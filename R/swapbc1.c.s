@@ -34,7 +34,7 @@
     nlocs <- length(in.locs)
     nstep <- nlocs
     
-    len.locs <- length(unique(locs))
+    len.locs <- length(unique(c( locs ) ))
     
     nopt <- len.locs
     optmax <- 1
