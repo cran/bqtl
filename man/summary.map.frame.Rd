@@ -22,4 +22,4 @@ summary.analysis.object(x)
  a list
 }
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
-\keyword{bqtl}
+\keyword{methods}

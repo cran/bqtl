@@ -95,3 +95,4 @@ swapf2(varcov, invars, rparm, nreps, locs = <see below>>,
 }
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 
+\keyword{utilities}

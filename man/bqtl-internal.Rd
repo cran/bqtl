@@ -20,4 +20,4 @@ unique.config(swap.obj)
 \details{
   These are not to be called by the user.
 }
-\keyword{bqtl}
+\keyword{utilities}

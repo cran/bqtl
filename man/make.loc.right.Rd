@@ -29,3 +29,4 @@ make.loc.right(marker.frame, marker.distances)
 
 }
 
+\keyword{manip}

@@ -45,4 +45,5 @@ plot( fitted( fit.pheno ), residuals( fit.pheno) )
 
 \testonly{rm(little.ana.bc,fit.pheno)}
 
-} 
+}
+\keyword{methods}

@@ -40,3 +40,4 @@ make.varcov(regressor.matrix, y, subset=is.finite(y), casewt=NULL)
   ill-conditioning.  Of course the rational for using the method is to
   speed the sampling, and it is very effective at doing so.} 
 
+\keyword{utilities}

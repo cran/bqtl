@@ -85,3 +85,4 @@ plot(fitted(little.lin), residuals(little.lin))
 \testonly{rm(little.lin,little.ana.bc)}
 }
 
+\keyword{regression,models}

@@ -47,3 +47,4 @@ image( 1:21, 44:64, little.res )
 rm(little.ana.bc, little.update, little.res  )
 }
 
+\keyword{models}

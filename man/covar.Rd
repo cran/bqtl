@@ -55,3 +55,4 @@ covar(x,...,scope=<see below>, method=<see below>)
    }
 
 
+\keyword{models,regression}

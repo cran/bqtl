@@ -25,7 +25,7 @@ morgan=100, nint=NULL, reso=NULL)
 \code{"data.frame"} or a vector or a
     data.frame with a column named \code{cM}, \code{M}, or \code{dx} or
     whose first column gives location  
-    on each chromosome in \code{100/morgan} centiMorgans (from start of
+    on each chromosome in  centiMorgans (from start of
     chromosome or Morgans if \code{M} was the column name).  It is best
     if \code{names(dx)} (for vector arguments) 
     or \code{row.names(dx)} (for data.frame arguments) give names of
@@ -87,3 +87,4 @@ plot( little.mf.5 ) # notice the 'virtual' markers added
 \testonly{ rm( little.map.dx,little.map.frame ,little.mf.5) }
 }
 
+\keyword{manip}

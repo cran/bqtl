@@ -128,3 +128,4 @@ summary( little.ana.bc )
 
 \testonly{rm( little.ana.bc, little.bc.pheno, little.mf.5, little.bc.markers )}
 }
+\keyword{manip}

@@ -66,4 +66,4 @@ par(.old.par)
 \testonly{ rm(null.llk, llk, little.ana.bc, .old.par ) }
 
 }
-\keyword{bqtl}
+\keyword{hplot,methods	}

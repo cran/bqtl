@@ -100,3 +100,4 @@ of a model formula(s).
   map and the marker information.
   
 }
+\keyword{models,regression}

@@ -21,6 +21,4 @@ coef(bqtl.obj)
 
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 \seealso{\code{\link{bqtl}}}
-\keyword{bqtl}
-
-
+\keyword{methods}
