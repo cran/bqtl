@@ -83,11 +83,13 @@
     
     increments <- diff(mgd/morgan)
 
-    not.r <- ifelse(pos.type=="right",0.0,
-                    c(exp(-increments),0.0))
+    ##    not.r <- ifelse(pos.type=="right",0.0,
+    ##                    c(1/2+exp(-2*increments)/2,0.0))
+    lambda <- ifelse(pos.type=="right", 0.0, exp(-2*increments) )
     if (!is.null(nint)) {
         orig <- cumsum(c(1,nint[-length(nint)]))
-        not.r <- rep(not.r^(1/nint),nint)
+        ##        not.r <- rep(not.r^(1/nint),nint)
+        lambda <- rep(lambda^(1/nint),nint)
         marker.names <- paste(rep(marker.names,nint),int.suffix(nint),sep="")
         is.marker <- rep(is.marker,nint)
         is.marker[-orig] <- FALSE
@@ -99,7 +101,7 @@
         pos.type <- rep(pos.type,nint)
         pos.type[-orig] <- "center"
     }
-    lambda <- ifelse(not.r==0,0,2*not.r-1)
+##    lambda <- ifelse(not.r==0,0,2*not.r-1)
     prior <- eval(prior)
     pos.plot <- mgd
     locus<-paste("C",chr.num,as.numeric(format(100*mgd/morgan,digits=4)),
