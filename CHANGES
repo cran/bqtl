@@ -87,3 +87,7 @@ bugfix - new classes for unique() broke summary.swap
 
 ----------------------------------------
 
+Version: 1.0-11
+add src/Makevars for BLAS usage
+
+----------------------------------------
