@@ -23,7 +23,7 @@
 ### marker. frame is assumed to be all numeric
 ###
     sum.or.one <- function(x)  {y <- sum(x);if (y>0) y else 1.0}
-    md.unique <- unique(marker.distances)
+    md.unique <- unique( c( marker.distances ) )
     md.ind <- factor(marker.distances, md.unique)
     n.ind <- length(md.unique)
 ###

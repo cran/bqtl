@@ -37,7 +37,7 @@
     mode.offset <- mode.offset[ match( uniq.locs, in.locs ) ]
     nlocs <- length(uniq.locs)
     nstep <- nlocs
-    len.locs <- length(unique(locs))
+    len.locs <- length(unique(c( locs) ))
     
     nopt <- len.locs*3
     optmax <- 2
@@ -53,7 +53,7 @@
         stop("length(locs.prior)!=length(unique(locs))")
     if (length(nreps)>1) stop("nreps should be an integer")
     optpri <- c(locs.prior)%o%c(combo.prior)
-    optvars <- matrix(c(rbind(unique(locs)*2-2,-1),rbind(unique(locs)*2-1,-1),
+    optvars <- matrix(c(rbind(unique(c(locs))*2-2,-1),rbind(unique(c(locs))*2-1,-1),
                         locs*2-rep(2:1,nopt/3)),nrow=2)
 
     optcur <- uniq.locs + mode.offset*len.locs

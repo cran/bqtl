@@ -26,7 +26,7 @@
     if (missing(locs))
         locs <- rep(seq(ncol(varcov$var.x)/2), rep(2, ncol(varcov$var.x)/2))
     
-    uniq.locs <- unique(locs)
+    uniq.locs <- unique(c( locs ))
     nlocs <- length(uniq.locs)
     nin <- 2
     nopt <-  nlocs*3
