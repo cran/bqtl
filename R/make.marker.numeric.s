@@ -9,7 +9,7 @@
     if ( length(level.names) != 6 )
       stop("length(level.names) must = 6 if none NULL value is used")
 
-  char.frame <- as.matrix(marker.frame)
+  char.frame <- unlist(lapply(marker.frame,as.character))
   char.frame[is.na(char.frame)] <- level.names[6]
   char.frame[char.frame=="NA"] <- level.names[6]
   level.numeric <- seq(length(level.names))
