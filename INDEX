@@ -1,0 +1,29 @@
+
+bqtl                     QTL Model Fitting
+
+locus                    Lookup loci or effects for genetic model
+                         formulas
+
+linear.bayes             Approximate Bayesian QTL mapping
+
+plot.map.frame           plots by chromosome location
+summary.bqtl             Summarize results
+loglik                   Extract the log likelihood from a fit
+formula.bqtl             Extract the formula from a fit
+
+predict.bqtl             Fitted Values
+predict.linear.bayes
+
+residuals.bqtl           Residuals
+residuals.linear.bayes
+
+make.analysis.obj        Set up data object for QTL mapping
+make.map.frame           Create marker map specifications
+marker.levels            Specifying the marker codes
+
+map.location             Finding/identifying markers/loci on the genome
+map.names
+
+little.ana.bc            A simulated dataset
+little.ana.f2            A simulated dataset
+

@@ -1,0 +1,11 @@
+
+ODIR=/mnt/work/cberry/projects/MAC/genetics/qtldev/src
+
+CFILES:sh=ls *.c *.h
+
+all: $(CFILES)
+
+$(CFILES):$$(ODIR)/$$@
+	cp $(ODIR)/$@  $@
+
+

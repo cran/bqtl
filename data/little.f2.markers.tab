@@ -1,0 +1,151 @@
+row.names	m.1	m.2	m.3	m.4	m.5	m.6	m.7	m.8	m.9	m.10	m.11	m.12	m.13	m.14	m.15	m.16	m.17	m.18	m.19	m.20	m.21	m.22	m.23	m.24	m.25	m.26	m.27	m.28	m.29	m.30	m.31	m.32	m.33	m.34	m.35	m.36	m.37	m.38	m.39	m.40	m.41	m.42	m.43	m.44	m.45	m.46	m.47	m.48	m.49	m.50
+  1	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	AA	AA	AA	AA	AA	AA	AA	AA	Aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	a-	AA	AA	AA	Aa	NA
+  2	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	a-	Aa	Aa	Aa	Aa	Aa
+  3	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	NA	Aa	Aa	a-	Aa	Aa	Aa	NA	aa
+  4	Aa	NA	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	NA	aa	aa	aa	aa	aa	aa	aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	a-	aa	aa	aa	aa	aa
+  5	aa	aa	aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	Aa	NA	Aa	Aa	AA	aa	AA	NA	Aa	Aa	Aa	AA	AA	Aa	Aa	aa	aa	aa	Aa	a-	aa	aa	aa	NA	aa
+  6	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	AA	AA	AA	AA	NA	NA	A-	AA	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	aa	aa	aa	aa	aa
+  7	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	A-	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+  8	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	NA	AA	AA	AA	AA	AA	AA	AA	AA	AA
+  9	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	a-	Aa	NA	Aa	Aa	Aa
+ 10	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	AA	A-	AA	Aa	Aa	Aa	aa	Aa	AA	AA	AA	Aa	Aa	NA	AA	AA	AA	aa	aa	aa	aa	a-	aa	aa	aa	aa	Aa
+ 11	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	AA	AA	Aa	Aa	AA	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	aa	aa	aa	NA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	NA	Aa	NA	Aa	a-	aa	AA	AA	NA	AA
+ 12	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	aa	aa	NA	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	AA	NA	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	a-	Aa	NA	NA	NA	aa
+ 13	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	NA	A-	AA	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	a-	AA	AA	AA	AA	Aa
+ 14	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	aa	aa	aa	aa	aa
+ 15	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	A-	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	NA	a-	AA	AA	AA	AA	AA
+ 16	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	Aa	Aa	AA	Aa	Aa	aa	aa	aa	aa	a-	AA	AA	AA	AA	AA
+ 17	AA	AA	AA	Aa	Aa	Aa	NA	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	Aa	NA	Aa	Aa	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	NA
+ 18	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	A-	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	aa	aa	a-	aa	aa	aa	aa	Aa
+ 19	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	aa	aa	Aa	Aa	aa	aa	aa	NA	aa	aa	Aa	Aa	Aa	Aa	A-	aa	NA	aa	aa	Aa	aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	AA	Aa	Aa	aa	aa	a-	aa	Aa	Aa	Aa	Aa
+ 20	Aa	Aa	Aa	AA	NA	AA	AA	AA	AA	AA	Aa	NA	aa	aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	A-	AA	NA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA
+ 21	AA	AA	AA	AA	AA	AA	NA	Aa	aa	aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 22	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	aa	aa	aa	aa	NA	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	Aa	AA	AA	NA	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	a-	Aa	Aa	Aa	Aa	aa
+ 23	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	AA	Aa	Aa	Aa	aa	aa	aa	aa	a-	Aa	Aa	Aa	Aa	Aa
+ 24	Aa	Aa	Aa	Aa	NA	Aa	Aa	aa	aa	aa	AA	AA	Aa	aa	aa	aa	aa	NA	aa	aa	NA	Aa	Aa	Aa	A-	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 25	NA	Aa	Aa	AA	AA	AA	AA	NA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	AA	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	aa	aa	aa	aa	a-	Aa	NA	Aa	Aa	Aa
+ 26	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	A-	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	Aa	Aa	AA	AA	AA	AA	AA	AA	NA	AA	AA	AA
+ 27	aa	aa	aa	aa	aa	aa	aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	NA	A-	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	AA	AA	AA	AA	Aa
+ 28	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	NA	AA	AA	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 29	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	Aa	AA	AA	AA	Aa	AA	AA	AA	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	a-	Aa	Aa	Aa	Aa	NA
+ 30	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	aa	aa	Aa	NA	Aa	NA	Aa	Aa	AA	NA	AA	AA	A-	AA	AA	AA	AA	NA	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	a-	aa	aa	aa	NA	aa
+ 31	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	aa	aa	aa	a-	Aa	Aa	Aa	aa	aa
+ 32	AA	AA	NA	AA	NA	AA	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	a-	aa	Aa	Aa	Aa	Aa
+ 33	Aa	NA	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	NA	Aa	Aa	Aa	A-	Aa	AA	AA	AA	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA
+ 34	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	A-	AA	AA	AA	NA	AA	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	aa	NA	aa	aa	a-	aa	aa	aa	aa	AA
+ 35	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	NA	AA	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	A-	Aa	Aa	NA	Aa	AA	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	AA
+ 36	Aa	Aa	Aa	Aa	Aa	Aa	NA	NA	Aa	Aa	AA	AA	AA	AA	NA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	aa	aa	aa	a-	aa	aa	aa	aa	aa
+ 37	Aa	Aa	Aa	aa	aa	aa	aa	Aa	AA	AA	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	NA	AA	AA	AA	AA	AA	AA	aa
+ 38	Aa	Aa	Aa	AA	NA	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	NA	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	a-	AA	Aa	aa	aa	aa
+ 39	Aa	Aa	Aa	aa	aa	aa	aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	Aa	Aa	AA	A-	AA	NA	AA	AA	AA	Aa	NA	AA	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	a-	AA	AA	Aa	Aa	AA
+ 40	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	NA	aa	AA	NA	Aa	NA	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	A-	NA	aa	aa	aa	aa	AA	Aa	Aa	Aa	Aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	NA	AA	Aa
+ 41	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	A-	Aa	NA	NA	Aa	Aa	Aa	Aa	Aa	aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 42	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	AA	AA	AA	AA	AA	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	aa	a-	aa	aa	aa	aa	Aa
+ 43	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	NA	AA	AA	Aa	Aa	Aa	Aa	A-	AA	AA	AA	AA	Aa	Aa	AA	AA	AA	AA	AA	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	a-	aa	Aa	Aa	Aa	aa
+ 44	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	NA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	a-	aa	aa	aa	aa	aa
+ 45	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	A-	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	Aa	Aa	AA	AA	AA	AA	a-	Aa	NA	Aa	Aa	aa
+ 46	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	NA	Aa	Aa	a-	Aa	AA	AA	AA	NA
+ 47	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	aa	aa	aa	aa	Aa
+ 48	AA	AA	AA	AA	NA	AA	AA	AA	Aa	AA	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	a-	Aa	aa	aa	aa	aa
+ 49	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	NA	Aa	NA	aa	NA	Aa	Aa	Aa	NA	Aa	AA	AA	AA	AA	A-	AA	AA	AA	AA	AA	NA	Aa	aa	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	a-	Aa	AA	Aa	Aa	Aa
+ 50	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	NA	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	Aa	Aa	a-	aa	Aa	Aa	Aa	AA
+ 51	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	AA	A-	AA	AA	AA	AA	AA	Aa	Aa	Aa	AA	AA	NA	Aa	Aa	Aa	NA	aa	aa	aa	aa	a-	aa	AA	AA	AA	Aa
+ 52	aa	NA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	aa	aa	aa	Aa	A-	NA	AA	NA	AA	AA	Aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa
+ 53	AA	AA	AA	Aa	Aa	Aa	Aa	NA	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	NA	Aa	Aa	Aa	aa	aa	aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 54	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	a-	AA	Aa	Aa	Aa	Aa
+ 55	AA	AA	AA	Aa	Aa	Aa	Aa	NA	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	aa	AA	AA	AA	AA	AA	NA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	AA	AA	AA	AA	AA
+ 56	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	Aa	aa	aa	Aa	AA	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	AA	Aa
+ 57	AA	AA	NA	AA	AA	AA	AA	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	A-	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	NA	a-	aa	NA	aa	Aa	Aa
+ 58	AA	AA	AA	aa	aa	aa	aa	aa	aa	NA	aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	A-	AA	Aa	Aa	Aa	Aa	aa	aa	Aa	NA	Aa	Aa	AA	NA	Aa	Aa	AA	AA	AA	AA	AA	AA	Aa	aa	aa	Aa
+ 59	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	A-	aa	AA	AA	AA	AA	Aa	NA	Aa	AA	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 60	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	aa	aa	NA	aa	aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	aa	aa	NA	Aa	a-	Aa	Aa	NA	Aa	Aa
+ 61	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	Aa	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	aa
+ 62	AA	AA	AA	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA
+ 63	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	Aa	NA	aa	aa	aa	aa	aa	Aa	aa	aa	aa	Aa	A-	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	NA	Aa	Aa	Aa
+ 64	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	A-	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	aa	aa	Aa	AA
+ 65	Aa	NA	Aa	Aa	Aa	Aa	NA	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	aa	NA	Aa	Aa	Aa	Aa	AA	Aa	Aa	AA	a-	Aa	Aa	Aa	Aa	Aa
+ 66	aa	aa	aa	aa	aa	aa	aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	AA	NA	AA	AA	NA	Aa	NA	Aa	NA	aa	aa	Aa	Aa	Aa	aa	aa	aa	aa	a-	aa	aa	Aa	Aa	Aa
+ 67	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	NA	AA	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	AA	aa	aa	aa	aa	a-	aa	aa	aa	aa	Aa
+ 68	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	Aa	aa	NA	NA	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	NA	AA	AA	AA	AA	AA	AA	AA	AA	NA	AA	aa	aa	aa	aa	a-	aa	aa	aa	Aa	Aa
+ 69	aa	aa	NA	Aa	Aa	Aa	Aa	NA	aa	Aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	AA	aa	aa	aa	aa	NA	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	a-	NA	aa	aa	aa	aa
+ 70	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 71	aa	aa	aa	Aa	Aa	aa	aa	aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	A-	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	Aa	Aa	Aa	Aa	NA	NA	Aa	Aa	a-	Aa	Aa	Aa	Aa	AA
+ 72	NA	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	AA	A-	AA	Aa	Aa	Aa	AA	NA	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	NA	Aa	NA
+ 73	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	aa	aa	NA	aa	Aa	Aa	Aa	Aa	aa	NA	aa	aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA
+ 74	Aa	Aa	Aa	aa	aa	aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	NA	aa	aa	Aa	Aa	NA	Aa	Aa	NA	aa	NA	aa	aa	aa	aa	Aa	Aa	a-	AA	AA	AA	Aa	Aa
+ 75	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	AA	AA	Aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	AA	AA	Aa	a-	AA	aa	aa	aa	Aa
+ 76	AA	AA	AA	aa	aa	aa	aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	AA	A-	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	aa	aa	aa	aa	Aa
+ 77	Aa	Aa	Aa	aa	aa	aa	aa	aa	NA	NA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	A-	Aa	Aa	Aa	Aa	Aa	aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	aa	aa	NA	aa	a-	aa	aa	aa	aa	aa
+ 78	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	A-	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	NA	aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 79	Aa	Aa	Aa	AA	AA	AA	AA	AA	NA	AA	AA	AA	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	NA	Aa	Aa	Aa	NA
+ 80	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	a-	Aa	Aa	Aa	Aa	Aa
+ 81	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	AA	A-	NA	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	NA	a-	Aa	Aa	Aa	Aa	Aa
+ 82	aa	aa	aa	aa	aa	NA	aa	aa	NA	aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 83	AA	AA	AA	AA	AA	AA	AA	NA	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	aa	aa	aa	aa	a-	aa	aa	aa	Aa	Aa
+ 84	aa	aa	aa	aa	aa	aa	aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	aa	aa	aa	aa	a-	aa	aa	aa	Aa	Aa
+ 85	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	a-	Aa	Aa	Aa	Aa	aa
+ 86	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	NA	AA	A-	AA	AA	AA	AA	aa	NA	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	AA	AA	Aa	aa
+ 87	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	NA	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	aa	aa	Aa	Aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	AA	Aa	Aa	NA	Aa
+ 88	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	AA	aa	aa	aa	aa	Aa	Aa	AA	AA	Aa	Aa	aa	aa	aa	aa	a-	NA	aa	aa	aa	aa
+ 89	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	Aa	Aa	AA	NA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	AA	AA	AA	AA	AA	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	a-	Aa	Aa	Aa	Aa	Aa
+ 90	AA	AA	NA	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	NA	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+ 91	aa	NA	aa	Aa	Aa	NA	Aa	NA	AA	AA	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	AA	AA	AA	AA	NA	NA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	AA	AA	AA	AA	AA
+ 92	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	AA	Aa	Aa	Aa	aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	NA	Aa	Aa	Aa	aa	a-	aa	aa	aa	aa	aa
+ 93	Aa	Aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	NA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	NA	aa	aa	aa	aa	a-	aa	aa	aa	Aa	Aa
+ 94	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	NA	Aa	aa	aa	AA	AA	AA	AA	NA	Aa	aa	aa	aa	aa	aa	aa	a-	aa	aa	aa	aa	aa
+ 95	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa
+ 96	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	AA	NA	AA	AA	Aa
+ 97	Aa	Aa	Aa	AA	AA	AA	AA	AA	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	NA	a-	Aa	Aa	Aa	Aa	Aa
+ 98	aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	AA	AA	AA	A-	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	aa	aa	aa	aa	Aa
+ 99	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	aa	Aa	A-	aa	AA	AA	AA	AA	Aa	AA	AA	AA	AA	AA	Aa	Aa	Aa	NA	aa	aa	aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+100	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	NA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	aa	NA	a-	Aa	aa	aa	aa	AA
+101	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	NA	AA	AA	AA	AA	AA	AA	AA	AA	NA	Aa	NA	AA	NA	A-	AA	Aa	Aa	Aa	NA	aa	aa	aa	aa	aa	aa	aa	aa	Aa	aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	aa
+102	Aa	NA	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	a-	aa	aa	aa	aa	Aa
+103	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	aa	aa	aa	Aa	A-	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	aa	aa	aa	aa	NA	aa	a-	Aa	AA	AA	AA	Aa
+104	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	AA	AA	NA	AA	Aa	aa	aa	aa	aa	aa	NA	AA	AA	AA	AA	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	AA	a-	AA	AA	AA	AA	AA
+105	Aa	Aa	Aa	aa	aa	aa	aa	aa	NA	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	AA	AA	AA	Aa	a-	AA	AA	AA	NA	AA
+106	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	aa	Aa	aa	Aa	Aa	NA	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	a-	NA	AA	NA	AA	AA
+107	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	NA	aa	aa	aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	AA	AA	AA	AA
+108	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	aa	aa	aa	aa	aa	aa	NA	aa	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	AA	AA	AA	Aa	aa	aa	aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	aa
+109	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA
+110	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	NA	Aa	AA	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	AA	Aa
+111	Aa	Aa	NA	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	AA	Aa	Aa	Aa	Aa	AA	Aa	NA	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	aa	a-	Aa	aa	aa	aa	Aa
+112	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	NA	aa	aa	aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	AA
+113	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	AA	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA
+114	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	Aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	NA	Aa	Aa	AA
+115	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	A-	Aa	aa	aa	aa	aa	NA	aa	Aa	Aa	NA	AA	AA	Aa	Aa	Aa	aa	aa	aa	aa	a-	Aa	Aa	Aa	Aa	NA
+116	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	AA	AA	AA	Aa	NA	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	A-	aa	AA	AA	AA	AA	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA
+117	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	AA	AA	AA	NA	AA	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	a-	aa	aa	aa	aa	aa
+118	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	Aa	aa	aa	NA	aa	aa	aa	aa	aa	AA	AA	AA	AA	AA	A-	AA	AA	AA	AA	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	AA	AA	AA	Aa	a-	Aa	Aa	Aa	Aa	Aa
+119	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	AA	AA	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	AA	Aa	Aa	NA	Aa	a-	NA	Aa	NA	Aa	Aa
+120	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	A-	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	NA	a-	Aa	Aa	Aa	Aa	Aa
+121	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	aa	aa	aa	aa	aa	NA	aa	aa	aa	aa	NA	aa	aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	AA	a-	Aa	Aa	Aa	Aa	Aa
+122	aa	aa	NA	AA	AA	AA	AA	AA	Aa	AA	Aa	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	A-	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	aa	aa	NA	a-	Aa	Aa	Aa	Aa	Aa
+123	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	NA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+124	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	AA	AA	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa
+125	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	AA	AA	Aa
+126	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	NA	NA	aa	aa	aa	aa	NA	AA	AA	AA	AA	A-	AA	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	aa
+127	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+128	AA	AA	AA	AA	NA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	A-	AA	AA	AA	AA	AA	Aa	Aa	NA	Aa	Aa	Aa	NA	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	NA	AA	AA	Aa
+129	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	NA	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	AA	Aa	Aa	NA	Aa	aa	aa	aa	Aa	AA	AA	AA	AA	AA	AA	Aa	AA	AA	AA	a-	Aa	Aa	Aa	Aa	Aa
+130	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	NA	NA	Aa	Aa	Aa	NA	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	AA	NA	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	NA	a-	AA	AA	AA	AA	AA
+131	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa
+132	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	aa	aa	aa	aa	a-	aa	aa	aa	aa	aa
+133	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	A-	NA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	NA	a-	AA	AA	AA	AA	NA
+134	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	A-	Aa	AA	AA	AA	AA	aa	aa	aa	aa	aa	NA	aa	aa	Aa	Aa	aa	aa	aa	aa	a-	aa	Aa	Aa	Aa	Aa
+135	aa	aa	aa	Aa	Aa	Aa	NA	aa	aa	aa	Aa	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	aa	aa	aa	aa	aa	NA	aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	aa	a-	aa	aa	NA	aa	aa
+136	Aa	Aa	Aa	AA	AA	AA	AA	Aa	Aa	AA	AA	Aa	Aa	Aa	aa	aa	NA	Aa	Aa	AA	Aa	Aa	Aa	Aa	A-	Aa	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	aa	aa	aa	Aa	Aa	aa	aa	aa	aa	a-	Aa	AA	AA	AA	Aa
+137	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	AA	AA	AA	A-	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	AA
+138	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	Aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	NA	AA	A-	AA	AA	AA	AA	AA	AA	Aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+139	AA	NA	AA	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	NA	Aa	Aa	AA	AA	AA	AA	aa	aa	aa	aa	a-	Aa	Aa	Aa	AA	AA
+140	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	NA	AA	AA	AA	Aa	A-	AA	aa	aa	aa	aa	Aa	AA	AA	AA	Aa	Aa	AA	AA	AA	Aa	AA	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+141	aa	aa	aa	aa	aa	aa	aa	NA	NA	Aa	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	NA	aa	aa	aa	aa	aa	aa	Aa	Aa	aa	aa	Aa	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	aa
+142	Aa	Aa	Aa	aa	aa	aa	NA	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	AA	AA	Aa	Aa	Aa	NA	aa	aa	aa	aa	AA	AA	AA	Aa	a-	aa	aa	aa	aa	Aa
+143	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	Aa	NA	Aa	a-	aa	aa	aa	aa	aa
+144	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	AA	AA	AA	AA	A-	NA	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	a-	Aa	Aa	Aa	Aa	Aa
+145	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	A-	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	Aa	Aa	Aa	a-	Aa	Aa	Aa	aa	aa
+146	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	A-	Aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	Aa	Aa	Aa	Aa	Aa	NA	a-	aa	aa	aa	aa	aa
+147	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	NA	AA	AA	AA	A-	AA	AA	AA	AA	AA	Aa	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	a-	Aa	Aa	Aa	Aa	aa
+148	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	AA	AA	aa	aa	aa	aa	aa	aa	NA	Aa	NA	aa	Aa	Aa	Aa	NA	Aa	Aa	AA	AA	AA	AA	Aa	Aa	Aa	Aa	a-	NA	Aa	Aa	AA	AA
+149	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	AA	AA	NA	aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	aa	aa	aa	aa	aa	aa	Aa	Aa	Aa	Aa	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	AA	AA	AA	Aa	Aa
+150	Aa	Aa	Aa	Aa	NA	Aa	AA	Aa	AA	AA	aa	aa	aa	aa	aa	aa	aa	aa	aa	aa	Aa	NA	NA	AA	A-	AA	Aa	Aa	Aa	Aa	AA	AA	AA	AA	AA	AA	Aa	Aa	Aa	Aa	Aa	Aa	Aa	Aa	a-	aa	Aa	Aa	Aa	Aa
