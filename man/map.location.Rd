@@ -2,7 +2,6 @@
 \alias{map.loc}
 \alias{map.location}
 \alias{map.location.default}
-\alias{map.location.map.frame}
 \alias{map.location.analysis.object}
 \alias{map.location.bqtl}
 \alias{map.location.bqtl.list}
@@ -11,8 +10,8 @@
  Report the chromosome number and location of loci in a genetic map.
 }
 \usage{
-map.location(x, y, \dots)
-map.loc(x, chromo=c(4,6), cM=c(22,13) )
+map.location(x,\dots)
+map.loc(x, \dots )
 }
 
 \arguments{
@@ -25,7 +24,7 @@ map.loc(x, chromo=c(4,6), cM=c(22,13) )
   \item{cM }{(Optional) map distance vector. If the same chromosome
     number is used twice in \code{chromo}, \code{cM} must be
     ordered. If \code{cM} is omitted, all loci on each chromosome listed
-    in \code{chromo} will be included.)
+    in \code{chromo} will be included.}
 
   \item{map.names}{A vector of \code{map.names}}
 }

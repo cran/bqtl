@@ -8,18 +8,23 @@
   \code{bqtl(y~configs(swap.obj),\dots)} with the data in
   \code{swap.obj} to provide improved posteriors, et cetera} 
 }
+\synopsis{
+summary.adj(object, n.loc, coef.znames, mode.names=c("add", "dom"),
+imp.denom=NULL, swap.obj=NULL,...)
+}
 \usage{
-summary.adj(adj.obj, n.loc, coef.znames, mode.names=c("add", "dom"), imp.denom=NULL, swap.obj=NULL)
+
+\method{summary}{adj}(object, n.loc, coef.znames, mode.names=c("add", "dom"), imp.denom=NULL, swap.obj=NULL)
 }
 \arguments{
-  \item{adj.obj}{Typically, this is the result of a call like
+  \item{object}{Typically, this is the result of a call like
   \code{bqtl(y~configs(swap.obj),\dots)}  }
-  {n.loc}{The number of genes in this model }
+  \item{n.loc}{The number of genes in this model }
   \item{coef.znames}{\code{map.names} for the sample space }
   \item{mode.names}{\code{NULL} except for "F2", in which case it is
     uusally c("add","dom") }
   \item{imp.denom}{Optional, and only used when some sampling scheme
-    other than the default MCMC generates \code{adj.obj} }
+    other than the default MCMC generates \code{object} }
   \item{swap.obj}{The result of a call to \code{swap} }
 }
 \details{

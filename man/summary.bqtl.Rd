@@ -7,17 +7,18 @@
   standard error of the trait.  
 }
 \usage{
-summary.bqtl(bqtl.obj)
+\method{summary}{bqtl}(object,\dots)
 }
 
 \arguments{
-  \item{bqtl.obj}{The result of \code{link{bqtl}} }
+  \item{object}{The result of \code{link{bqtl}} }
+  \item{\dots}{ Currently not used}
 
 }
 \value{
   A list containing
   \item{coefficients }{Either a vector of regression coefficents, or if
-    {bqtl.obj} was created via \code{bqtl(\dots,return.hess=TRUE)}, then
+    {object} was created via \code{bqtl(\dots,return.hess=TRUE)}, then
     a matrix with coefficients, standard errors, t-statistics, and p-values}
   \item{loglik }{
     the loglikelihood or log posterior}

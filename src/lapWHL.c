@@ -96,15 +96,15 @@ void lapWhl(double *y, double *wt, double *amnt, longint *nparm, double **xc,
 		}
 	    }
 	    else {                                               /* do em update */
-		sigma = sqrt(emparm[*np-1]);
+		sigma = sqrt(oldprm[*np-1]);
 		*reset = 1;
 		if (*nem==0){
-		    CPY(emparm, curprm, np);
+		    CPY(emparm, curprm, np);   /* retrieve last EM update */
 		}
 		else
 		{
 		    llkEm(nparm,  xc, zc, txc, tzc, &sigma, 
-			  amnt, fits, y, emparm, wt, res,
+			  amnt, fits, y, oldprm, wt, res,
 			  vsum, vsum2, vysum, &lprior, &newllk, xvx,
 			  xvy, df, curprm, &ss, newgrd, newhss, &sigma2,
 			  qrxvx, qraux, pvt, wrksp,nem, casewt);
@@ -113,11 +113,10 @@ void lapWhl(double *y, double *wt, double *amnt, longint *nparm, double **xc,
 		    newllk += lprior;
 		    need_search = 1;
 		}
-		
-		if (NTFINITE(newllk) == 0) 
-		{
+		if ((NTFINITE(newllk)) == 0) 
+		  {
 		    tsttol = (d__1 = (newllk - oldllk)*2.0/(newllk + oldllk), ABS(d__1));
-		    for (j = 0; j <*np; ++j) tsttol += (d__1 = newgrd[j], ABS(d__1));
+		    for (j = 0; j <*np; j++) tsttol += (d__1 = newgrd[j], ABS(d__1));
 		    notdn = (tsttol > *tol) ? 1 : 0; 
 		} 
 		else {
@@ -126,18 +125,16 @@ void lapWhl(double *y, double *wt, double *amnt, longint *nparm, double **xc,
 	    }
 	}
 	else 
-	{  
-	    notdn = (fabs(newllk - oldllk) > *tol) ? 1 : 0;
-	    
-	    CPY(curprm, emparm,np);
-	    
+	  {  
+	    notdn = (fabs(newllk - oldllk) > *tol) ? 1 : 0; /* fabs needed?? */   
+	    CPY(curprm, emparm,np); /*retain curprm as emparm*/
 	    F77_CALL(hessup)(dgr, dparm, newgrd, oldgr, curprm, 
 			     oldprm, ireset, bk, newhss, bks, qrbk, 
 			     paradj, inp, newprm);
 	    
-	    CPY(emparm, oldprm, np);
+	    CPY(emparm, oldprm, np); /* oldprm has best, tested values */
 	    sigma = (curprm[*np-1] > 0) ? sqrt(curprm[*np-1]): -1.0;
-	    CPY(newprm, emparm, np);
+	    CPY(newprm, emparm, np); /* newprm was the EM update */
 	    oldllk = newllk;
 	    CPY(newgrd,oldgr, np);
 	    if (sigma<0.0) notdn = 1;
@@ -146,8 +143,15 @@ void lapWhl(double *y, double *wt, double *amnt, longint *nparm, double **xc,
     }
     
     *reset = *ireset;
-    
-    normLogLik(nparm,xc,zc,txc,tzc,y,fits,res,&sigma,amnt,newprm, 
+    sigma = sqrt(oldprm[*np-1]);  /* oldprm = best proven choice */
+    /* initialize res and fits for normLogLik */
+    llkEm(nparm,  xc, zc, txc, tzc, &sigma, 
+	  amnt, fits, y, oldprm, wt, res,
+	  vsum, vsum2, vysum, &lprior, &newllk, xvx,
+	  xvy, df, curprm, &ss, newgrd, newhss, &sigma2,
+	  qrxvx, qraux, pvt, wrksp,&nem1, casewt);
+    normLogLik(nparm,xc,zc,txc,tzc,y,fits,res,&sigma,amnt,oldprm, 
 	       wrksp,qrxvx,qraux, 
 	       newgrd,newhss,llk,casewt); 
 }
+

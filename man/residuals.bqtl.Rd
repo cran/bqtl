@@ -5,9 +5,10 @@
  The phenotype data, estimated coefficients, and expected locus values
 are used to find fitted values for the QTL model
 }
+\synopsis{residuals.bqtl(object,...)}
 \usage{
-residuals(object)
-residuals.bqtl(object)
+\method{residuals}{bqtl}(object)
+
 }
 \arguments{
   \item{object}{ An object of class \code{\link{bqtl}}}}

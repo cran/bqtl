@@ -14,8 +14,6 @@ ri.levels(  AA="AA", aa="aa", miss.val="--")
 f2.levels(  AA="AA", Aa="Aa", aa="aa", not.aa="A-", not.AA="a-",
 miss.val="--")
 
-make.analysis.obj(data, map.frame, marker.frame,
-marker.levels=f2.levels(),method="F2")
 }
 \arguments{
   \item{AA}{Always used: the code for the homozygous state from one parent line}
@@ -32,12 +30,12 @@ marker.levels=f2.levels(),method="F2")
 clearly understood by \emph{BQTL}. It is hoped that thees functions
 provide a bridge between the internals of \emph{BQTL} and the user's
 view of the marker codes. Numeric values can be used, but they will be
-coerced to character values.
+coerced to character values.}
 \value{A vector with 6 elements corresponding to the values of 
   \code{AA, \code{Aa}, \code{aa}, \code{not.aa}, \code{not.AA}, and
     \code{miss.val}. For RI and BC1 setups, those that do not apply will
     be unnamed and set to \code{"nil"}
-}
+}}
 \author{ Charles C. Berry \email{cberry@ucsd.edu}}
 \seealso{ \code{\link{make.analysis.obj}} }
 

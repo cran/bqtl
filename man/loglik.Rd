@@ -18,14 +18,14 @@ log likelihood or log posterior and a posterior. These functions simply
 extract them.
 }
 \usage{
-loglik(x)
-logpost(x)
-posterior(x)
+loglik(x, ...)
+logpost(x, ...)
+posterior(x, ...)
 }
 
 \arguments{
   \item{x}{ The object produced by \code{bqtl} }
- 
+  \item{...}{ Currently unused }
 }
 
 \value{

@@ -1,4 +1,5 @@
 \name{map.names}
+\alias{map.names}
 \alias{map.names.default}
 \alias{map.names.bqtl}
 \alias{map.names.bqtl.list}
@@ -11,8 +12,8 @@
 }
 \usage{
 map.names(x,...)
-map.names.map.frame(x,chromo=NULL,cM=NULL)
-map.names.bqtl(x)
+map.names.map.frame(x,...)
+map.names.bqtl(x, ..., ana.obj)
 }
 
 \arguments{
@@ -23,8 +24,9 @@ map.names.bqtl(x)
   \item{\dots}{For \code{class(x)=="analysis.object"} or
     \code{class(x)=="map.frame"}, arguments \code{chromo} and \code{cM}
     can be used as in \code{map.index}
+  }
+  \item{ana.obj}{(optional) analysis object in which to look up the names}
 }
-
 \value{
 A character vector 
 }

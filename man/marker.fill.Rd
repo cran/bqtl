@@ -25,12 +25,11 @@ A map.frame.object.
 
 }
 \item{reso}{
-
-
 The desired interval between loci in the same metric as \code{map.frame$cM}
-
-
-}}
+}
+\item{return.nint}{Whether to output a vector of number of intervals to
+  produce in each existing interlocus interval}
+}
 \value{
 If \code{return.nint} is \code{TRUE}, a vector of integers is
 returned. It indicates how many intervals to place between this marker

@@ -10,8 +10,8 @@ function.  It is used on the right hand side of a formula in the
 
 }
 \usage{
-configs(x,...,scope=<<see below>>)
-bqtl( reg.formula = y ~ PVV.4 + configs(14,17), my.analysis.object )
+configs(x,...,scope=<<see below>>, method = NULL)
+
 }
 
 \arguments{
@@ -32,8 +32,9 @@ automatically.  A vector of regressor names, like the \code{reg.names}
 component returned by \code{\link{make.analysis.obj}}.  When
 \code{mode(x)} is \code{"character"}, then \code{names(scope)}
 \bold{must} be non-\code{NULL} }
-
-}
+\item{method}{ (Optional and) Usually not supplied by the user. A method
+  like "F2". Typically, this is determined by internal code.
+}}
 \details{ \code{configs} is used in the model formula notation of
 \code{bqtl}, possibly more than once, and possibly with regressors named
 in the usual manner.  \code{configs} is intended to speed up the

@@ -6,6 +6,8 @@ locus                    Lookup loci or effects for genetic model
 
 linear.bayes             Approximate Bayesian QTL mapping
 
+bqtl.fitter              Faster fitting of many models
+
 plot.map.frame           plots by chromosome location
 summary.bqtl             Summarize results
 loglik                   Extract the log likelihood from a fit

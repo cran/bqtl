@@ -3,7 +3,7 @@ function(reg.formula, ana.obj,
          rparm = NULL,  tol = 9.900000000000001e-09,
 	return.hess = F, mode.names = NULL, mode.mat = NULL,
           maxit = 100, nem = 1,setup.only=FALSE,subset=NULL,casewt=NULL,
-         ...)
+         start.parm=NULL, ...)
 {
   this.call <- match.call(expand.dots=TRUE)
   n.data<-nrow(ana.obj$data)
@@ -161,9 +161,20 @@ function(reg.formula, ana.obj,
   np <- nreg+1
   
   n <- length(y)
+  if (is.null(start.parm)) { # initialize coefs and ln.sigma?
+    ninit <- 0
+    coefs <- double(nreg)
+    ln.sigma <- double(1)
+  }
+  else {
+    ninit <- 1
+    if (length(start.parm)!=np) stop("length(start.parm) is incorrect")
+    coefs <- as.double(start.parm[-np])
+    ln.sigma <- as.double(start.parm[np])
+  }
   nparm <- c(n,nrx,ncx,nloc,ncz,
              nx2uz,nz2uz,nt2uz,
-             nreg,np,ptx,ptz,pttx,pttz)
+             nreg,np,ptx,ptz,pttx,pttz,ninit)
   reg.vec <- c(dimnames(reg.proto)[[2]],dimnames(covar.matrix)[[2]][-1],dimnames(form.factors)[[2]][both.terms])
   
 ### rparm for intercept is assumed to be in the first element, named "intercept",
@@ -238,9 +249,9 @@ function(reg.formula, ana.obj,
                } ,
                needProd = as.integer(need.prod),
                lambda = as.double(lambda),
-               coefs = double(nreg),
+               coefs = coefs,
                casewt=as.double(casewt),
-               ln.sigma = double(1),
+               ln.sigma = ln.sigma,
                hkExact = double(1),
                hkApprox = double(1),
                llk = double(1),
@@ -272,9 +283,9 @@ function(reg.formula, ana.obj,
               } ,
               needProd = as.integer(need.prod),
               lambda = as.double(lambda),
-              coefs = double(nreg),
+              coefs = coefs,
               casewt=as.double(casewt),
-              ln.sigma = double(1),
+              ln.sigma = ln.sigma,
               hkExact = double(1),
               hkApprox = double(1),
               llk = double(1),

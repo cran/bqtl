@@ -10,15 +10,13 @@ function.  It is used on the right hand side of a formula in the
 \code{\link{bqtl}} function. 
 
 }
+\synopsis{
+locus(x, ..., scope, method, chromo, cM, ana.obj)}
 \usage{
-locus(x, ...,chromo=NULL,cM=NULL, scope=<<see below>>,method=<<see below>>)
-
-add(x,...)
-
-dom(x,...)
-
-bqtl( reg.formula = y ~ locus(14,17) * locus(133,245), my.analysis.object )
-
+locus(x)
+locus(chromo,cM)
+add(x)
+dom(x)
 }
 
 \arguments{
@@ -43,7 +41,7 @@ bqtl( reg.formula = y ~ locus(14,17) * locus(133,245), my.analysis.object )
   or range of locations from which loci will be included. If the one
   chromosome number is specified in \code{chromo}, \code{cM} must be 
   ordered. If \code{cM} is omitted, all loci on the chromosome(s) will
-  be included.)
+  be included.}
 
 \item{scope}{ (Optional and)
   Usually not supplied by the user.  Rather \code{bqtl} fills this in

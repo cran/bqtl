@@ -2,7 +2,7 @@
     function(x,...)
     UseMethod("map.index")
 "map.index.default"<-
-    function(x,chromo,cM=NULL)
+    function(x,chromo,cM=NULL,...)
 {
     if (length(chromo)==1 && missing(cM) || length(cM)!=2){
         subset <-    x$chr.num==chromo

@@ -1,4 +1,4 @@
 "formula.bqtl" <-
-    function(object) {
-        object$call[[2]]
+    function(x,...) {
+        x$call[[2]]
     }

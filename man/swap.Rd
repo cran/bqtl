@@ -30,9 +30,9 @@ swap(varcov, invars, rparm, nreps, ana.obj, ...)
   \item{\dots}{Additional arguments override the default choices of
     candidate loci (\code{locs}), prior for locus (\code{locs.prior}),
     or method specified by \code{ana.obj}. Also, the default prior for
-    model (\code{combo.prior} when \code{ana.obj$method=="F2" can be
-      overridden. See \link{swapbc1} and \link{swapf2} for details. } 
-}
+    model (\code{combo.prior}) when \code{ana.obj$method=="F2" can be
+      overridden. See \link{swapbc1} and \link{swapf2} for details. }
+}}
 \details{
    An MCMC sampler for loci using the object of \code{ make.varcov } is
   executed.  This sampler uses the exact posterior probability under the

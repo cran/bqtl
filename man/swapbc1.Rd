@@ -9,7 +9,7 @@
   (backcross) designs and recombinant inbred lines.
 }
 \usage{
-swapbc1(varcov, invars, rparm, nreps, locs=seq(ncol(var.x)),
+swapbc1(varcov, invars, rparm, nreps, ana.obj, locs=seq(ncol(var.x)),
 locs.prior=rep(1, ncol(var.x)),tol=1e-10 )
 
 }
@@ -19,6 +19,8 @@ locs.prior=rep(1, ncol(var.x)),tol=1e-10 )
     the 'ridge' parameters for the independent variables - larger values
     imply more shrinkage or a more concentrated prior for the regresion
     coefficients. }
+  \item{nreps}{How many cycles of MCMC to perform}
+  \item{ana.obj}{A object produced by \code{\link{make.analysis.obj}}}
   \item{invars}{
     Which variables to start in the model. The first of these is
     immediately removed, so it is merely a placeholder.  The number of
@@ -46,7 +48,7 @@ variables not in the model are examined to determine the effect of each
 on the posterior.  One variable is sampled.  The process is repeated until
 each variable has been removed and a new one sampled in its place
 (possibly the same variable that was removed is sampled).  And this whole
-cycle is repeated \code{nreps] times.  
+cycle is repeated \code{nreps} times.  
 }
 \value{
   A list with components:

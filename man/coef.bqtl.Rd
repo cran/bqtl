@@ -5,12 +5,13 @@
 \description{
  Return a vector or matrix of coefficients as appropriate
 }
+\synopsis{coef.bqtl(object,...)}
 \usage{
-coef(bqtl.obj)
+\method{coef}{bqtl}(object)
 }
 
 \arguments{
-  \item{bqtl.obj}{The object returned by \code{bqtl}. }
+  \item{object}{The object returned by \code{bqtl}. }
   
 }
 

@@ -6,12 +6,16 @@
  The estimated coefficients and expected locus values are used to find
  fitted values for the QTL model
 }
+\synopsis{
+predict.bqtl(object, newdata,...)
+fitted.bqtl(object, newdata,...)
+}
 \usage{
-predict(object, newdata)
-fitted(object, newdata)
+\method{predict}{bqtl}(object, newdata)
+\method{fitted}{bqtl}(object, newdata)
 }
 \arguments{
-  \item{object}{ An object of class \code{\link{bqtl}}}}
+  \item{object}{ An object of class \code{\link{bqtl}}}
   \item{newdata}{An optional data.frame for which fitted values are to
     be found. If not specified, the a search for the original data frame
     for the fit will be made. }

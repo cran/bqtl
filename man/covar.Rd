@@ -9,6 +9,7 @@
   approach. \code{covar} provides a mechanism for creating formula
   objects that specify such linearizations. 
 }
+\synopsis{covar(x)} 
 \usage{
 covar(x,...,scope=<<see below>>, method=<<see below>>)
 }
@@ -31,10 +32,10 @@ covar(x,...,scope=<<see below>>, method=<<see below>>)
   \code{paste("covar(",deparse(x),")")} is returned. Later, when
   \code{bqtl} calls \code{lapadj}, terms like \code{covar(PVV4.1)} are
   recognized as requiring a linearization w.r.t. effect 'PVV4.1'.}
-}
+
 \value{
   a character string or vector 
-
+}
   \references{
 
     HALEY, C. S. and S. A. KNOTT, 1992  A simple regression method for

@@ -1,12 +1,12 @@
 "summary.analysis.object" <-
-    function(x)
+    function(object,...)
 {
-    mf <- summary(x$map.frame)
-    norg <- nrow(x$data)
-    method <- x$method
-    origin<-x$call
-    pheno.cov <- setdiff(names(x$data),x$reg.names)
+    mf <- summary(object$map.frame)
+    norg <- nrow(object$data)
+    method <- object$method
+    origin<-object$call
+    pheno.cov <- setdiff(names(object$data),object$reg.names)
     list(map=mf,N=norg,method=method,variable.names=pheno.cov,
-         mode.mat=x$mode.mat,call=origin)
+         mode.mat=object$mode.mat,call=origin)
 }
 

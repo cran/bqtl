@@ -46,7 +46,7 @@
 ### now do multi-gene models
     swap.gene.expr <- one.gene.expr
     swaps.expr <-
-        expression( configs( unique.config(lbo$swaps[[1]])$uniq ) )[[1]]
+        expression( configs( uniq.config(lbo$swaps[[1]])$uniq ) )[[1]]
     swaps.expr[[2]][[2]][[2]][[2]][[2]] <- as.name(this.call$lbo)
     n.gene.smry.expr <- one.gene.smry.expr
     n.gene.smry.expr$adj.obj <- as.name("swaps.adj")
@@ -55,7 +55,7 @@
     n.swap <- specs$gene.number[specs$n.cycles != 0]
 
     for( i in n.swap ){
-        ## y ~ configs( unique.config(lbo$swaps[[  i  ]])$uniq )
+        ## y ~ configs( uniq.config(lbo$swaps[[  i  ]])$uniq )
         swaps.expr[[2]][[2]][[2]][[3]] <- i
         swap.gene.expr$reg.formula[[3]] <- swaps.expr
         swaps.adj <- eval(swap.gene.expr)  # do it
