@@ -10,6 +10,10 @@
   approximation to the likelihood, i.e. the expected allele states are
   used.
 }
+\synopsis{
+twohkbc1(varcov, ana.obj, rparm = 0, locs = NULL, locs.prior =
+                 NULL)
+}
 \usage{
 twohkbc1(varcov, rparm, locs=<<see below>> ), locs.prior=<<see below>> )
 
