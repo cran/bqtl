@@ -42,7 +42,7 @@
                             eval(parse(text=paste("~ . -", cntl)))  )
         x <- model.matrix(terms(x.formula),mf)[,-1]
         y <- model.extract(mf,"response")
-        z <- model.matrix(terms(eval(parse(text=paste("~", cntl)))),mf)[,-1,drop=F]
+        z <- model.matrix(terms(eval(parse(text=paste("~", cntl)))),mf)[,-1,drop=FALSE]
         y[] <- lsfit(z,y)$resid
         x[] <- lsfit(z,x)$resid
         res <- make.varcov(x,y,...)

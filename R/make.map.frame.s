@@ -25,7 +25,7 @@
         if (ncol(dx)>1) {
             dx.synonyms <- c("cM","cm","dx","M","m")
             dx.name <- dx.synonyms[is.element(dx.synonyms,names(dx))][1]
-            if ( length(dx.name)!=0 && dx.name!="NA") {# found explicitly labelled distance
+            if ( length(dx.name)!=0 && dx.name!="NA" && !is.na(dx.name) ) {# found explicitly labelled distance
                 marker.names <-
                     if (any(pmatch(names(dx),"marker.names",0)!=0))
                         dx$marker.name

@@ -70,7 +70,8 @@ twohk(varcov, ana.obj, ...)
 
 \examples{
 data(little.ana.bc)
-little.vc<-make.varcov(little.ana.bc$data[,little.ana.bc$reg.names],little.ana.bc$data$bc.phenotype)
+little.vc<-make.varcov(little.ana.bc$data[,little.ana.bc$reg.names],
+  little.ana.bc$data$bc.phenotype)
 little.2<- twohk(little.vc,little.ana.bc,rparm=1)
 print( c(odds.1=sum(little.2$loc.1),odds.2=sum(little.2$loc.2)) )
 par(mfrow=c(3,2))

@@ -13,7 +13,7 @@
         {
             tab <- table(unlist(sapply(x,as.character)))
             bad.x <- !(names(tab) %in% c(y,"NA"))
-            bad.y<- !(y %in%names(tab))
+            bad.y<- !( is.na(y) | (y %in%names(tab)))
             list(bad.markers=tab[bad.x],unused.levels=y[bad.y])
         }
     

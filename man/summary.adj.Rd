@@ -14,7 +14,8 @@ imp.denom=NULL, swap.obj=NULL,...)
 }
 \usage{
 
-\method{summary}{adj}(object, n.loc, coef.znames, mode.names=c("add", "dom"), imp.denom=NULL, swap.obj=NULL)
+\method{summary}{adj}(object, n.loc, coef.znames, mode.names=c("add",
+"dom"), imp.denom=NULL, swap.obj=NULL)
 }
 \arguments{
   \item{object}{Typically, this is the result of a call like

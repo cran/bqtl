@@ -69,7 +69,7 @@
         x <- model.matrix(terms(x.formula),mf)[,-1]
         y <- model.extract(mf,"response")
         z <- model.matrix(terms(eval(parse(text=paste("~", cntl)))),
-                          mf)[,-1,drop=F]
+                          mf)[,-1,drop=FALSE]
         pred.z <- y - lsfit(z,y)$resid
         preds <- x%*%matrix(coefs,nc=1) + pred.z
         preds <- preds + mean(y) - mean(preds)

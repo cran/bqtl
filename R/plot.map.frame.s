@@ -5,6 +5,7 @@
              ylab=deparse(substitute(y)),xlab="Location", ...)
 {
     mf.obj <- x
+    x.as.text <- deparse(substitute(x))
     if (any(is.na(pmatch(c("chr.num","pos.plot"),names(mf.obj)))))
         stop("need $chr.num and $pos.plot components in first arg")
 ### try to be smart: guess if this is a vector or matrix arg.
@@ -31,7 +32,7 @@
                          x[which.seg],rep(i,n.seg)+0.1,lty=seg.lty[2],
                          col=seg.col[2])}
         }
-        title(paste(title.string,deparse(substitute(mf.obj))))
+        title(paste(title.string,x.as.text))
         return(invisible())
     }
     
@@ -42,7 +43,7 @@
             "vector"
     if (is.null(y)) stop("NULL value for y not accepted in plot.map.frame")
     if (is.null(y.range))
-        y.range <- range(y,na.rm=T)
+        y.range <- range(y,na.rm=TRUE)
 
     if (exists("is.R") && is.R() && y.type=="matrix") { # S compat workaround
         matlines <-
@@ -57,7 +58,7 @@
 
     for (i in unique(mf.obj$chr.num)) {
         i.index <- i==mf.obj$chr.num
-        yp <- if (y.type=="matrix") y[i.index,,drop=F] else y[i.index]
+        yp <- if (y.type=="matrix") y[i.index,,drop=FALSE] else y[i.index]
         if (length(yp)==0) 
             print(paste("no data for chr.num = ",i))
         else { 

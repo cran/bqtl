@@ -7,7 +7,7 @@
     conf.match <- match(configs, unique.con)
     uniq.mat <-
         matrix(swap.obj$config, nr =
-               dim(swap.obj$config)[1])[, ! duplicated(conf.match), drop = F]
+               dim(swap.obj$config)[1])[, ! duplicated(conf.match), drop = FALSE]
     list(uniq = uniq.mat, match = conf.match)
 }
 
