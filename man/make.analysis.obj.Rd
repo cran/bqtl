@@ -57,23 +57,23 @@ method="F2", casewt=NULL,varcov=FALSE,mode.mat=NULL)
    this is a 3 by 2 matrix:
    \tabular{lrr}{
      Genotype \tab add \tab dom \cr
-     AA \tab -1 \tab -1 \cr
-     Aa \tab 0 \tab 1 \cr
      AA \tab 1 \tab -1 \cr
+     Aa \tab 0 \tab 1 \cr
+     aa \tab -1 \tab -1 \cr
    }
    For \code{method=="BC1"} ( and the default \code{marker.levels} of
    \code{AA} and \code{Aa} ),it is
    \tabular{lr}{
      Genotype \tab \cr
-     AA \tab -1 \cr
-     Aa \tab 1 \cr
+     AA \tab 1 \cr
+     Aa \tab -1 \cr
    }
    and for RIL methods ( and the default \code{marker.levels} of
    \code{AA} and \code{aa} ),it is
    \tabular{lr}{
      Genotype \tab \cr
-     AA \tab -1 \cr
-     aa \tab 1 \cr
+     AA \tab 1 \cr
+     aa \tab -1 \cr
    }
    Other choices of \code{marker.levels} will relabel the corresponding
 rows.

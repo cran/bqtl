@@ -3,10 +3,13 @@
 
 \title{ One and Two Gene Models Using Linearized Posterior }
 \description{
- Fits all one and two gene models (without interactions aka 'epistasis')
- in an intercross, backcross, or recombinant inbred line. Uses a linear
- approximation to the likelihood, i.e. the expected allele states are
- used. 
+  Fits all one and two gene models (without interactions aka 'epistasis')
+  in an intercross, backcross, or recombinant inbred line. Uses a linear
+  approximation to the likelihood, i.e. the expected allele states are
+  used. 
+}
+\synopsis{
+twohk((varcov, ana.obj, ...)
 }
 \usage{
 twohk(varcov, ana.obj, ...)

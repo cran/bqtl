@@ -9,6 +9,9 @@ function.  It is used on the right hand side of a formula in the
 \code{\link{bqtl}} function. 
 
 }
+\synopsis{
+configs(x,...,scope,method=NULL)
+}
 \usage{
 configs(x,...,scope=<<see below>>, method = NULL)
 

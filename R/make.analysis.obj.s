@@ -49,10 +49,10 @@
     if (is.null(mode.mat)){
         mode.mat <-
             if (method=="F2")
-                matrix(c(-1,0,1,-1,1,-1),nc=2,
+                matrix(c(1,0,-1,-1,1,-1),nc=2,
                        dimnames=list(marker.levels[1:3],c("add","dom")))
             else
-                matrix(c(-1,1),nc=1,dimnames=list(marker.levels[1:2],NULL))
+                matrix(c(1,-1),nc=1,dimnames=list(marker.levels[1:2],NULL))
     }
     else {   # check the supplied version
         dmmt <- dim(mode.mat)

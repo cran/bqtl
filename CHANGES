@@ -106,3 +106,9 @@ Version: 1.0-14
 marker.fill, make.map.frame work for one marker per chromo
 CoDoc updates
 
+----------------------------------------
+
+Version: 1.0-15
+Codoc changes
+make.analysis.obj needed mode.mat corrected
+
