@@ -75,7 +75,7 @@
               qraux =double(nmax),
               zraux =double(nmax),
               zrank=integer(1),
-              tol=as.double(1e-10))[c("loc.2","loc.1","coefs.2","coefs.1")]
+              tol=as.double(1e-10), PACKAGE="bqtl" )[c("loc.2","loc.1","coefs.2","coefs.1")]
     dim(res$loc.2) <- c(nlocs,1)
     dim(res$loc.1) <- c(nlocs,1)
     dim(res$coefs.2) <- c(1,nlocs)

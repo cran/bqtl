@@ -105,7 +105,8 @@
             postwk=double(nopt),
             coefwk=double(nopt*nmax),
             alt.marginal=double(nopt),
-            alt.coef=double(nrx))
+            alt.coef=double(nrx),
+            PACKAGE="bqtl" )
     res <- z[c("configs","posteriors","coefs","cond","marg",
                "alt.marginal","alt.coef")]
     res$configs <- array(res$configs+1,c(nmax,nlocs,nreps))
