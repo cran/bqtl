@@ -72,3 +72,13 @@ bugfix - example(make.analysis.obj) was
 	broken in r-devel (1.6.0)
 
 ----------------------------------------
+Version: 1.0-8
+cleanup of Rd files to conform to R-1.6.0
+
+----------------------------------------
+
+Version: 1.0-9
+bugfix - not.r computation was off in make.marker.map
+
+
+
