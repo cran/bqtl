@@ -4,24 +4,37 @@
 {
     local.covar <-
         function (x, ..., scope = scope, method = method,
-                  prefix = NULL, bq.spec=bqtl.specials) 
+                  prefix = NULL, bq.spec=bqtl.specials,chromo=NULL,cM=NULL) 
         {
             if (missing(scope)) 
                 stop("missing scope arg - possible bqtl syntax error")
+            dots <- list(...)
+            if (is.null(chromo)&& length(names(dots))!=0 &&
+                any(cloc <- which(1==pmatch(names(dots),"chromo",0)))){
+                chromo <- dots[[cloc]]
+                if (length(dots)>1)
+                    stop("... not allowed")
+                else
+                    dots<-NULL
+            }
             x.arg <- match.call()$x
-            if  ( length(x.arg) ==1 && deparse(x.arg) == "." )  # allow . shorthand 
+            if  ( length(x.arg) ==1 && deparse(x.arg) == "all" )  # allow 'all' shorthand 
                 x <- seq(along=scope)
             if (is.call(x.arg)){
                 if (deparse(x.arg[[1]])%in%bq.spec){
                     if (is.null(x.arg$scope)) x.arg$scope <- as.name("scope")
                     if (is.null(x.arg$method)) x.arg$method <- method
+                    if (is.null(x.arg$chromo)) x.arg$chromo <- chromo
+                    if (is.null(x.arg$cM)) x.arg$cM <- cM
+                    
                     if (!missing(...)) stop("cannot use ... in this context")
                     paste("covar(",eval(x.arg),")",sep="")
                 }
                 else{ ## x.arg is c(1,2) or 7:8 or whatever
                     x <- eval(x.arg)
                     new.scope <- paste("covar(", scope, ")", sep = "")
-                    locus(x, ..., scope = new.scope, method = method)
+                    locus(x, ..., scope = new.scope, method = method,
+                          chromo=chromo,cM=cM)
                 }
             }
             else {
@@ -34,7 +47,8 @@
                 }
                 else {
                     new.scope <- paste("covar(", scope, ")", sep = "")
-                    locus(x, ..., scope = new.scope, method = method)
+                    locus(x, ..., scope = new.scope, method = method,
+                          chromo=chromo,cM=cM)
                 }
             }
         }
@@ -90,6 +104,8 @@
                        x$scope <- as.name("scope")
                    if ( !is.element("method",names(x)) ) #typically use default
                        x$method <- method
+                  if ( !is.element("ana.obj",names(x)) ) #typically use default
+                       x$ana.obj <- as.name("ana.obj")
                    eval(x)
                },
                scope=scope,method=method,

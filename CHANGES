@@ -1,0 +1,28 @@
+
+Changes to package bqtl - Bayesian QTL mapping toolkit 
+
+
+Version: 1.0
+Date: 2001-02-28
+
+Initial Release
+
+----------------------------------------
+
+Version: 1.0-1
+Date: 2001-03-09
+
+added keywords
+coerce make.map.frame()$marker.name to be character
+
+----------------------------------------
+
+Version: 1.0-2
+Date: 2001-05-03
+
+bugfixes - update.bqtl(), lapadj()
+
+locus( chromo=1, cM=25 ) will now work 
+
+----------------------------------------
+

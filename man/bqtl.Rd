@@ -57,6 +57,8 @@ and Marginal Densities. \emph{JASA}, \bold{81},82--86.
 data(little.ana.bc )                        # load  BC1 dataset
 
 loglik( bqtl( bc.phenotype ~ 1, little.ana.bc ) ) #null loglikelihood
+                                                  #on chr 1 near cM 25
+loglik(bqtl(bc.phenotype~locus(chromo=1,cM=25),little.ana.bc))
 
 little.bqtl <-                              # two genes with epistasis
    bqtl(bc.phenotype ~ m.12 * m.24, little.ana.bc)

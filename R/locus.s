@@ -1,5 +1,5 @@
 locus<-
-    function(x,...,scope=scope,method=NULL)
+    function(x,...,scope=scope,method=NULL,chromo=NULL,cM=NULL,ana.obj=NULL)
 {
 ###
 ###   
@@ -14,28 +14,44 @@ locus<-
 ### I parenthesize everything. S+3.4 needs this workaround 
 ###  ~(a):(u+v):(w) parses correctly, but not  ~a:(u+v):w
 ###
-    if (missing(scope)) stop("missing scope arg - possible bqtl syntax error")
-    dots <- list(...)
-    x.call <- match.call()$x
-    if  ( length(x.call) ==1 && deparse(x.call) == "all" ){  # all loci ? 
-        x <- seq(along=scope)
-        if (method=="F2") dim(x) <- c(2,length(x)%/%2)
-        if (length(dots) != 0) stop(". must be only arg")
-        return(configs(x,scope=scope))
-    } #else
-    
-    if (length(x)>1 && length(dots)!=0)
-        stop("only one arg allowed with vector or matrix")
-    if (method == "F2") {
-        if (length(x)==1) {
-            x.1 <- 2*x-1
-            y <- 2*x
-            if ( length(dots)==0 )
-                dots <- list(y)
-            else
-                dots <- c(list(y),lapply(dots,function(x) c(2*x-1,2*x)))
-            configs.args <-  c(list(x=x.1),dots,scope=list(scope))
-        }
+  if (missing(scope)) stop("missing scope arg - possible bqtl syntax error")
+  dots <- list(...)
+  if (is.null(chromo)&& length(names(dots))!=0 &&
+      any(cloc <- which(1==pmatch(names(dots),"chromo",0)))){
+    chromo <- dots[[cloc]]
+    if (length(dots)>1)
+      stop("... not allowed")
+    else
+      dots<-NULL
+  }
+  if (!is.null(chromo)){
+    if (!missing(x)) stop("using both x and chromo args not allowed")
+    x <- if (is.null(cM))
+        map.index(ana.obj,chromo=chromo)
+    else
+        map.index(ana.obj,chromo=chromo,cM=cM)
+  }
+
+  x.call <- match.call()$x
+  if  ( length(x.call) ==1 && deparse(x.call) == "all" ){  # all loci ? 
+    x <- seq(along=scope)
+    if (method=="F2") dim(x) <- c(2,length(x)%/%2)
+    if (length(dots) != 0) stop("... not allowed")
+    return(configs(x,scope=scope))
+  } #else
+  
+  if (length(x)>1 && length(dots)!=0)
+    stop("only one arg allowed with vector or matrix")
+  if (method == "F2") {
+    if (length(x)==1) {
+      x.1 <- 2*x-1
+      y <- 2*x
+      if ( length(dots)==0 )
+        dots <- list(y)
+      else
+        dots <- c(list(y),lapply(dots,function(x) c(2*x-1,2*x)))
+      configs.args <-  c(list(x=x.1),dots,scope=list(scope))
+    }
         else {
             x.1 <- 2*x-1
             y <- 2*x
@@ -48,12 +64,12 @@ locus<-
             }
             configs.args <-  c(list(x.1),scope=list(scope))
         }
-        do.call("configs",configs.args)
-    }
-    else {
-        
-        configs(x,...,scope=scope)
-    }
-    
+    do.call("configs",configs.args)
+  }
+  else {
+    configs.args <- c(list(x),dots,scope=list(scope))
+    do.call("configs",configs.args)
+  }
+  
 }
 

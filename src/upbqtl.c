@@ -163,7 +163,7 @@ void upbqtl(longint *crsType, longint *nparm,
       for (i=0; i<N; i++)
 	for (j=0;j< NLOC-1; j++)
 	  needProd[i+N*j] = 
-	    (longint) (loc_right[i+N*cur_loci[j]] < cur_loci[j+1]);
+	    (longint) (loc_right[i+N*cur_loci[j]] > cur_loci[j+1]);
       /* calc lambda */
       for (j=0;j< (NLOC-1); j++){
 	tmp = 1.0;
@@ -174,11 +174,11 @@ void upbqtl(longint *crsType, longint *nparm,
       /* get perm vector for x */
       
       for (i=0;i<NLOC;i++) {
-	newRadixProd[loc_order[i]]=radixProd[i];
+	newRadixProd[loc_order[i+NLOC*i_alt]]=radixProd[i];
       }
       for (i=0;i<NRX;i++){
 	k=0;
-	for (j=0;j<NLOC;j++) k+= ((i/radixProd[j]) % radix) * newRadixProd[j];
+	for (j=0;j<NLOC;j++) k+= ((i/newRadixProd[j]) % radix) * radixProd[j];
 	perm_indx[i]=k;
       }
       /* revise x */
