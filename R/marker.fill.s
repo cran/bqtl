@@ -40,7 +40,8 @@
                            mark.loc <- x[ - genes]
                        else mark.loc <- x
 ###     nint <- pmax(1, (diff(mark.loc)+reso/2) %/% reso)
-                       nint <- pmax(1, ceiling(diff(mark.loc) / reso))
+###                       nint <- pmax(1, ceiling(diff(mark.loc) / reso))
+                       nint <- if (length(mark.loc)==1) integer(0) else pmax(1, ceiling(diff(mark.loc)/reso))
                        if(return.nint) {
                            nint <- c(nint, 1)
                            names(nint) <- names(mark.loc)

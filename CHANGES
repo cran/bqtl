@@ -100,3 +100,9 @@ R_Ext/Mathlib.h is deprecated - change to Rmath.h
 Version: 1.0-13
 CoDoc updates, .C( ..., PACKAGE= ) discipline
 
+----------------------------------------
+
+Version: 1.0-14
+marker.fill, make.map.frame work for one marker per chromo
+CoDoc updates
+
