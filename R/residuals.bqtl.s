@@ -1,5 +1,5 @@
 "residuals.bqtl"<-
-    function(object)
+    function(object,...)
 {
     coefs <- coef(object)
     coef.names <- names(coefs)[-1]        # drop intercept

@@ -1,4 +1,4 @@
-"unique.config"<-
+"uniq.config"<-
     function(swap.obj)
 {
     configs <- apply(swap.obj$config, 2:3, function(x)

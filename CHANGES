@@ -36,3 +36,15 @@ on to check for incompatible, earlier versions
 
 ----------------------------------------
 
+Version: 1.0-4
+Date: 2001-12-18
+
+bugfixes - there was a bug in the optimization that is now fixed, more
+cleanups of the Rd files, generic/methods consistency improved
+
+lapadj() now allows a 'start.parm' parameter - not yet documented -
+that specifies a starting point for iteration - can be used for
+profiling.
+
+----------------------------------------
+

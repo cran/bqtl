@@ -8,17 +8,17 @@
   of the sort created by \code{\link{make.map.frame}}
 }
 \usage{
-plot(x, ...)
-
-plot.map.frame(mf.obj, y, fun=<<see below>>, type="l",
- include.rug=TRUE, title.string=NULL, ylab=deparse(substitute(y)),
- xlab="Location", ...)
+\method{plot}{map.frame}(x, ...)
+}
+\synopsis{
+plot.map.frame(x, y, fun, type, include.rug, rug.lwd,
+                 title.string, y.range, ylab, xlab, ...)
 }
 
 \arguments{
- \item{mf.obj}{A \code{map.frame.object} or an \code{analysis.object}  }
+ \item{x}{A \code{map.frame.object} or an \code{analysis.object}  }
  \item{y}{(optional) A vector with as many elements or a
-   matrix with as many rows as \code{nrow(mf.obj)} .  If omitted, a plot
+   matrix with as many rows as \code{nrow(x)} .  If omitted, a plot
    will be drawn in a single frame representing the chromosomes as
    horizontal bars and giving tic marks to show the locations markers
    and virtual markers (if any).  }

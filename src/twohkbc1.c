@@ -13,19 +13,6 @@
 #include "lapadj.h"
 #define NLOCS *nopt
 
-void condreg(double *varx, double *covxy, double *vary, double *df,
-	     double *amount, double *optpri, double *inpri, 
-	     longint * nrx, longint *invars ,longint *nin ,longint *optvars ,
-	     longint *nopt ,longint *optmax , longint *useopt, longint *pvt, 
-	     longint *rank,
-	     double *wrksp, double *gama, double *bee, 
-	     double *xx, double *xy, 
-	     double *zz, double *zy, double *xz, double *beta,
-	     double *posterior, 
-	     double *marg, double *cond, double *coefs, 
-	     double *qraux, double *zraux, longint *zrank, 
-	     double *tol);
-
 void twohkbc1(double *varx, double *covxy, double *vary, double *df,
 	     double *amount, double *optpri, 
 	     longint * nrx, longint *optvars ,
@@ -75,7 +62,7 @@ void twohkbc1(double *varx, double *covxy, double *vary, double *df,
     tcpst += *tcond;
     coef1[invars[0]] += bee[0]**tcond;
     for (i=0;i<*nopt;i++) 
-      if (useopt[i] == 1) {
+      if (useopt[i] == TRUE) {
 	j1= *nmax*i;
 	j2= *optmax*i;
 	coefs[invars[0]] += coefwk[j1]*posterior[i];

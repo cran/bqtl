@@ -6,7 +6,7 @@
 \usage{ lapadj(reg.formula, loc.right, marker.distances, state.matrix,
 marker.names=dimnames(state.matrix)[[2]], rparm=NULL, casewt=NULL,
 tol=9.9e-09, return.hess=F, mode.names=NULL, mode.mat=NULL,
-nc = 1), method="BC1", maxit=100, nem=1, ...)  }
+nc = 1), method="BC1", maxit=100, nem=1, start.parm=NULL, ...)  }
 
 
 \arguments{
@@ -61,6 +61,7 @@ nc = 1), method="BC1", maxit=100, nem=1, ...)  }
   \item{maxit}{ Maximum Number of iterations to perform}
   \item{nem}{ Number of EM iterations to use in reinitializing the
     pseudo-Hessian }
+  \item{start.parm}{Vector of starting values for the maximization}
   \item{\dots}{ other objects needed in fitting }
 }
 \description{

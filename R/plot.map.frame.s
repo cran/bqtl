@@ -1,9 +1,10 @@
 "plot.map.frame"<-
-    function(mf.obj,y, fun = if (y.type=="matrix") matlines else lines,
+    function(x,y, fun = if (y.type=="matrix") matlines else lines,
              type="l", include.rug=TRUE, rug.lwd=0.1,title.string=NULL,
              y.range=NULL,
              ylab=deparse(substitute(y)),xlab="Location", ...)
 {
+    mf.obj <- x
     if (any(is.na(pmatch(c("chr.num","pos.plot"),names(mf.obj)))))
         stop("need $chr.num and $pos.plot components in first arg")
 ### try to be smart: guess if this is a vector or matrix arg.

@@ -7,9 +7,9 @@
 
 
 "logpost.bqtl" <-
-    function(bqtl.obj,...)
+    function(x,...)
 {
-    bqtl.obj$logpost
+    x$logpost
 }
 
 "logpost.default"<-logpost.bqtl
@@ -17,51 +17,51 @@
 "loglik.default"<-logpost.bqtl
 
 "logpost.bqtl.list"<-
-    function(bqtl.list,...)
+    function(x,...)
 {
-    res <- sapply(bqtl.list,logpost.bqtl)
+    res <- sapply(x,logpost.bqtl)
     res
 }
 
 "loglik.bqtl.list"<-logpost.bqtl.list
 
 "coef.bqtl"<-
-    function(bqtl.obj,...)
+    function(object,...)
 {
-    ncoefs <- length(bqtl.obj$parm)-1
-    coefs <- bqtl.obj$parm[1:ncoefs]
-    names(coefs) <- c("Intercept",bqtl.obj$reg.vec)
+    ncoefs <- length(object$parm)-1
+    coefs <- object$parm[1:ncoefs]
+    names(coefs) <- c("Intercept",object$reg.vec)
     coefs
 }
 
 ### method dispatch for coef takes care of this: "coefficients.bqtl"<-coef.bqtl
 
 "coef.bqtl.list"<-
-    function(bqtl.list,...)
+    function(object,...)
 {
-    res <- sapply(bqtl.list,coef.bqtl)
+    res <- sapply(object,coef.bqtl)
     res
 }
 
 ### method dispatch for coef takes care of this: "coefficients.bqtl.list"<-coef.bqtl.list
 
 "summary.bqtl"<-
-    function(bqtl.obj,...)
+    function(object,...)
 {
-    nparm <-    length(bqtl.obj$parm)
+    nparm <-    length(object$parm)
     coefs <-
-        if (is.null(bqtl.obj$hess))
-            coef(bqtl.obj)
+        if (is.null(object$hess))
+            coef(object)
         else
         {
-            vals <- coef(bqtl.obj)
-            hess.qr <- qr(-bqtl.obj$hess)
+            vals <- coef(object)
+            hess.qr <- qr(-object$hess)
             if (hess.qr$rank < nparm){
                 use.coef <-  vals != 0
                 hrc <- c(use.coef,TRUE)
                 std.err <- ifelse( use.coef, 0, NA)
                 std.err[use.coef]<-
-                    sqrt(diag(solve(-bqtl.obj$hess[hrc,hrc]))[-hess.qr$rank])
+                    sqrt(diag(solve(-object$hess[hrc,hrc]))[-hess.qr$rank])
             }
             else{
                 std.err <- sqrt(diag(solve(hess.qr))[-nparm])
@@ -71,9 +71,9 @@
             cbind(Value=vals,Std.Err=std.err,t.statistic=t.stats,p.value=p.vals)
         }
     
-    loglik <- loglik(bqtl.obj)
-    sigma <- exp(bqtl.obj$parm[nparm])
-    list(coefficients=coefs,loglik=loglik,std.res=sigma,N=bqtl.obj$N)
+    loglik <- loglik(object)
+    sigma <- exp(object$parm[nparm])
+    list(coefficients=coefs,loglik=loglik,std.res=sigma,N=object$N)
 }
 
 "posterior"<-
@@ -81,17 +81,17 @@
     UseMethod("posterior")
 
 "posterior.bqtl" <-
-    function(bqtl.obj,...)
+    function(x,...)
 {
-    bqtl.obj$posterior
+    x$posterior
 }
 
 "posterior.default" <-posterior.bqtl
 
 "posterior.bqtl.list"<-
-    function(bqtl.list)
+    function(x,...)
 {
-    res <- sapply(bqtl.list,posterior.bqtl)
+    res <- sapply(x,posterior.bqtl)
     res
 }
 

@@ -11,7 +11,7 @@
 
 bqtl(reg.formula, ana.obj, ...)
 }
-
+\synopsis{bqtl(reg.formula, ana.obj, scope, expand.specials, ...)}
 \arguments{
  \item{reg.formula}{A formula.object like \code{ y ~ add.PVV4 *
      add.H15C12 }.  The names of the independent

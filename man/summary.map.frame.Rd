@@ -6,16 +6,13 @@
 \description{
  Provide a simple report on the data structure
 }
+\synopsis{summary.map.frame(object,...)}
 \usage{
-summary(x)
-
-summary.map.frame(x)
-
-summary.analysis.object(x)
+\method{summary}{map.frame}(object)
 }
 
 \arguments{
-  \item{x}{ A \code{map.frame} pr \code{analysis.object} }
+  \item{object}{ A \code{map.frame} or \code{analysis.object} }
 }
 
 \value{

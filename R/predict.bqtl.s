@@ -1,5 +1,5 @@
 "predict.bqtl"<-
-    function(object,newdata)
+    function(object,newdata,...)
 {
     coefs <- coef(object)
     coef.names <- names(coefs)[-1]        # drop intercept

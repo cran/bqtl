@@ -49,7 +49,7 @@ void lapadj(longint *crsType, longint *nparm,
    elements are as follows:
 */
   longint *n,  *nrx,  *ncx,  *nloc, *ncz,  *nx2uz,  *nz2uz,  *nt2uz,
-        *nreg, *np, *ptx,  *ptz,  *pttx, *pttz;
+        *nreg, *np, *ptx,  *ptz,  *pttx, *pttz, *ninit;
 
 
   longint npnp[1], itStill[1], rank[1],  reset[1], dq[2] ;
@@ -80,7 +80,8 @@ void lapadj(longint *crsType, longint *nparm,
   ptz = ptx +  ( *nx2uz  ? *nx2uz: 1 ) ;  
   pttx =ptz +  ( *nz2uz  ? *nz2uz: 1 );  
   pttz =pttx + ( *nt2uz  ? *nt2uz: 1 ); 
-  
+  ninit = pttz + ( *nt2uz  ? *nt2uz: 1 );
+
   *npnp = *np**np;  
   *itStill =  *iter;  
     
@@ -156,17 +157,20 @@ void lapadj(longint *crsType, longint *nparm,
   if (*rank<*nreg) 
     PROBLEM "deficient rank in hkreg\n" WARNING(NULL_ENTRY) ; 
   
-  hkSigma = sqrt(*sigma2);
-
+  if ( *ninit == 0 ) { /* start with hkreg results */
+    hkSigma = sqrt(*sigma2);
+    for (i=0;i<*nreg;i++) coefs[i] = hkCoefs[i];
+  }
+  else {  /* coefs, sigma were initialized by caller */
+    hkSigma = exp(*sigma); /* caller used ln(sigma) */
+    *sigma2 = hkSigma*hkSigma;
+    for (i=0;i<*nreg;i++) hkCoefs[i] = coefs[i];
+  }  
   /* note llkEm() is written to implicitly include constant
      vector. Therefore, x is just NRX by NREG - 1
      */
- 
-
-
-  for (i=0;i<*nreg;i++) coefs[i] = hkCoefs[i];
     
-llkEm(nparm, xc, zc, txc, tzc, &hkSigma, amnt, fits, y, coefs, wt, 
+  llkEm(nparm, xc, zc, txc, tzc, &hkSigma, amnt, fits, y, coefs, wt, 
 	 res, vsum, vsum2, vysum, lprior, oldllk, xvx, xvy,
 	 df, curprm, ss, oldgr, hess, &curprm[*np-1], qrxvx, qraux,
 	 pvt, wrksp, &nem1,casewt);
@@ -177,10 +181,8 @@ llkEm(nparm, xc, zc, txc, tzc, &hkSigma, amnt, fits, y, coefs, wt,
 
     for (i=0;i<*nreg;i++) 
             emprm[i] = oldprm[i] = hkCoefs[i];
-    /*oldprm[i] = curprm[i];*/
     *sigma = sqrt(curprm[*np-1]);
-      emprm[*np-1] = oldprm[*np-1] = *sigma2;
-      /*oldprm[NP-1] = curprm[NP-1];*/
+    emprm[*np-1] = oldprm[*np-1] = *sigma2;
     *reset = 1;  
     
     lapWhl(y, wt, amnt, nparm, xc, zc, txc, tzc, fits, res, vsum, 

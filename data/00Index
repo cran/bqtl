@@ -5,5 +5,5 @@ little.bc.pheno          Simulated Phenotype Data
 little.dx                Marker Map Description for Simulated Data
 little.f2.markers        Simulated Marker Data
 little.f2.pheno          Simulated Phenotype Data
-little.map.frame         Simulated Marker Map Information
-little.mf.5              Simulated Marker Map Information
+little.map.frame         Package of Simulated Marker Map Information
+little.mf.5              Package of Simulated Marker Map Information

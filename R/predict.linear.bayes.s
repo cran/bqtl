@@ -10,7 +10,7 @@
     predict.linear.bayes(...)
 
 "predict.linear.bayes"<-
-    function(object,newdata=lb.call$ana.obj,return.resids=FALSE)
+    function(object,newdata=lb.call$ana.obj,return.resids=FALSE,...)
 {
     coefs <- coef(object)
     lb.call <- match.call(linear.bayes,object$call)

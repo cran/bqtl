@@ -13,11 +13,12 @@
 \usage{
 twohkbc1(varcov, rparm, locs=<<see below>> ), locs.prior=<<see below>> )
 
-twohkf2(varcov, rparm, locs=<<see below>>, locs.prior=<<see below>>,
+twohkf2(varcov, ana.obj, rparm, locs=<<see below>>, locs.prior=<<see below>>,
 combo.prior=<<see below>>) 
 }
 \arguments{
- \item{varcov}{ An object produced by \code{ \link{make.varcov}} }
+  \item{varcov}{ An object produced by \code{ \link{make.varcov}} }
+  \item{ana.obj}{An object produced by \code{ \link{make.analysis.obj}}}
  \item{rparm}{ The 'ridge' parameters for the independent variables -
    larger values imply more shrinkage or a more concentrated prior for
    the regresion coefficients. } 

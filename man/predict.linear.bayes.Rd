@@ -10,13 +10,13 @@
  the 'intercept' is lost; see `Details' below.
 }
 \usage{
-residuals(object)
+\method{residuals}{linear.bayes}(object)
 
-predict(object)
+\method{predict}{linear.bayes}(object)
 
-fitted(object)
-
-predict.linear.bayes(object, newdata=lb.call$ana.obj, return.resids=FALSE)
+\method{fitted}{linear.bayes}(object)}
+\synopsis{
+predict.linear.bayes(object, newdata=lb.call$ana.obj, return.resids=FALSE,...)
 }
 
 \arguments{

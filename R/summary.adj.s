@@ -1,11 +1,11 @@
 "summary.adj"<-
-function(adj.obj, n.loc, coef.znames, mode.names = c("add", "dom"), imp.denom
-	 = NULL, swap.obj = NULL)
+function(object, n.loc, coef.znames, mode.names = c("add", "dom"), imp.denom
+	 = NULL, swap.obj = NULL,...)
 {
 
 ### imp.denom is any non-null to switch on use of swap.obj$hk.exact
 ### this amounts to importance sampling from a swap.obj that differs
-### in params from adj.obj to use enumerations (like one gene case)
+### in params from object to use enumerations (like one gene case)
 ### use imp.denom=1/elementwise.prior
 ###
 
@@ -38,36 +38,36 @@ function(adj.obj, n.loc, coef.znames, mode.names = c("add", "dom"), imp.denom
 
   
   if(is.element(adj.type,c("swap","imp.swap"))) {
-    config <- unique.config(swap.obj)
-    if(max(config$match) != length(adj.obj))
-      stop("incompatible argument lengths:adj.obj and swap.obj"
+    config <- uniq.config(swap.obj)
+    if(max(config$match) != length(object))
+      stop("incompatible argument lengths:object and swap.obj"
            )
   }
   else
-    config <- list(match=seq(along = adj.obj),
-                   uniq=rbind(seq(along = adj.obj)))
+    config <- list(match=seq(along = object),
+                   uniq=rbind(seq(along = object)))
   
-  if (is.null(adj.obj[[1]]$reg.vec)) { # take locs from swap obj or default
+  if (is.null(object[[1]]$reg.vec)) { # take locs from swap obj or default
     locs <- (config$uniq[,config$match] - 1)%/%n.mode +1
     coef.ind <- config$uniq[,config$match]
     coef.ind <- coef.ind[coef.ind>0]
   }
-  else { # figure out locs from adj.obj[[i]]$reg.vec
+  else { # figure out locs from object[[i]]$reg.vec
     locs <-
-      factor(unlist(lapply(adj.obj[config$match], function(x, nm, n.mode)
+      factor(unlist(lapply(object[config$match], function(x, nm, n.mode)
                            unique((match(x$reg.vec, nm) - 1) %/% n.mode) + 1,
                            nm = coef.unames, n.mode = n.mode)),
              1:length(coef.znames))
-    coef.names <- unlist(lapply(adj.obj, "[[", "reg.vec")[config$match])
+    coef.names <- unlist(lapply(object, "[[", "reg.vec")[config$match])
     coef.ind <- factor(coef.names, coef.unames)
   }
-  coef.multiple <- unlist(lapply(adj.obj, function(x) length(x$parm) - 2))[config$match]
+  coef.multiple <- unlist(lapply(object, function(x) length(x$parm) - 2))[config$match]
   
-  coefs <- unlist(lapply(adj.obj, function(x) x$parm[ - c(1, length(x$parm))])[config$match])
+  coefs <- unlist(lapply(object, function(x) x$parm[ - c(1, length(x$parm))])[config$match])
   
   
-  adj <- adj.unlist(adj.obj)[config$match]
-  post <- adj*unlist(adj.unlist(adj.obj,component="hk.exact"))[config$match]
+  adj <- adj.unlist(object)[config$match]
+  post <- adj*unlist(adj.unlist(object,component="hk.exact"))[config$match]
   switch(adj.type,
        uniform={
          post <- post/imp.denom
@@ -97,7 +97,7 @@ function(adj.obj, n.loc, coef.znames, mode.names = c("add", "dom"), imp.denom
        imp.swap={
          post <- post/swap.obj$hk.exact
          adj.mean <- mean(post)
-         hk.ratio <- adj.unlist(adj.obj, comp="hk.exact")[config$match]/swap.obj$hk.exact
+         hk.ratio <- adj.unlist(object, comp="hk.exact")[config$match]/swap.obj$hk.exact
          hk.ratio.mean <- mean(hk.ratio)	
          adj.var <- var(c(apply(matrix(adj * hk.ratio, nr = n.loc), 2, 
                                 mean)))/(length(adj)/n.loc)

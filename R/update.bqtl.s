@@ -1,4 +1,4 @@
-"update.bqtl"<-
+"bqtl.fitter"<-
     function(setup,loc.mat,ana.obj)
 {
     dmloc <- dim(loc.mat)

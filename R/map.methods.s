@@ -56,7 +56,7 @@
     UseMethod("map.location")
 "map.loc"<-map.location
 "map.location.default"<-
-    function(x,y,chromo=NULL,cM=NULL,map.names=NULL)
+    function(x,y,chromo=NULL,cM=NULL,map.names=NULL,...)
 {
     if (missing(y)){
         sw.arg <-    1+2*is.null(chromo)+is.null(map.names)
@@ -93,7 +93,7 @@
     function(x,...)
     map.location(x$map.frame,...)
 "map.location.bqtl"<-
-    function(x,ana.obj=NULL)
+    function(x,...,ana.obj=NULL)
 {
     if (is.null(ana.obj))
         ana.object <- eval(match.call(bqtl,x$call)$ana.obj)
