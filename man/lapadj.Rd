@@ -37,8 +37,9 @@ nc = 1), method="BC1", maxit=100, nem=1, start.parm=NULL, ...)  }
    
       A vector who named elements  can be matched by the design term
       names returned in \code{$reg.vec}. If no term named
-      "intercept" is provided, \code{rparm["intercept"]} will be set to
-      zero. 
+      "intercept" is provided,
+      
+      \code{rparm["intercept"]} will be set to zero. 
 
  
       A vector with \code{(q-1)*k} elements (this works when there are

@@ -1,4 +1,5 @@
 \name{marker.levels}
+\alias{marker.levels}
 \alias{bc1.levels}
 \alias{f2.levels}
 \alias{ri.levels}

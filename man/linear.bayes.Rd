@@ -9,7 +9,8 @@
   and (optionally) larger models. 
 }
 \usage{
-linear.bayes(x, ana.obj, partial=NULL, rparm=<<see below>>, specs=<<see below>>, scope=<<see below>>, subset=<<see below>>, casewt=<<see below>>, ...)
+linear.bayes(x, ana.obj, partial=NULL, rparm=<<see below>>, specs=<<see below>>,
+scope=<<see below>>, subset=<<see below>>, casewt=<<see below>>, ...)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -25,7 +26,9 @@ linear.bayes(x, ana.obj, partial=NULL, rparm=<<see below>>, specs=<<see below>>,
   initial MCMC cycles to discard), and \code{n.cycles} (to indicate how
   many MCMC cycles to perform for each model size). If no values are
   supplied, \code{specs} defaults to
-  \code{list(gene.number=c(1,2,3,4,5),burn.in=1,n.cycles=c(0,0,200,100,100))    }}
+  
+  \code{list(gene.number=c(1,2,3,4,5),burn.in=1,n.cycles=c(0,0,200,100,100))}}
+
   \item{scope}{Not generally used. If supplied this will be passed to
     \code{varcov}. } 
   \item{subset}{Not generally used. If supplied this will be passed to

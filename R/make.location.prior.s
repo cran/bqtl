@@ -1,5 +1,5 @@
 "make.location.prior"<-
-    function(x, add.2.end = 0, normalize = T)
+    function(x, add.2.end = 0, normalize = TRUE)
 {
 ###x is a lambda parametter vector
     chromo.break <- x == 0

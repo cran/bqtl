@@ -1,7 +1,7 @@
 "lapadj"<-
 function(reg.formula, ana.obj,  
          rparm = NULL,  tol = 9.900000000000001e-09,
-	return.hess = F, mode.names = NULL, mode.mat = NULL,
+	return.hess = FALSE, mode.names = NULL, mode.mat = NULL,
           maxit = 100, nem = 1,setup.only=FALSE,subset=NULL,casewt=NULL,
          start.parm=NULL, ...)
 {
@@ -43,7 +43,7 @@ function(reg.formula, ana.obj,
       ## return the null posterior
   }
   e.marker <- seq(nrow(form.factors)) %in% attr(form.terms,"specials")$covar
-  actual.covar <- ifelse(e.marker, F,
+  actual.covar <- ifelse(e.marker, FALSE,
                          !dimnames(form.factors)[[1]] %in% ana.obj$reg.names)
   covar.ind <- ( e.marker | actual.covar )
   covar.terms <- covar.ind%*%form.factors>0
@@ -145,7 +145,7 @@ function(reg.formula, ana.obj,
                                    nc=ncx))
       }
       names(reg.frame) <- regr.names[which.vars]
-      reg.proto <- model.matrix(plain.formula,reg.frame)[,-1,drop=F]
+      reg.proto <- model.matrix(plain.formula,reg.frame)[,-1,drop=FALSE]
       ncx <- ncol(reg.proto)
       ptx <- seq(from=0,by=1,length=ncx)
   } # if (any(plain.terms)) {
@@ -213,7 +213,7 @@ function(reg.formula, ana.obj,
   if (any(is.na(rparm)))
       stop(paste("rparm undefined for term:",reg.vec[is.na(rparm)][1]))
   if(nloc > 1) {
-      need.prod <- as.numeric(ana.obj$loc.right[subset, z.used[ - nloc], drop = F] > 
+      need.prod <- as.numeric(ana.obj$loc.right[subset, z.used[ - nloc], drop = FALSE] > 
                               rep(z.used[-1], rep(n, nloc - 1)))
       lambda <- rep(0, nloc - 1) 
       for(i in 2:nloc)

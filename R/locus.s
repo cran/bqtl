@@ -14,6 +14,15 @@ locus<-
 ### I parenthesize everything. S+3.4 needs this workaround 
 ###  ~(a):(u+v):(w) parses correctly, but not  ~a:(u+v):w
 ###
+    xget <- function(x,scope) { # handle character versions
+        if (is.character(x)) {
+            res <- match(x,colnames(scope),0)
+            if (any(res==0)) stop(paste("could not find",x[res==0][1]))
+        }
+        else
+            res <- x
+        res
+    }    
   if (missing(scope)) stop("missing scope arg - possible bqtl syntax error")
   dots <- list(...)
   if (is.null(chromo)&& length(names(dots))!=0 &&
@@ -44,15 +53,17 @@ locus<-
     stop("only one arg allowed with vector or matrix")
   if (method == "F2") {
     if (length(x)==1) {
+        x <- xget(x,scope)
       x.1 <- 2*x-1
       y <- 2*x
       if ( length(dots)==0 )
         dots <- list(y)
       else
-        dots <- c(list(y),lapply(dots,function(x) c(2*x-1,2*x)))
+        dots <- c(list(y),lapply(dots,function(x) c(2*xget(x,scope)-1,2*xget(x,scope))))
       configs.args <-  c(list(x=x.1),dots,scope=list(scope))
     }
         else {
+            x <- xget(x,scope)
             x.1 <- 2*x-1
             y <- 2*x
             if ( length( dm <- dim(x) )>0 && dm[1]>1 ) {
@@ -67,7 +78,8 @@ locus<-
     do.call("configs",configs.args)
   }
   else {
-    configs.args <- c(list(x),dots,scope=list(scope))
+      dots <- lapply(dots,xget,scope)
+    configs.args <- c(list(xget(x,scope)),dots,scope=list(scope))
     do.call("configs",configs.args)
   }
   

@@ -50,12 +50,12 @@
     switch(method,
            F2 = {
                tmat <- matrix(c(1, 1, 1, -1, 0, 1, 1, -1, 1), 3, byrow
-                              = F)
+                              = FALSE)
                tinv <- matrix(c(1, -2, 1, 2, 0, -2, 1, 2, 1)/4, 3, 
-                              byrow = F)
-               t1 <- tmat[, 1, drop = F] %*% tinv[1,  , drop = F]
-               t2 <- tmat[, 2, drop = F] %*% tinv[2,  , drop = F]
-               t3 <- tmat[, 3, drop = F] %*% tinv[3,  , drop = F]
+                              byrow = FALSE)
+               t1 <- tmat[, 1, drop = FALSE] %*% tinv[1,  , drop = FALSE]
+               t2 <- tmat[, 2, drop = FALSE] %*% tinv[2,  , drop = FALSE]
+               t3 <- tmat[, 3, drop = FALSE] %*% tinv[3,  , drop = FALSE]
                tx.mat <- array(rep(t1, n.ind), c(3, 3, n.ind)) +
                    outer(t2, md.unique) + outer(t3, md.unique^2)
                unc.pr <- t1[1,  ]
@@ -130,7 +130,7 @@
             if (any(is.a.minus)) {
                 should.be <- t(t(as.matrix(left.marker[, is.a.minus, i - 1])
                                  ) %*% (tx.mat[,  , i.tx]*
-                                        rep(dom.a.pr/unc.pr,rep(3,3)))/unc.pr)
+                                        rep(dom.a.pr/unc.pr,rep(3,3))))
 
                 left.marker[, is.a.minus, i ] <-
                     sweep(should.be, 2, apply(should.be, 2, sum.or.one), "/")
@@ -178,19 +178,22 @@
                       apply(should.be, 2, sum.or.one), "/")
         }
         if (method == "F2") {
+            ## this is a bit tricky. both left.marker and right.marker were
+            ## set up to have dom.*.pr included at the locus (should be just after
+            ## or just before). Thus one of these has to be backed out
             is.A.minus <- mf.num[,i]==4
             is.a.minus <- mf.num[,i]==5
             if(any(is.A.minus)) {
-                mpy <- ifelse(dom.A.pr==0.0,0.0,(1/dom.A.pr/unc.pr^2))
+                mpy <- ifelse(dom.A.pr==0.0,0.0,(1/dom.A.pr))
                 should.be <- as.matrix((left.marker[, is.A.minus, i] * 
                                         right.marker[, is.A.minus, i])*mpy)
                 
-
                 center.marker[, is.A.minus, i ] <-
                     sweep(should.be, 2, apply(should.be, 2, sum.or.one), "/")
+                
             }
             if (any(is.a.minus)) {
-                mpy <- ifelse(dom.a.pr==0.0,0.0,(1/dom.a.pr/unc.pr^2))
+                mpy <- ifelse(dom.a.pr==0.0,0.0,(1/dom.a.pr))
                 should.be <- as.matrix((left.marker[, is.a.minus, i] * 
                                         right.marker[, is.a.minus, i])*mpy)
                 
