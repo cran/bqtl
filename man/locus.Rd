@@ -13,8 +13,7 @@ function.  It is used on the right hand side of a formula in the
 \synopsis{
 locus(x, ..., scope, method, chromo, cM, ana.obj)}
 \usage{
-locus(x)
-locus(chromo,cM)
+locus(x, ..., scope, method, chromo, cM, ana.obj)
 add(x)
 dom(x)
 }

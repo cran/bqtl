@@ -1,1 +1,1 @@
-version.bqtl<-"Version:1.0-11"
+version.bqtl<-"Version:1.0-12"

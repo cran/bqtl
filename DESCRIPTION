@@ -1,6 +1,6 @@
 Package: bqtl
-Version: 1.0-11
-Date: 2003-25-03
+Version: 1.0-12
+Date: 2003-16-09
 Title: Bayesian QTL mapping toolkit 
 Author: Charles C. Berry <cberry@ucsd.edu>
 Maintainer: Charles C. Berry <cberry@ucsd.edu>

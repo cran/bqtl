@@ -13,7 +13,7 @@ This data frame contains the following columns:
 The marker names taken from \code{little.map.frame} and those created to
 fill virtual markers in between actual markers.
 }
-\item{dx}{
+\item{cM}{
 a vector of locations
 }
 \item{prior}{

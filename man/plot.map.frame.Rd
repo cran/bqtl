@@ -8,7 +8,7 @@
   of the sort created by \code{\link{make.map.frame}}
 }
 \usage{
-\method{plot}{map.frame}(x, ...)
+\method{plot}{map.frame}(x, y, ...)
 }
 \synopsis{
 plot.map.frame(x, y, fun, type, include.rug, rug.lwd,
@@ -22,16 +22,17 @@ plot.map.frame(x, y, fun, type, include.rug, rug.lwd,
    will be drawn in a single frame representing the chromosomes as
    horizontal bars and giving tic marks to show the locations markers
    and virtual markers (if any).  }
- \item{fun}{ A plotting function to be used \emph{after} the plot axes and
+ \item{\dots}{ more args:
+ \code{fun}{ A plotting function to be used \emph{after} the plot axes and
    labels have been drawn.  The current default \code{if (y.type ==
      "matrix") matlines else lines} usually is good enough.  But a
    fancier function could be used for a fancier plot. }
- \item{type}{ \code{"l"} for lines, "p" for points, et cetera.  see \code{\link{par}} }
- \item{include.rug}{ if \code{TRUE} place a tick on the x-axis at each marker location }
- \item{title.string}{(optional) label to prepend to each title }
- \item{ylab}{plot label for y-axis, see \code{\link{par}}  }
- \item{xlab}{plot label for x-axis, see \code{\link{par}}  }
- \item{\dots}{(optional args to pass to \code{fun}  }
+ \code{type}{ \code{"l"} for lines, "p" for points, et cetera.  see \code{\link{par}} }
+ \code{include.rug}{ if \code{TRUE} place a tick on the x-axis at each marker location }
+ \code{title.string}{(optional) label to prepend to each title }
+ \code{ylab}{plot label for y-axis, see \code{\link{par}}  }
+ \code{xlab}{plot label for x-axis, see \code{\link{par}}  }
+  }
 }
 \details{
   This function enables drawing graphs that depend on chromosome and

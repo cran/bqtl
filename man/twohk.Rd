@@ -17,19 +17,19 @@ twohk(varcov, ana.obj, ...)
  \item{ana.obj}{An \code{analysis.object} --- see \code{make.analysis.obj} }
  \item{\dots}{Additional arguments override the default choices of
     candidate loci (\code{locs}), prior for locus (\code{locs.prior}),
-    or method specified by \code{ana.obj}. See the next arguments.}
-\item{locs}{A vector indexing the loci to use.}
-  \item{locs.prior}{ 
+    or method specified by \code{ana.obj}:
+\code{locs}{A vector indexing the loci to use.}
+  \code{locs.prior}{ 
     The prior mass to  associate with each locus. Typically, these sum
     to one, but sometimes they might each be set to one (as in computing
     lod scores). }
-\item{combo.prior}{Only valid for \code{ana.obj$method=="F2"}. 
+\code{combo.prior}{Only valid for \code{ana.obj$method=="F2"}. 
     The prior probability for each term or combination of terms for the
     phenotypic effect at a locus. Typically, there will be three of
     these - one for the 'additive' term (linear in number of alleles
     from one parent strain), the 'dominance' term (quadratic in allele
     number), or both terms. The default sets them all to 1/3.}
-}
+}}
 \details{
   The marginal posterior (integrating over regression parameters and
   dispersion) is calculated for each one and two gene model under the
