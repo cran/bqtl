@@ -10,7 +10,7 @@
 \usage{
 plot(x, ...)
 
-plot.map.frame(mf.obj, y, fun=<see below>, type="l",
+plot.map.frame(mf.obj, y, fun=<<see below>>, type="l",
  include.rug=TRUE, title.string=NULL, ylab=deparse(substitute(y)),
  xlab="Location", ...)
 }
@@ -66,4 +66,4 @@ par(.old.par)
 \testonly{ rm(null.llk, llk, little.ana.bc, .old.par ) }
 
 }
-\keyword{hplot,methods	}
+\keyword{hplot}

@@ -10,7 +10,7 @@
   objects that specify such linearizations. 
 }
 \usage{
-covar(x,...,scope=<see below>, method=<see below>)
+covar(x,...,scope=<<see below>>, method=<<see below>>)
 }
 \arguments{
   \item{x}{The name of a locus (except for F2 designs, when it is the
@@ -55,4 +55,4 @@ covar(x,...,scope=<see below>, method=<see below>)
    }
 
 
-\keyword{models,regression}
+\keyword{regression}

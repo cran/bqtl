@@ -8,7 +8,6 @@
 
 /* delta.c - for raking 2 by 2 table */
 
-#include <math.h>
 
 static double delta(double amat[2], double bmat[2], double odds)
 {

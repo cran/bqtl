@@ -97,6 +97,8 @@ rows.
   \item{map.frame}{See \code{ make.map.frame }}
   \item{casewt}{The \code{ casewt } argument}
   \item{mode.mat}{The \code{mode.mat} used}
+  \item{version}{A string giving the version of BQTL from qhich the
+    objects was created}
   \item{call}{The function call}
 }
 

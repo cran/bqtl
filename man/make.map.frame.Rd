@@ -13,10 +13,6 @@ information are bundled.
 \usage{
 make.map.frame(dx,reso=5)
 
-make.map.frame(dx, chr.num=cumsum(mgd == 0),
-prior=make.location.prior(lambda),
-morgan=100, nint=NULL, reso=NULL)
-
 }
 
 \arguments{

@@ -163,12 +163,13 @@
              if (method!="F2") NULL else dimnames(mode.mat)[[2]],
              names.lambda
              )
+    version.stamp <- if (exists("is.R")&&is.R()) version.bqtl else "splus"
     structure(
               list(data=data.frame(data,m.regressor.matrix), varcov = m.varcov, 
                    reg.names=reg.names,method=method,
                    state.matrix = m.state.matrix, loc.right = m.loc.right,
                    map.frame=map.frame,casewt=casewt,mode.mat=mode.mat,
-                   call = this.call),
+                   call = this.call,version=version.stamp),
               class="analysis.object"
               )
 }

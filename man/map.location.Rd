@@ -12,10 +12,7 @@
 }
 \usage{
 map.location(x, y, \dots)
-map.loc(x, chromo=3)
 map.loc(x, chromo=c(4,6), cM=c(22,13) )
-map.loc(x, map.names="m.12")
-map.loc(x)
 }
 
 \arguments{
@@ -69,4 +66,4 @@ map.loc(little.ana.bc,chromo=3,cM=22)
 map.loc(little.ana.bc,"m.12")
 rm(little.ana.bc)
 }
-\keyword{\keyword{bqtl}
+\keyword{regression}

@@ -36,4 +36,4 @@ adjust.linear.bayes(lbo, ana.obj=lbo$call$ana.obj, ...)
   this can require a very long time to run.}
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 \seealso{\code{\link{linear.bayes}}}
-\keyword{ regression }
+\keyword{regression}
