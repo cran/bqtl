@@ -64,4 +64,11 @@ bugfix - unusable file removed from data/
 .Rdata files use compress = TRUE
 
 
+----------------------------------------
+Version: 1.0-7
+Date: 2002-06-24
 
+bugfix - example(make.analysis.obj) was
+	broken in r-devel (1.6.0)
+
+----------------------------------------
