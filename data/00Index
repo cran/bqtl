@@ -1,9 +1,11 @@
-little.ana.bc            A simulated dataset
-little.ana.f2            A simulated dataset
-little.bc.markers        Simulated Marker Data
-little.bc.pheno          Simulated Phenotype Data
-little.dx                Marker Map Description for Simulated Data
-little.f2.markers        Simulated Marker Data
-little.f2.pheno          Simulated Phenotype Data
-little.map.frame         Package of Simulated Marker Map Information
-little.mf.5              Package of Simulated Marker Map Information
+little.ana.bc           A simulated dataset 
+little.ana.f2           A simulated dataset 
+little.bc.markers       Simulated Marker Data 
+little.bc.pheno         Simulated Phenotype Data 
+little.dx               Marker Map Description for Simulated Data 
+little.f2.markers       Simulated Marker Data 
+little.f2.pheno         Simulated Phenotype Data 
+little.map.frame        Package of Simulated Marker Map Information 
+little.mf.5             Package of Simulated Marker Map Information 
+swapbc1                 Sample BC1 or Recombinant Inbred loci via
+                        approximate posterior. 
