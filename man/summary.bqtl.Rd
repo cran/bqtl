@@ -34,3 +34,4 @@ return.hess=TRUE )
 summary(fit)
 \testonly{rm(little.ana.bc,fit)}
 }
+\keyword{methods}

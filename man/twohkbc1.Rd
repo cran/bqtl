@@ -70,3 +70,4 @@ combo.prior=<see below>)
   quantitative trait loci in line crosses using flanking
   markers. \emph{Heredity} \bold{69},315-324. } 
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
+\keyword{utilities}

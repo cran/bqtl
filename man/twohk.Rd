@@ -78,3 +78,4 @@ little.pe <- 2 * little.2$loc.2 / sum(little.2$loc.2)   #locus-wise posterior ex
 plot(little.ana.bc,little.pe,type="h",ylab="E(genes")
 rm(little.2,little.vc,little.pe,little.ana.bc)
 }
+\keyword{models}

@@ -20,7 +20,7 @@ map.loc(x)
 
 \arguments{
   \item{x}{A object of class \code{map.frame},\code{analysis.object},
-\code{bqtl}, or \code{bqtl.list}
+\code{bqtl}, or \code{bqtl.list}}
   \item{\dots}{Other arguments usage depend on the class of \code{x} }
   \item{y}{A vector of row numbers or \code{map.names} specifying which
     subset of the \code{map.frame} of \code{x} is to be returned}
@@ -31,8 +31,8 @@ map.loc(x)
     in \code{chromo} will be included.)
 
   \item{map.names}{A vector of \code{map.names}}
-
-} \details{ It is often helpful to refer to genentic loci by their
+}
+\details{ It is often helpful to refer to genentic loci by their
 locations. The methods of \code{map.location} (alias \code{map.loc})
 will extract the row index, chromosome number and location, and the name
 for specified loci. For direct lookups of the loci in a \code{map.frame}
@@ -69,4 +69,4 @@ map.loc(little.ana.bc,chromo=3,cM=22)
 map.loc(little.ana.bc,"m.12")
 rm(little.ana.bc)
 }
-\keyword{bqtl}
+\keyword{\keyword{bqtl}

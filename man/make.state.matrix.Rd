@@ -60,3 +60,4 @@ make.state.matrix(marker.frame, marker.distances, method="F2")
   It might have been better to design this array so that the third
   subscript moves fastest.  In large problems, the current structure may
   involve excessive memory access.}
+\keyword{utilities}

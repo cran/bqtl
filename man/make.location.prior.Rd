@@ -26,3 +26,4 @@ make.location.prior( x, add.2.end=0, normalize=TRUE )
 
 
 
+\keyword{utilities}

@@ -40,3 +40,4 @@ hence which variable to use in ofrming residuals. So, in that case,
 
 \seealso{ \code{\link{linear.bayes}}}
 
+\keyword{methods}

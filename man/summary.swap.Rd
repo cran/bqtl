@@ -29,3 +29,4 @@ summary.swap(sc.obj, method=NULL, ncoef=length(sc.obj$alt.coef), nloc=sc.obj$nlo
 }
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 
+\keyword{methods}

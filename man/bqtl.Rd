@@ -86,3 +86,5 @@ round( regr.coef.table[,"Value"] +  # coefs inside 95\% CI
 \testonly{ rm(five.gene,little.ana.bc,little.bqtl,max.loglik,
               regr.coef.table,several.epi,several.main) }
 }
+\keyword{regression}
+

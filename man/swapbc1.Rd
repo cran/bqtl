@@ -81,3 +81,4 @@ cycle is repeated \code{nreps] times.
     Section,} 164-169.
 }
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
+\keywords{utilities}

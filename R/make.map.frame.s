@@ -105,7 +105,8 @@
     locus<-paste("C",chr.num,as.numeric(format(100*mgd/morgan,digits=4)),
                  sep=".")
     res <- data.frame(
-                      marker.name=as.character(make.names(marker.names,TRUE)),
+                      marker.name=
+                      I(as.character(make.names(marker.names,TRUE))),
                       cM=as.numeric(mgd),
                       prior=as.numeric(prior),
                       pos.type=I(pos.type),

@@ -25,3 +25,4 @@ make.marker.numeric(marker.frame, level.names=NULL)
 }
 
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
+\keyword{utilities}

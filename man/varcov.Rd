@@ -43,3 +43,4 @@ varcov(x, ana.obj, partial=NULL, scope=<see below>}
   ill-conditioning.  Of course the rational for using the method is to
   speed the sampling, and it is very effective at doing so.}
 \seealso{The examples in \code{\link{swap}} and \code{\link{twohk}}.}
+\keyword{utilities}

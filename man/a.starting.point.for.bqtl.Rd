@@ -1,5 +1,5 @@
 \name{A Starting Point}
-
+\alias{A Starting Point}
 \title{Some Introductory Comments}
 \description{Some pointers to a few key functions in \emph{BQTL}}
 
@@ -24,38 +24,39 @@
 }
 \section{Key Functions}{
   \describe{
-    \item{Data Input}{ }
-   
+    \item{Data Input}{ \  }
+    
       \describe{
-	\item{\code{make.map.frame}}{defines the map,}
+	\item{\code{\link{make.map.frame}}}{defines the map,}
 	
-	\item{\code{marker.levels}}{defines the coding scheme for
+	\item{\code{\link{marker.levels}}}{The help page describes several
+	  functions that define the coding scheme for
 	  marker levels, }
 	
-	\item{\code{make.analysis.obj}}{combines marker data, phenotype
+	\item{\code{\link{make.analysis.obj}}}{combines marker data, phenotype
 	  data,and the \code{map.frame} to create an object that can be
 	  used by data analysis functions.}
 	
       }
-    
-      \item{Maximum Likelihood Methods}{ }
+      \item{Maximum Likelihood Methods}{ \  }
       
       \describe{
-       \item{\code{bqtl}}{does a host of things from marker regression
+       \item{\code{\link{bqtl}}}{does a host of things from marker regression
 	 and interval mapping to full maximum likelihood. The best way to
 	 get started is to run \code{example(bqtl)} and take a look at
 	 the resulting output.}
        
-       \item{\code{locus}}{ is very helpful in specification of runs.} 
+       \item{\code{\link{locus}}}{ is very helpful in specification of runs.} 
      }
      
-     \item{Approximate Bayesian Analysis: }{
+     \item{Approximate Bayesian Analysis }{ \ }
 
-       Try \code{example(linear.bayes)}, then look at the help page for it.}
+     \describe{
+       \item{\code{\link{linear.bayes}}}{
+	 For a good starting point try \code{example(linear.bayes)}}}
+   }
+   }
    
- }
- }
 \author{Charles C. Berry \email{cberry@ucsd.edu}}
 
-
-\keyword{Introduction }
+\keyword{regression,models}

@@ -60,3 +60,4 @@ cbind(nint=little.nint,cM=little.map.frame$cM)[1:10,]
 rm( little.map.frame, little.nint )
 }
 % Converted by Sd2Rd version 1.10.
+\keyword{utilties}

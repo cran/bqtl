@@ -52,3 +52,4 @@ cbind( genotype.grid, fit.vals )                     # print them!
 
 }
 
+\keyword{methods}

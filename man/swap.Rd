@@ -93,3 +93,4 @@ plot( little.ana.bc, little.4.smry$loc.posterior, type="h",
  ylab="E(genes)" )
 rm(little.4,little.vc,little.ana.bc)
 }
+\keyword{regression}

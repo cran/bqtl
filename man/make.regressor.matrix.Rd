@@ -33,3 +33,4 @@ A state.matrix.object - see \code{\link{make.state.matrix}} for more details
 \seealso{
   \code{\link{make.state.matrix}}
 }
+\keyword{utilities}

@@ -47,5 +47,5 @@ fit.on.1 <- bqtl(bc.phenotype~locus(index.chr.1),little.ana.bc)
 summary( loglik( fit.on.1 ) )
 
 }
-\keyword{bqtl}
 
+\keyword{methods}
