@@ -9,7 +9,7 @@
   and (optionally) larger models. 
 }
 \usage{
-linear.bayes(x, ana.obj, partial=NULL, rparm=<see below>, specs=<see below>, scope=<see below>, subset=<see below>, casewt=<see below>, ...)
+linear.bayes(x, ana.obj, partial=NULL, rparm=<<see below>>, specs=<<see below>>, scope=<<see below>>, subset=<<see below>>, casewt=<<see below>>, ...)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -85,4 +85,4 @@ plot(fitted(little.lin), residuals(little.lin))
 \testonly{rm(little.lin,little.ana.bc)}
 }
 
-\keyword{regression,models}
+\keyword{regression}

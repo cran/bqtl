@@ -7,7 +7,7 @@
   the phenotype variable.  For use in regression modelling on the markers.
 }
 \usage{
-varcov(x, ana.obj, partial=NULL, scope=<see below>}
+varcov(x, ana.obj, partial=NULL, scope=<<see below>>}
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{

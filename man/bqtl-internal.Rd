@@ -4,9 +4,10 @@
 \alias{rhs.bqtl}
 \alias{unique.config}
 \alias{zero.dup}
+\alias{version.bqtl}
 \title{Internal BQTL functions}
 \description{
- Internal ts functions
+ Internal bqtl functions and objects
 }
 \usage{
 x\%equiv\%y

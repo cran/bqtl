@@ -10,11 +10,8 @@ function.  It is used on the right hand side of a formula in the
 
 }
 \usage{
-configs(x, ..., scope=<see below>)
-
-bqtl( y ~ PVV.4 + configs(14,17), my.analysis.object )
-
-bqtl( y ~ configs(14,17) * configs(133,245), my.analysis.object )
+configs(x,...,scope=<<see below>>)
+bqtl( reg.formula = y ~ PVV.4 + configs(14,17), my.analysis.object )
 }
 
 \arguments{
@@ -92,4 +89,4 @@ map and the marker information,
 
  }
 
-\keyword{utilities, models}
+\keyword{utilities}

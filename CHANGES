@@ -26,3 +26,13 @@ locus( chromo=1, cM=25 ) will now work
 
 ----------------------------------------
 
+Version: 1.0-3
+Date: 2001-05-20
+
+bugfixes - Mac Port should work now, Rd files cleaner
+
+make.analysis.obj() nows has a $version component - might use it later
+on to check for incompatible, earlier versions
+
+----------------------------------------
+

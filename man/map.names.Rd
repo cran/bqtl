@@ -45,4 +45,4 @@ map.names( fit )
 
 \testonly{rm(fit, little.ana.bc)}
 }
-\keyword{bqtl}
+\keyword{utilities}

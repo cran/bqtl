@@ -18,4 +18,4 @@ formula.bqtl(object)
 
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 \seealso{\code{\link{bqtl}}}
-\keyword{ methods }
+\keyword{methods}

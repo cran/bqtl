@@ -11,10 +11,10 @@
   used.
 }
 \usage{
-twohkbc1(varcov, rparm, locs=<see below> ), locs.prior=<see below> )
+twohkbc1(varcov, rparm, locs=<<see below>> ), locs.prior=<<see below>> )
 
-twohkf2(varcov, rparm, locs=<see below>, locs.prior=<see below>,
-combo.prior=<see below>) 
+twohkf2(varcov, rparm, locs=<<see below>>, locs.prior=<<see below>>,
+combo.prior=<<see below>>) 
 }
 \arguments{
  \item{varcov}{ An object produced by \code{ \link{make.varcov}} }

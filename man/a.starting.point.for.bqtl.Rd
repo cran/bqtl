@@ -59,4 +59,4 @@
    
 \author{Charles C. Berry \email{cberry@ucsd.edu}}
 
-\keyword{regression,models}
+\keyword{regression}

@@ -11,17 +11,13 @@ function.  It is used on the right hand side of a formula in the
 
 }
 \usage{
-locus(x, ...,chromo=NULL,cM=NULL scope=<see below>,method=<see below>)
+locus(x, ...,chromo=NULL,cM=NULL, scope=<<see below>>,method=<<see below>>)
 
 add(x,...)
 
 dom(x,...)
 
-bqtl( y ~ PVV.4 + locus(14,17), my.analysis.object )
-
-bqtl( y ~ locus(14,17) * locus(133,245), my.analysis.object )
-
-bqtl( y ~ add(14) +dom(27), my.f2.object )
+bqtl( reg.formula = y ~ locus(14,17) * locus(133,245), my.analysis.object )
 
 }
 
@@ -117,4 +113,4 @@ of a model formula(s).
   map and the marker information.
   
 }
-\keyword{models,regression}
+\keyword{regression}

@@ -103,4 +103,4 @@ models.  Thesis (Ph. D.)--University of California, San Diego,
 Department of Mathematics.
   }
   \author{Charles C. Berry \email{cberry@ucsd.edu} }
- \keyword{models,regression}
+ \keyword{regression}
