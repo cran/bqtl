@@ -10,7 +10,7 @@
  the 'intercept' is lost; see `Details' below.
 }
 \usage{
-\method{residuals}{linear.bayes}(object)
+\method{residuals}{linear.bayes}(object, newdata, return.resids})
 
 \method{predict}{linear.bayes}(object)
 

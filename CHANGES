@@ -91,3 +91,6 @@ Version: 1.0-11
 add src/Makevars for BLAS usage
 
 ----------------------------------------
+
+Version: 1.0-12
+R_Ext/Mathlib.h is deprecated - change to Rmath.h

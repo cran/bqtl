@@ -6,7 +6,7 @@
 #include "lapadj.h"
 #ifdef USING_R
 #include <R_ext/Applic.h>
-#include <R_ext/Mathlib.h>
+#include <Rmath.h>
 #define lgamma(x) lgammafn(x)
 #else
 int F77_SYMBOL(dqrsl1)();

@@ -10,7 +10,7 @@
  Internal bqtl functions and objects
 }
 \usage{
-x\%equiv\%y
+"%equiv%"( x, y )
 map.dx(lambda, theta, min.lambda)
 rhs.bqtl(reg.terms, ana.obj, bqtl.specials, local.covar, scope, 
     expand.specials = NULL, method, ...) 

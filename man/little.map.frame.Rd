@@ -1,11 +1,10 @@
 \name{little.map.frame}
-\alias{little.map.dx}
 \alias{little.map.frame}
 \non_function{}
 \title{ Package of Simulated Marker Map Information }
 \description{
 The \code{little.map.frame} data frame has 50 rows and 9 columns that
-describe the marker map of \code{\link{little.dx}} in the format
+describe the marker map of \code{\link{little.map.dx}} in the format
 produced by \code{\link{make.map.frame}. \code{little.map.dx} has the
   minimal data needed to construct this.}
 }
@@ -19,7 +18,7 @@ a factor with levels
 \dots
 \code{m.50} 
 }
-\item{dx}{
+\item{cM}{
 a vector of locations
 }
 \item{prior}{

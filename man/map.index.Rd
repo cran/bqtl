@@ -10,20 +10,19 @@ its row (their rows). \code{map.index} performs a lookup in a specific
 two) map distance(s).
 }
 \usage{
-map.index(x, ...)
+map.index(x, ... )
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
   \item{x }{A \code{map.frame} or \code{analysis.object}}
   \item{...}{ For methods that look up a location in a \code{map.frame}
-    the following named arguments may be used}
-  \item{chromo }{A chromosome number or 2 ordered numbers }
-  \item{cM }{(Optional) map distance or two. If the same chromosome
+    the following named arguments may be used:
+  \code{chromo }{A chromosome number or 2 ordered numbers }
+  \code{cM }{(Optional) map distance or two. If the same chromosome
     number is used twice in \code{chromo}, \code{cM} must be
     ordered. If \code{cM} is omitted, all loci on the chromosome will
   be included.}
-
-}
+}}
 \details{
   It is often convenient to refer to genetic loci or regions by the
   numerical index(es) in a \code{map.frame}. \code{map.index} allows
