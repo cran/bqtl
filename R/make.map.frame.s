@@ -79,7 +79,8 @@
     pos.type <- as.numeric(c(0,chr.num[-length(chr.num)])==chr.num) +
         as.numeric(c(chr.num[-1],0)==chr.num)*2
     pos.type <- factor(c(1,1,2,3)[pos.type+1],1:3,c("right","left","center"))
-    is.marker <- rep(TRUE,length(chr.num))
+    
+    is.marker <- if (inherits(dx,"map.frame")) dx$is.marker else rep(TRUE,length(chr.num))
     
     increments <- diff(mgd/morgan)
 
@@ -103,6 +104,10 @@
     }
 ##    lambda <- ifelse(not.r==0,0,2*not.r-1)
     prior <- eval(prior)
+    if (any(is.na(prior))){
+      prior <- rep( 1/ length(prior), length(prior))
+      warning("could not priorize loci - setting all equal; perhaps only one marker on a chromosome")
+    }
     pos.plot <- mgd
     locus<-paste("C",chr.num,as.numeric(format(100*mgd/morgan,digits=4)),
                  sep=".")
