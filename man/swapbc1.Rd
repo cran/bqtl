@@ -9,8 +9,8 @@
   (backcross) designs and recombinant inbred lines.
 }
 \usage{
-swapbc1(varcov, invars, rparm, nreps, ana.obj, locs=seq(ncol(var.x)),
-locs.prior=rep(1, ncol(var.x)),tol=1e-10 )
+swapbc1(varcov, invars, rparm, nreps, ana.obj, locs=NULL,
+locs.prior=NULL, tol=1e-10 )
 
 }
 \arguments{

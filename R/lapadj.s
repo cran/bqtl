@@ -293,7 +293,8 @@ function(reg.formula, ana.obj,
               postApprox = double(1),
               iter = as.integer(iter),
               tol = as.double(tol),
-              nem = as.integer(nem))
+              nem = as.integer(nem),
+              PACKAGE="bqtl")
       if ( (z$postApprox==0) && (z$hkApprox==0))
         adj <- 1.0
       else
