@@ -6,6 +6,9 @@
 ### for BC1 method as.numeric(marker.states)%in%c( 1,2,5,6 )
 ### or NA's
 ###  if NA's are present, they are recoded to 6
+  
+                                        # no this is wrong NA cause error
+
 ###  the assumed setup is as follows:
 ###    strains are A and a
 ###
@@ -33,6 +36,17 @@
     mf.num <- as.matrix(marker.frame)
     if (any(is.na(mf.num)))
         stop("marker.frame must be all numeric")
+
+    if (n.ind==0){            # only one marker
+      if (method=="F2")
+        return(
+               array(rbind(diag(3),c(1,2,0)/3,c(0,2,1)/3,c(1,2,1)/4)[mf.num,],
+                     c(dim(mf.num),3)))
+      else
+        return(array(rbind(diag(2),NA,NA,NA,c(1,1)/2)[mf.num,],
+                     c(dim(mf.num),2)))
+    }
+
     switch(method,
            F2 = {
                tmat <- matrix(c(1, 1, 1, -1, 0, 1, 1, -1, 1), 3, byrow

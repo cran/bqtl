@@ -11,7 +11,7 @@ function.  It is used on the right hand side of a formula in the
 
 }
 \usage{
-locus(x, ..., scope=<see below>,method=<see below>)
+locus(x, ...,chromo=NULL,cM=NULL scope=<see below>,method=<see below>)
 
 add(x,...)
 
@@ -40,6 +40,15 @@ bqtl( y ~ add(14) +dom(27), my.f2.object )
   Optional arguments (usually integers) to be used when
   \code{is.atomic(x)} is TRUE. 
 }
+\item{chromo }{A chromosome number or 2 ordered numbers. The loci on the
+  chromosome or in the range of chromosome numbers are used. If
+\code{chromo} is used, \code{x} must not be used.}
+\item{cM }{(Optional) map distance or two giving a location near a locus
+  or range of locations from which loci will be included. If the one
+  chromosome number is specified in \code{chromo}, \code{cM} must be 
+  ordered. If \code{cM} is omitted, all loci on the chromosome(s) will
+  be included.)
+
 \item{scope}{ (Optional and)
   Usually not supplied by the user.  Rather \code{bqtl} fills this in
   automatically.  A vector of regressor names, like the \code{reg.names}
@@ -48,17 +57,20 @@ bqtl( y ~ add(14) +dom(27), my.f2.object )
 \item{method}{ (Optional and) 
   Usually not supplied by the user. Like \code{scope}, \code{bqtl} takes
   care of filling this in with "BC1", "F2", et cetera as appropriate.}
-}
-\details{ \code{locus} is used in the model formula notation of
-\code{bqtl}, possibly more than once, and possibly with regressors named
-in the usual manner.  \code{locus} is intended to speed up the
-specification and examination of genetic models by allowing many models
-to be specified in a shorthand notation in a single model formula.  The
-names of genetic loci can consist of marker names, names that encode
-chromosome number and location, or other shorthand notations.  The names
-of terms in genetic models will typically include the names of the locus
-and may prepend "add." or "dom." or similar abbreviations for the
-'additive' and 'dominance' terms associated with the locus. 
+\item{ana.obj}{Usually not specified by the user. This is the
+  \code{analysis.object} to be used to lookup loci if a \code{chromo}
+  argument is used.}  }
+\details{ \code{locus} is used in the model
+formula notation of \code{bqtl}, possibly more than once, and possibly
+with regressors named in the usual manner.  \code{locus} is intended to
+speed up the specification and examination of genetic models by allowing
+many models to be specified in a shorthand notation in a single model
+formula.  The names of genetic loci can consist of marker names, names
+that encode chromosome number and location, or other shorthand
+notations.  The names of terms in genetic models will typically include
+the names of the locus and may prepend "add." or "dom." or similar
+abbreviations for the 'additive' and 'dominance' terms associated with
+the locus.
 
 When used as in \code{bqtl( y ~ locus(34), my.analysis.obj )}, it will
 look up the term or terms corresponding to the 34$^{th}$ locus. When
@@ -79,6 +91,11 @@ locus(cbind(c(15,45,192),c(16,46,193))),\dots)} returns two three gene
 models.  And more generally, whenever \code{is.array(x)} is TRUE, the
 columns (or slices) specify \code{ dim(x)[1]/length(x)} different
 models. 
+
+The \code{chromo} argument performs a lookup of loci on the chromosome
+via the function \code{\link{map.index}}. If \code{cM} is also given,
+the locus nearest that location is used. If two values are given for
+\code{cM} all loci in the range are used.
 
 \code{add(x)} and \code{dom(x)} are alternatives that specify that only
 the \emph{additive} or \emph{dominance} terms in an F2 intercross. 

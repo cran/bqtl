@@ -130,7 +130,7 @@ function(reg.formula, ana.obj,
               reg.frame <- as.data.frame(do.call("expand.grid", rep(list(mode.mat), nloc)))
           marker.distances <- switch(ana.obj$method,
                                      "RI.self"={ana.obj$map.frame$lambda/(2-ana.obj$map.frame$lambda)},
-                                     "RI.sib"=={ana.obj$map.frame$lambda/(4-3*ana.obj$map.frame$lambda)},
+                                     "RI.sib"={ana.obj$map.frame$lambda/(4-3*ana.obj$map.frame$lambda)},
                                      ana.obj$map.frame$lambda)
       }
       else

@@ -2,9 +2,9 @@
     function(x,...)
     UseMethod("map.index")
 "map.index.default"<-
-    function(x,chromo,cM)
+    function(x,chromo,cM=NULL)
 {
-    if (length(chromo)==1){
+    if (length(chromo)==1 && missing(cM) || length(cM)!=2){
         subset <-    x$chr.num==chromo
         if (!missing(cM)){
             this.cM <- x[ subset ,"cM" ]
@@ -19,6 +19,7 @@
     }
     else
     {# two locations find a loci in span
+      if (length(chromo)==1) chromo[2] <- chromo
         if (length(chromo)>2) stop("> 2 values for chromo not allowed")
         if (chromo[1]>chromo[2]) stop("chromo[1]>chromo[2]")
         subset <-

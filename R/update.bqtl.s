@@ -15,7 +15,10 @@
     if (any( loc.mat > ncol(ana.obj$loc.right))||any(loc.mat<1) )
         stop("invalid locus number")
     subset <- attr(setup,"subset")
-    
+    lambda <- switch(ana.obj$method,
+                   RI.self = {ana.obj$map.frame$lambda/(2 - ana.obj$map.frame$lambda)},
+                   RI.sib = {ana.obj$map.frame$lambda/(4 - 3 * ana.obj$map.frame$lambda)},
+                   ana.obj$map.frame$lambda)
     setup <-
         c(list("upbqtl"),
           setup[-c(1,22)],
@@ -25,7 +28,7 @@
           list( res = double(n.alt)),
           list( orig.x = as.double(setup$x)) ,
           list( loc.right = as.integer(ana.obj$loc.right[subset,]-1)) ,
-          list( map.lambda = as.double(ana.obj$map.frame$lambda)) ,
+          list( map.lambda = as.double(lambda)) ,
           list( state.matrix = as.double(ana.obj$state.matrix[subset,,])) ,
           list( n.state.loc = as.integer(dim(ana.obj$state.matrix)[2])))
     
