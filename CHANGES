@@ -55,4 +55,13 @@ bugfixes - locus("name.of.locus") now works, plot(map.frame.object) no
 longer spills text on the plot, make.state.matrix had a bug when
 dominant markers were used, "NA" issues (R-1.5.0) addressed
 
+----------------------------------------
+
+Version: 1.0-6
+Date: 2002-05-15
+
+bugfix - unusable file removed from data/ 
+.Rdata files use compress = TRUE
+
+
 
