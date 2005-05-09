@@ -10,8 +10,8 @@
  Internal bqtl functions and objects
 }
 \usage{
-"%equiv%"( x, y )
-map.dx(lambda, theta, min.lambda)
+x \%equiv\% y
+ map.dx(lambda, theta, min.lambda)
 rhs.bqtl(reg.terms, ana.obj, bqtl.specials, local.covar, scope, 
     expand.specials = NULL, method, ...) 
 zero.dup(x,dig=6)
@@ -32,7 +32,8 @@ uniq.config(swap.obj)
   \item{method}{e'g' "F2", "BC!", etc}
   \item{...}{not sure}
   \item{swap.obj}{result of swap}
-  \item{x}{numeric vector}
+  \item{x}{numeric vector or matrix}
+  \item{y}{numeric vector or matrix}
   \item{dig}{how many significant digits to use}
 
 }
