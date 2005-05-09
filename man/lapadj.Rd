@@ -2,29 +2,23 @@
 \alias{lapadj}
 
 \title{Approximate marginal posterior for chosen model}
-
-\usage{ lapadj(reg.formula, loc.right, marker.distances, state.matrix,
-marker.names=dimnames(state.matrix)[[2]], rparm=NULL, casewt=NULL,
-tol=9.9e-09, return.hess=F, mode.names=NULL, mode.mat=NULL,
-nc = 1), method="BC1", maxit=100, nem=1, start.parm=NULL, ...)  }
-
-
+\synopsis{ lapadj(reg.formula, ana.obj,  
+         rparm = NULL,  tol = 1e-10,
+	return.hess = FALSE, mode.names = NULL, mode.mat = NULL,
+          maxit = 100, nem = 1,setup.only=FALSE,subset=NULL,casewt=NULL,
+         start.parm=NULL, ...) }
+\usage{ lapadj(reg.formula, ana.obj,  
+         rparm = NULL,  tol = 1e-10,
+	return.hess = FALSE, mode.names = NULL, mode.mat = NULL,
+          maxit = 100, nem = 1,setup.only=FALSE,subset=NULL,casewt=NULL,
+         start.parm=NULL, ...)
+}
 \arguments{
 
   \item{reg.formula}{ A formula, like
     \code{y~add.X.3+dom.X.3+add.x.45*add.x.72}}
-  \item{loc.right}{ See\code{\link{make.analysis.obj}}, which returns
-    objects like this. It is a matrix of pointers to the next marker with a
-    known state on the current chromosome (if any). }
-  \item{marker.distances}{Distances between the markers in the
-    'lambda' metric. \code{-log(lambda)/2} is the Haldane map
-    distance. Linkage groups are separated by values of 0.0.  }
-  \item{state.matrix}{ See\code{\link{make.analysis.obj}}, which returns
-    objects like this. An n by k by q array. q is 2 for method="BC1" and
-    3 for method="F2". Each element encodes the probability of the
-    allele state conditional on the marker states. see
-    \code{\link{make.state.matrix}} for more details.  } 
-  \item{marker.names}{The names by which the markers are known.}
+  \item{ana.obj}{ See\code{\link{make.analysis.obj}}, which returns
+    objects like this}
   \item{rparm}{
 
     One of the following:
@@ -58,10 +52,14 @@ nc = 1), method="BC1", maxit=100, nem=1, start.parm=NULL, ...)  }
     variables corresponding to the allele states. If \code{mode.mat} is
     not given by the user,
    \code{ana.obj$mode.mat} is used.}
-  \item{method}{ Currently, "BC1", "F2", "RI.self" and "RI.sib" are recognized. }
   \item{maxit}{ Maximum Number of iterations to perform}
   \item{nem}{ Number of EM iterations to use in reinitializing the
     pseudo-Hessian }
+  \item{setup.only}{ If TRUE, do not run. Return an object that can be use
+    for a direct call to \code{.C}}
+  \item{subset}{ expression to evaluate using \code{ana.obj$data} as the
+  environment}
+  \item{  casewt }{ a vector of non-negative weights }  
   \item{start.parm}{Vector of starting values for the maximization}
   \item{\dots}{ other objects needed in fitting }
 }
@@ -82,7 +80,8 @@ nc = 1), method="BC1", maxit=100, nem=1, start.parm=NULL, ...)  }
 }
 \value{
   A list with components to be used in constructing approximations to the
-  marginal posterior. These are:
+  marginal posterior or a list that can be used to call the underlying C
+  code directly. In the former case, these are:
   \item{adj}{The ratio of the laplace approximation to the posterior for
     the correct likelihood to the laplace approximation to the posterior
     for  the linearized likelihood}
