@@ -47,6 +47,19 @@
      /* MAXVAR - maximum number of variables in all */
 #define MAXVAR OPTROW**nstep
 
+void condreg(double *varx, double *covxy, double *vary, double *df,
+             double *amount, double *optpri, double *inpri,
+             longint *nrx, longint *invars ,longint *nin, longint *optvars,
+             longint *nopt ,longint *optmax , longint *useopt, longint *pvt,
+             longint *rank,
+             double *wrksp, double *gama, double *bee,
+             double *xx, double *xy,
+             double *zz, double *zy, double *xz, double *beta,
+             double *posterior,
+             double *marg, double *cond, double *coefs,
+             double *qraux, double *zraux, longint *zrank,
+             double *tol);
+
 void swapf2( longint *nreps, longint *nstep,
              double *varx, double *covxy, double *vary, double *df,
 	     double *amount, double *optpri, double *inpri, 

@@ -119,6 +119,11 @@ Codoc changes
 
 ----------------------------------------
 
-Version 1.0.17
+Version 1.0-17
 added ${FLIBS} to PKG_LIBS
+
+----------------------------------------
+
+Version 1.0-18
+added headers and defs to fix compiler warnings
 
