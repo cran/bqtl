@@ -1,4 +1,5 @@
 \name{A Starting Point}
+\docType{package}
 \alias{A Starting Point}
 \title{Some Introductory Comments}
 \description{Some pointers to a few key functions in \emph{BQTL}}

@@ -1,3 +1,5 @@
+
+
 C      hessup.fpp ---> hessup.f
 C     update the hessian via BFGS
 C
@@ -91,6 +93,8 @@ C#            cur.parm <- cur.parm - qr.coef(qr(bk), new$grad)
       dx(2)=np
 
 
+
+
       call dqrdc2(qrbk,np,np,np,tol,rank,newhss,piv,wrksp)
 
       iq1=1
@@ -98,6 +102,9 @@ C#            cur.parm <- cur.parm - qr.coef(qr(bk), new$grad)
       iq100=100
 
           
+
+
+
 
       call dqrsl(qrbk,np,np,np,newhss,newgr,wrksp,paradj,paradj,wrksp,
      $     wrksp,100,iq1)
