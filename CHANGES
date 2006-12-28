@@ -127,3 +127,9 @@ added ${FLIBS} to PKG_LIBS
 Version 1.0-18
 added headers and defs to fix compiler warnings
 
+----------------------------------------
+
+Version 1.0-19
+Version 1.0-20
+change web page and fix WARNINGS in Rd files
+

@@ -5,13 +5,13 @@
 \description{
   formula method for class \code{bqtl}
 }
-\synopsis{formula.bqtl(x,...)}
 \usage{
-formula.bqtl(x)
+\method{formula}{bqtl}(x, \dots)
 }
 
 \arguments{
   \item{x}{The object returned by \code{bqtl} }
+  \item{\dots}{ }
 }
 
 \value{ a formula object
