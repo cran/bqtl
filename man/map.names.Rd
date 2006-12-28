@@ -11,9 +11,7 @@
 
 }
 \usage{
-map.names(x,...)
-map.names.map.frame(x,...)
-map.names.bqtl(x, ..., ana.obj)
+map.names(x,\dots)
 }
 
 \arguments{
@@ -25,11 +23,17 @@ map.names.bqtl(x, ..., ana.obj)
     \code{class(x)=="map.frame"}, arguments \code{chromo} and \code{cM}
     can be used as in \code{map.index}
   }
-  \item{ana.obj}{(optional) analysis object in which to look up the names}
 }
 \value{
 A character vector 
 }
+\details{
+  When applied to an object of class \code{bqtl}
+  \preformatted{map.names(x, \dots, ana.obj )
+  }
+  can be used to specify where to find the data.
+}
+  
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 
 \seealso{ \code{\link{map.index}}, \code{\link{map.location}}}
