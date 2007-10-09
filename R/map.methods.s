@@ -22,7 +22,7 @@
     if (exists("is.R") && is.R())
         tokens <- unlist(strsplit(x$reg.vec,":"))
     else
-        tokens <-  unlist(lapply(x$reg.vec,unpaste,":"))
+        tokens <-  unlist(lapply(x$reg.vec,strsplit,":"))
     covar.used <- tokens[grep("covar\\(",tokens)]
     
     if (is.null(ana.obj))

@@ -1,6 +1,6 @@
 \name{little.f2.markers}
+\docType{data}
 \alias{little.f2.markers}
-\non_function{}
 \title{ Simulated Marker Data }
 \description{
 The \code{little.f2.markers} data frame has 150 rows and 50 columns with
@@ -89,5 +89,5 @@ a factor with levels
 }
 \item{row.names}{row names}}
 }
-
+\usage{data(little.f2.markers)}
 \keyword{datasets}

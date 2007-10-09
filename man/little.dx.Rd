@@ -1,6 +1,6 @@
 \name{little.map.dx}
+\docType{data}
 \alias{little.map.dx}
-\non_function{}
 \title{ Marker Map Description for Simulated Data }
 \description{
 The \code{little.map.dx} data frame has 50 rows and 2 columns that specify 
@@ -18,4 +18,5 @@ a numeric vector of map locations in centimorgans
 }
 }
 }  
+\usage{data(little.map.dx)}
 \keyword{datasets}

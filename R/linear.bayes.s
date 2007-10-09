@@ -81,7 +81,7 @@
             odds <- loc.posterior <- coefs <- NULL          
         }
         else{
-            swap.odds <- sapply(smry,function(x) 1/x$ratio$mean)
+          swap.odds <- sapply(smry,function(x) if (any(names(x)=='ratio')) 1/x$ratio$mean)
             if (do.hk){
                 odds <-
                     c(sum(hk$loc.1),
