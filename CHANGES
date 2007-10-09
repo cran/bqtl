@@ -133,3 +133,15 @@ Version 1.0-19
 Version 1.0-20
 change web page and fix WARNINGS in Rd files
 
+-----------------------------------------
+
+Version 1.0.21
+update web page and update Rd format
+clean up minor code problems
+-----------------------------------------
+
+Version 1.0.22
+fixed R-devel complaint about x$y not atomic
+
+-----------------------------------------
+

@@ -6,8 +6,7 @@
   by the use a Laplace approximations for loci that are not
   markers. This function combines the results of a call like
   \code{bqtl(y~configs(swap.obj),\dots)} with the data in
-  \code{swap.obj} to provide improved posteriors, et cetera} 
-}
+  \code{swap.obj} to provide improved posteriors, et cetera}
 \synopsis{
 summary.adj(object, n.loc, coef.znames, mode.names=c("add", "dom"),
 imp.denom=NULL, swap.obj=NULL,...)

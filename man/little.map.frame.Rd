@@ -1,6 +1,6 @@
 \name{little.map.frame}
+\docType{data}
 \alias{little.map.frame}
-\non_function{}
 \title{ Package of Simulated Marker Map Information }
 \description{
 The \code{little.map.frame} data frame has 50 rows and 9 columns that
@@ -47,5 +47,5 @@ the chromosome number 1, 2, 3, 4, or 5.
 }
 }
 }
-
+\usage{data(little.map.frame)}
 \keyword{datasets}

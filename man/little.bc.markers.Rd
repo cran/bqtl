@@ -1,6 +1,6 @@
 \name{little.bc.markers}
+\docType{data}
 \alias{little.bc.markers}
-\non_function{}
 \title{ Simulated Marker Data }
 \description{
   The \code{little.bc.markers} data frame has 150 rows and 50
@@ -71,5 +71,5 @@ This data frame contains the following columns:
 \item{m.50}{ ditto }
 \item{row.names}{row.names}}
 }
-
+\usage{data(little.bc.markers)}
 \keyword{datasets}

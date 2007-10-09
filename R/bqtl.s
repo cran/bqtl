@@ -1,5 +1,5 @@
 "bqtl"<-
-    function(reg.formula,ana.obj=analysis.object, 
+    function(reg.formula,ana.obj, 
              scope = ana.obj$reg.names, expand.specials= NULL, ...)
 {
     local.covar <-

@@ -203,7 +203,7 @@ function(reg.formula, ana.obj,
                      c(rparm["intercept"],rparm[dimnames(reg.proto)[[2]]])
                  },
                      rparm,
-                     if (method=="F2") c(0,rparm[modes.used]) else NULL,
+                     if (ana.obj$method=="F2") c(0,rparm[modes.used]) else NULL,
                      stop("unamed 'rparm' has wrong length")
                        )
       }
