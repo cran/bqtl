@@ -66,7 +66,7 @@ abbreviations for the 'additive' and 'dominance' terms associated with
 the locus.
 
 When used as in \code{bqtl( y ~ locus(34), my.analysis.obj )}, it will
-look up the term or terms corresponding to the 34$^{th}$ locus. When
+look up the term or terms corresponding to the 34th locus. When
 this is passed back to \code{bqtl}, it is pasted into a text string that
 will become a formula and is subsequently processed to yield the fit for
 a one gene model.

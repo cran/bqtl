@@ -12,7 +12,6 @@ are used to find fitted values for the QTL model
 }
 \arguments{
   \item{object}{ An object of class \code{\link{bqtl}}}}
-}
 \details{
  The estimated coefficients for a specific QTL model fit are used along
  with the  expected locus values (conditionally on the marker values)

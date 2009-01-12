@@ -51,7 +51,7 @@ scope=<<see below>>, subset=<<see below>>, casewt=<<see below>>, ...)
 \value{
   \item{hk}{The object returned by \code{\link{twohk}}}
   \item{swaps}{A list of objects returned by calls to
-    \code{\link{swap}}. The i$^{th}$ element in \code{swaps} is for i gene
+    \code{\link{swap}}.  Element i in \code{swaps} is for i gene
     models.}
   \item{smry}{A list of objects returned by calls to
     \code{\link{summary.swap}}. Some elements may be \code{NULL} if no

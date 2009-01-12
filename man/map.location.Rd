@@ -18,16 +18,17 @@ map.loc(x, \dots )
   \item{x}{A object of class \code{map.frame},\code{analysis.object},
 \code{bqtl}, or \code{bqtl.list}}
   \item{\dots}{Other arguments usage depend on the class of \code{x} :
-  \code{y}{A vector of row numbers or \code{map.names} specifying which
-    subset of the \code{map.frame} of \code{x} is to be returned}
-  \code{chromo}{A vector of chromosome numbers}
-  \code{cM }{(Optional) map distance vector. If the same chromosome
+  \code{y} A vector of row numbers or \code{map.names} specifying which
+    subset of the \code{map.frame} of \code{x} is to be returned
+  \code{chromo}: A vector of chromosome numbers
+  \code{cM } (Optional) map distance vector. If the same chromosome
     number is used twice in \code{chromo}, \code{cM} must be
     ordered. If \code{cM} is omitted, all loci on each chromosome listed
-    in \code{chromo} will be included.}
+    in \code{chromo} will be included.
 
-  \code{map.names}{A vector of \code{map.names}}
-}}
+    \code{map.names}A vector of \code{map.names}}
+  }
+  
 \details{ It is often helpful to refer to genentic loci by their
 locations. The methods of \code{map.location} (alias \code{map.loc})
 will extract the row index, chromosome number and location, and the name

@@ -17,14 +17,14 @@
 }
 \value{
   A list containing
-  \item{coefficients }{Either a vector of regression coefficents, or if
-    {object} was created via \code{bqtl(\dots,return.hess=TRUE)}, then
+  \item{coefficients }{ Either a vector of regression coefficents, or if
+    object was created via \code{bqtl(\dots,return.hess=TRUE)}, then
     a matrix with coefficients, standard errors, t-statistics, and p-values}
   \item{loglik }{
     the loglikelihood or log posterior}
-  \item{std.res}{The residual standard deviation of the trait}
-  \item{N}{The counts of all observations, the number omitted, and the
-    number used in the fit}
+  \item{std.res}{ The residual standard deviation of the trait}
+  \item{N}{ The counts of all observations, the number omitted, and the
+    number used in the fit} 
 }
 
 \author{Charles C. Berry \email{cberry@ucsd.edu}}
