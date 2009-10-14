@@ -25,8 +25,5 @@ make.loc.right(marker.frame, marker.distances)
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 
 
-\examples{
-
-}
 
 \keyword{manip}

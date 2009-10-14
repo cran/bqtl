@@ -33,10 +33,10 @@ provide a bridge between the internals of \emph{BQTL} and the user's
 view of the marker codes. Numeric values can be used, but they will be
 coerced to character values.}
 \value{A vector with 6 elements corresponding to the values of 
-  \code{AA, \code{Aa}, \code{aa}, \code{not.aa}, \code{not.AA}, and
+  \code{AA}, \code{Aa}, \code{aa}, \code{not.aa}, \code{not.AA}, and
     \code{miss.val}. For RI and BC1 setups, those that do not apply will
     be unnamed and set to \code{"nil"}
-}}
+}
 \author{ Charles C. Berry \email{cberry@ucsd.edu}}
 \seealso{ \code{\link{make.analysis.obj}} }
 

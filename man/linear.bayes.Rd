@@ -77,8 +77,7 @@ scope=<<see below>>, subset=<<see below>>, casewt=<<see below>>, ...)
 \references{ Berry C.C.(1998) Computationally Efficient Bayesian QTL Mapping
   in Experimental Crosses. \emph{ASA Proceedings of the Biometrics
     Section}. 164--169.
-  Also available from
-  \url{http://hacuna.ucsd.edu/bqtl/} }
+ }
 
 \author{Charles C. Berry \email{cberry@ucsd.edu} }
 \examples{
