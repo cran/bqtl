@@ -5,9 +5,8 @@
 \description{
 The \code{little.map.frame} data frame has 50 rows and 9 columns that
 describe the marker map of \code{\link{little.map.dx}} in the format
-produced by \code{\link{make.map.frame}. \code{little.map.dx} has the
+produced by \code{\link{make.map.frame}}. \code{little.map.dx} has the
   minimal data needed to construct this.}
-}
 \format{
 This data frame contains the following columns:
 \describe{
