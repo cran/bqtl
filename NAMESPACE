@@ -1,0 +1,81 @@
+export(
+       f2.levels,
+       bc1.levels,
+       ri.levels,
+       loglik,
+       bqtl,
+       bqtl.fitter,
+       configs,
+       lapadj,
+       linear.bayes,
+       locus,
+       make.analysis.obj,
+       make.map.frame,
+       make.regressor.matrix,
+       make.state.matrix,
+       make.varcov,
+       map.index,
+       map.location,
+       map.loc,
+       map.names,
+       marker.fill,
+       plot.map.frame,
+       posterior,
+       logpost,
+       swap,
+       swapbc1,
+       swapf2,
+       twohk,
+       varcov)
+
+S3method(residuals,bqtl)
+
+S3method(loglik,bqtl)
+S3method(loglik,bqtl.list)
+S3method(loglik,default)
+
+S3method(summary,adj)
+S3method(summary,analysis.object)
+S3method(summary,bqtl)
+S3method(summary,swap)
+
+S3method(plot,analysis.object)
+S3method(plot,map.frame)
+
+S3method(formula,bqtl)
+
+S3method(coef,bqtl)
+S3method(coef,bqtl.list)
+
+S3method(posterior,bqtl    )
+S3method(posterior,bqtl.list    )
+S3method(predict,bqtl)
+S3method(predict,linear.bayes)
+
+S3method(logpost,bqtl)
+S3method(logpost,bqtl.list)
+S3method(logpost,default)
+
+S3method(fitted,bqtl    )
+S3method(fitted,linear.bayes    )
+
+S3method(map.index,analysis.object)
+S3method(map.index,default)
+
+S3method(map.names,analysis.object)
+S3method(map.names,bqtl)
+S3method(map.names,bqtl.list)
+S3method(map.names,default)
+S3method(map.names,map.frame)
+
+
+S3method(map.location,analysis.object)
+S3method(map.location,bqtl)
+S3method(map.location,bqtl.list)
+S3method(map.location,default)
+
+
+
+
+useDynLib(bqtl)
+

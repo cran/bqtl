@@ -13,7 +13,7 @@
     }
     else {
         casewt <- as.vector(casewt[subset])
-        mean.x <- matrix(casewt/sum(casewt), nr = 1) %*%
+        mean.x <- matrix(casewt/sum(casewt), nrow = 1) %*%
             as.matrix(regressor.matrix[subset,  ])
         mean.y <- sum(y[subset] * casewt)/sum(casewt)
         center.x <-

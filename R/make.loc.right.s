@@ -3,7 +3,7 @@
 {
     ncm <- ncol(marker.frame)
     nrm <- nrow(marker.frame)
-    res <- matrix(0, nr = nrm, nc = ncm)
+    res <- matrix(0, nrow = nrm, ncol = ncm)
     dimnames(res) <- list(NULL, names(marker.frame))
     init <- rep(ncm, nrm)
     for(i in rev(1:ncm)) {

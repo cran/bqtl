@@ -102,7 +102,12 @@ void hkreg(double *y,double **xc, double **zc, double **txc, double **tzc,
   for (j=0;j<nreg;j++) {  
     for (k=0;k<nreg;k++) 
     hess[k+(nreg+1)*j] = ( hess[j+(nreg+1)*k] =  - xvx[k+j*nreg] );
-  } 
+  }
+
+  /* hess[j+(nreg+1)*k] = - xvx[k+j*nreg] ;
+     will fill the sub matrix of hess[0:(nreg-1),0:(nreg-1) with -xvx
+     Apr 8, 2012 this is harmless but can be cleaned up
+  */
   *rank = nreg;
   dq[0] =nreg;
   dq[1] =nreg;
@@ -188,8 +193,7 @@ void hkreg(double *y,double **xc, double **zc, double **txc, double **tzc,
     }
 
   for (i=0;i<nreg;i++) 
-    hess[i+nreg*(nreg+1)] = (hess[(nreg+1)*i-1] = 0.0);
-  
+    hess[i+nreg*(nreg+1)] = (hess[(nreg)*(i+1)-1] = 0.0);
   hess[(nreg+1)*(nreg+1)-1] = - (2 * ss)/(*sigma2);
 
 }

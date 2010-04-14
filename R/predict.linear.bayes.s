@@ -56,7 +56,7 @@
     if (is.null(partial)) {
         x <- model.matrix(dummy.terms,mf)[,-1]
         y <- model.extract(mf,"response")
-        preds  <- x%*%matrix(coefs,nc=1)
+        preds  <- x%*%matrix(coefs,ncol=1)
         ## can't always get an intercept from linear.bayes, hence:
         preds<-preds + mean(y) - mean(preds)
     }
@@ -71,7 +71,7 @@
         z <- model.matrix(terms(eval(parse(text=paste("~", cntl)))),
                           mf)[,-1,drop=FALSE]
         pred.z <- y - lsfit(z,y)$resid
-        preds <- x%*%matrix(coefs,nc=1) + pred.z
+        preds <- x%*%matrix(coefs,ncol=1) + pred.z
         preds <- preds + mean(y) - mean(preds)
     }
     if (return.resids){

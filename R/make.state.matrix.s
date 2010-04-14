@@ -67,8 +67,8 @@
            RI.self=,
            RI.sib=,
            BC1 = {
-               t1 <- matrix(1/2, nc = 2, nr = 2)
-               t2 <- matrix(c(1, -1, -1, 1)/2, nc = 2)
+               t1 <- matrix(1/2, ncol = 2, nrow = 2)
+               t2 <- matrix(c(1, -1, -1, 1)/2, ncol = 2)
                tx.mat <- array(rep(t1, n.ind), c(2, 2, n.ind)) +
                    outer(t2, md.unique)
                unc.pr <- t1[1,  ]                        
@@ -77,7 +77,7 @@
            ,
            stop(paste(method, " method unknown")))
     left.marker <-
-        matrix(c(diag(lp),rep(NA, if (lp==2) 8 else 9)),nr=lp)[,mf.num]
+        matrix(c(diag(lp),rep(NA, if (lp==2) 8 else 9)),nrow=lp)[,mf.num]
     dmm <- c(lp, dim(marker.frame))
     dim(left.marker) <- dmm
     center.marker <- right.marker <- left.marker

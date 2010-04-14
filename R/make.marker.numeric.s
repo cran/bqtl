@@ -16,7 +16,7 @@
   names(level.numeric) <- level.names
   dm <- dim(marker.frame)
 
-  res <- matrix(level.numeric[char.frame],nc=dm[2],
+  res <- matrix(level.numeric[char.frame],ncol=dm[2],
                 dimnames=list(NULL,names(marker.frame)))
   if (any(is.na(res))) {
     stop(paste("unrecognized genotype(s):",unique(res[is.na(res)])))

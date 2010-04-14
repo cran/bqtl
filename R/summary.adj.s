@@ -83,7 +83,7 @@ function(object, n.loc, coef.znames, mode.names = c("add", "dom"), imp.denom
          },
        swap={
          adj.mean <- mean(adj)
-         adj.var <- var(c(apply(matrix(adj, nr = n.loc), 2, mean)))/(
+         adj.var <- var(c(apply(matrix(adj, nrow = n.loc), 2, mean)))/(
                                               length(adj)/n.loc)
          hk.ratio.mean <- 1
          loc.post <- tapply(rep(adj, rep(n.loc, length(adj))), locs, sum)
@@ -99,7 +99,7 @@ function(object, n.loc, coef.znames, mode.names = c("add", "dom"), imp.denom
          adj.mean <- mean(post)
          hk.ratio <- adj.unlist(object, comp="hk.exact")[config$match]/swap.obj$hk.exact
          hk.ratio.mean <- mean(hk.ratio)	
-         adj.var <- var(c(apply(matrix(adj * hk.ratio, nr = n.loc), 2, 
+         adj.var <- var(c(apply(matrix(adj * hk.ratio, nrow = n.loc), 2, 
                                 mean)))/(length(adj)/n.loc)
          loc.post <- tapply(rep(post, rep(n.loc, length(post))), locs, mean)
          loc.post[is.na(loc.post)] <- 1
