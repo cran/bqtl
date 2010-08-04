@@ -10,7 +10,7 @@
  \code{linear.bayes}. 
 }
 \usage{
-adjust.linear.bayes(lbo, ana.obj=lbo$call$ana.obj, ...)
+adjust.linear.bayes(lbo, ana.obj=lbo$call$ana.obj, \dots)
 }
 
 \arguments{
@@ -18,7 +18,7 @@ adjust.linear.bayes(lbo, ana.obj=lbo$call$ana.obj, ...)
   \item{ana.obj}{ The \code{analysis.object} used to create
     \code{lbo}. This need not be given explicitly, iff the original
     version is in the search path. }
-  \item{\dots}{ ~~Describe \code{\dots} here~~ }
+  \item{\dots}{ currently unused }
 }
 
 \value{A list of class \code{"adjust.linear.bayes"} containing:
