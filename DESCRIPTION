@@ -1,6 +1,6 @@
 Package: bqtl
-Version: 1.0-25
-Date: 2009-10-14
+Version: 1.0-26
+Date: 2010-08-04
 Title: Bayesian QTL mapping toolkit
 Author: Charles C. Berry <cberry@ucsd.edu>
 Maintainer: Charles C. Berry <cberry@ucsd.edu>
@@ -9,6 +9,6 @@ Description: QTL mapping toolkit for inbred crosses and recombinant
 Depends: R (>= 2.6.0)
 License: GPL (>= 2)
 URL: http://famprevmed.ucsd.edu:16080/faculty/cberry/bqtl/
-Packaged: 2009-10-14 21:44:58 UTC; cberry
+Packaged: 2010-08-04 20:15:10 UTC; cberry
 Repository: CRAN
-Date/Publication: 2009-10-15 11:07:42
+Date/Publication: 2010-08-04 21:39:17

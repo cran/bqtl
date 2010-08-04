@@ -11,7 +11,7 @@
 
 \arguments{
   \item{x}{The object returned by \code{bqtl} }
-  \item{\dots}{ }
+  \item{\dots}{ unused }
 }
 
 \value{ a formula object
