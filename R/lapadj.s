@@ -142,7 +142,7 @@ function(reg.formula, ana.obj,
           reg.frame <-
               as.data.frame(matrix(mode.mat[cbind(c(loc.indx[,col.seq]),
                                                   rep(modes.used,rep(nrx,ncx)))],
-                                   nc=ncx))
+                                   ncol = ncx))
       }
       names(reg.frame) <- regr.names[which.vars]
       reg.proto <- model.matrix(plain.formula,reg.frame)[,-1,drop=FALSE]
@@ -302,7 +302,7 @@ function(reg.formula, ana.obj,
       list(adj = adj, logpost = z$llk, parm =
            c(z$coefs[1: (nreg)], z$ln.sigma), posterior = z$postApprox,
            hk.approx = z$ hkApprox, hk.exact = z$hkExact, reg.vec = reg.vec,
-           rparm = rparm, hess = if(return.hess) matrix(z$hess, nc = np) else NULL,
+           rparm = rparm, hess = if(return.hess) matrix(z$hess, ncol = np) else NULL,
            iter = z$iter,N=c(N=n.data,N.omit=n.data-n,N.used=n),
            call=this.call)
   }

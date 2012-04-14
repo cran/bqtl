@@ -49,10 +49,10 @@
     if (is.null(mode.mat)){
         mode.mat <-
             if (method=="F2")
-                matrix(c(1,0,-1,-1,1,-1),nc=2,
+                matrix(c(1,0,-1,-1,1,-1),ncol = 2,
                        dimnames=list(marker.levels[1:3],c("add","dom")))
             else
-                matrix(c(1,-1),nc=1,dimnames=list(marker.levels[1:2],NULL))
+                matrix(c(1,-1), ncol = 1,dimnames=list(marker.levels[1:2],NULL))
     }
     else {   # check the supplied version
         dmmt <- dim(mode.mat)
@@ -125,7 +125,7 @@
 ###  --- the space required sometimes kills the whole function
     for (i in unique(m.chromo)) {
         which.chromo <- m.chromo==i
-        m.frame <- as.data.frame(matrix(NA, nr = dm.data[1], nc = sum(which.chromo)))
+        m.frame <- as.data.frame(matrix(NA, nrow = dm.data[1], ncol = sum(which.chromo)))
         names(m.frame) <- names.lambda[m.chromo==i]
         names.to.use <-
             names(m.frame)[is.element(names(m.frame),marker.names)]

@@ -164,3 +164,11 @@ Rd fix
 Version 1.0.26
 RD fix
 
+-----------------------------------------
+
+Version 1.0.27
+index index hkreg.c:196 corrected
+added NAMESPACE
+fixed partial matches of args
+
+

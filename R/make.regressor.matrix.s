@@ -11,7 +11,7 @@
         }
         else {
             ## assume BC1
-            mode.mat <- matrix(c(-1, 1), nr = 2)
+            mode.mat <- matrix(c(-1, 1), nrow = 2)
         }
     if(nrow(mode.mat) == 1) {
         dim(state.matrix) <- c(dsm[1] * dsm[2], dsm[3])

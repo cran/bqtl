@@ -8,5 +8,5 @@
     if (nr!=nrow(y)) stop("nrow(x) != nrow(y)")
     t.x <- x[,rep(seq(dm[1]),dm[2]),drop=FALSE]
     t.y <- y[,rep(seq(dm[2]),rep(dm[1],dm[2])),drop=FALSE]
-    matrix(apply(t.x==t.y,2,sum) == nr,nc=dm[2],dimnames=list(dimnames(x)[[2]],dimnames(y)[[2]]))
+    matrix(apply(t.x==t.y,2,sum) == nr,ncol=dm[2],dimnames=list(dimnames(x)[[2]],dimnames(y)[[2]]))
 }
