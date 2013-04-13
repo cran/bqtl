@@ -10,15 +10,11 @@
   approximation to the likelihood, i.e. the expected allele states are
   used.
 }
-\synopsis{
+\usage{
 twohkbc1(varcov, ana.obj, rparm = 0, locs = NULL, locs.prior =
                  NULL)
-}
-\usage{
-twohkbc1(varcov, rparm, locs=<<see below>> , locs.prior=<<see below>> )
-
-twohkf2(varcov, ana.obj, rparm, locs=<<see below>>, locs.prior=<<see below>>,
-combo.prior=<<see below>>) 
+twohkf2(varcov, ana.obj, rparm, locs, locs.prior,
+combo.prior) 
 }
 \arguments{
   \item{varcov}{ An object produced by \code{ \link{make.varcov}} }

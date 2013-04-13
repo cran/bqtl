@@ -10,15 +10,14 @@
  the 'intercept' is lost; see `Details' below.
 }
 \usage{
-\method{residuals}{linear.bayes}(object, newdata, return.resids)
-\method{predict}{linear.bayes}(object)
-\method{fitted}{linear.bayes}(object)
-}
-\synopsis{
-predict.linear.bayes(object, newdata=lb.call$ana.obj, return.resids=FALSE,...)
+\method{residuals}{linear.bayes}(object, \dots)
+\method{predict}{linear.bayes}(object, newdata = lb.call$ana.obj, return.resids =
+                 FALSE, ...)
+\method{fitted}{linear.bayes}(\dots)
 }
 \arguments{
   \item{object}{An object returned by \code{linear.bayes} }
+  \item{\dots}{possibly the following}
   \item{newdata}{Optional \code{data.frame} in which to do the calculations }
   \item{return.resids}{Not usually set by the user. } }
 

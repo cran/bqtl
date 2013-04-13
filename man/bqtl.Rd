@@ -9,9 +9,9 @@
 }
 \usage{
 
-bqtl(reg.formula, ana.obj, ...)
+bqtl(reg.formula, ana.obj, scope = ana.obj$reg.names, expand.specials = NULL, ...)
 }
-\synopsis{bqtl(reg.formula, ana.obj, scope, expand.specials, ...)}
+
 \arguments{
  \item{reg.formula}{A formula.object like \code{ y ~ add.PVV4 *
      add.H15C12 }.  The names of the independent
@@ -24,6 +24,8 @@ one or a collection of terms in a shorthand notation.  See \code{
    data frame \code{data}, or \code{y} if the phenotype variable in
    \code{ ana.obj} is used. }  
  \item{ana.obj}{ The result of \code{ \link{make.analysis.obj} }. }
+ \item{scope}{passed to \code{lapadj}}
+ \item{expand.specials}{passed to \code{lapadj}}
  \item{\dots}{ Arguments to pass to \code{lapadj}, e.g. \code{rparm} and
    \code{return.hess}}
 }

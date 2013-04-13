@@ -8,32 +8,33 @@
   of the sort created by \code{\link{make.map.frame}}
 }
 \usage{
-\method{plot}{map.frame}(x, y, ...)
-}
-\synopsis{
-plot.map.frame(x, y, fun, type, include.rug, rug.lwd,
-                 title.string, y.range, ylab, xlab, ...)
+\method{plot}{map.frame}(x, y, fun = if (y.type == "matrix") matlines else
+                 lines, type = "l", include.rug = TRUE, rug.lwd = 0.1,
+                 title.string = NULL, y.range = NULL, ylab =
+                 deparse(substitute(y)), xlab = "Location", ...)
 }
 
 \arguments{
- \item{x}{A \code{map.frame.object} or an \code{analysis.object}  }
- \item{y}{ (optional) A vector with as many elements or a
-   matrix with as many rows as \code{nrow(x)} .  If omitted, a plot
-   will be drawn in a single frame representing the chromosomes as
-   horizontal bars and giving tic marks to show the locations markers
-   and virtual markers (if any).}  
- \item{\dots}{ more args:
- \code{fun}  A plotting function to be used \emph{after} the plot axes and
-   labels have been drawn.  The current default \code{if (y.type ==
-     "matrix") matlines else lines} usually is good enough.  But a
-   fancier function could be used for a fancier plot. 
- \code{type} \code{"l"} for lines, "p" for points, et cetera.  see \code{\link{par}} 
- \code{include.rug} if \code{TRUE} place a tick on the x-axis at each marker location 
- \code{title.string} (optional) label to prepend to each title 
- \code{ylab} plot label for y-axis, see \code{\link{par}}  
- \code{xlab} plot label for x-axis, see \code{\link{par}}  
-  }
+  \item{x}{A \code{map.frame.object} or an \code{analysis.object}  }
+  \item{y}{ (optional) A vector with as many elements or a
+    matrix with as many rows as \code{nrow(x)} .  If omitted, a plot
+    will be drawn in a single frame representing the chromosomes as
+    horizontal bars and giving tic marks to show the locations markers
+    and virtual markers (if any).}  
+  \item{\dots}{ more args}
+  \item{fun}{  A plotting function to be used \emph{after} the plot axes and
+    labels have been drawn.  The current default \code{if (y.type ==
+      "matrix") matlines else lines} usually is good enough.  But a
+    fancier function could be used for a fancier plot. }
+  \item{type}{ \code{"l"} for lines, "p" for points, et cetera.  see \code{\link{par}} }
+  \item{include.rug}{ if \code{TRUE} place a tick on the x-axis at each marker location }
+  \item{rug.lwd}{size of ticks}
+  \item{title.string}{ (optional) label to prepend to each title }
+  \item{y.range}{range for y limits}
+  \item{ylab}{ plot label for y-axis, see \code{\link{par}}  }
+  \item{xlab}{ plot label for x-axis, see \code{\link{par}}  }
 }
+  
 \details{
   This function enables drawing graphs that depend on chromosome and
   chromosome location.  Typically, one will use a command like

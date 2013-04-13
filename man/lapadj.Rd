@@ -2,11 +2,7 @@
 \alias{lapadj}
 
 \title{Approximate marginal posterior for chosen model}
-\synopsis{ lapadj(reg.formula, ana.obj,  
-         rparm = NULL,  tol = 1e-10,
-	return.hess = FALSE, mode.names = NULL, mode.mat = NULL,
-          maxit = 100, nem = 1,setup.only=FALSE,subset=NULL,casewt=NULL,
-         start.parm=NULL, ...) }
+
 \usage{ lapadj(reg.formula, ana.obj,  
          rparm = NULL,  tol = 1e-10,
 	return.hess = FALSE, mode.names = NULL, mode.mat = NULL,

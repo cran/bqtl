@@ -6,9 +6,8 @@
   Create a moment matrix of the marker variables and of the regressors by
   the phenotype variable.  For use in regression modelling on the markers.
 }
-\synopsis{ varcov(x,ana.obj,partial=NULL,scope=ana.obj$reg.names,... ) }
 \usage{
-varcov(x, ana.obj, partial=NULL, scope=<<see below>>)
+varcov(x, ana.obj, partial=NULL, scope,\dots)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{
@@ -19,7 +18,8 @@ varcov(x, ana.obj, partial=NULL, scope=<<see below>>)
   \item{partial}{A formula whose right hand side specifies variables to
     be treated as covariates. }
   \item{scope}{ Usually not explicitly used. Optional vector of variable
-    names. } 
+    names. }
+  \item{\dots}{ignored}
 }
 \details{This is just a wrapper for \code{\link{make.varcov}}.}
 \value{

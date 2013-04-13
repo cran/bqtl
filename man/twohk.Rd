@@ -8,9 +8,6 @@
   approximation to the likelihood, i.e. the expected allele states are
   used. 
 }
-\synopsis{
-twohk( varcov, ana.obj, ...)
-}
 \usage{
 twohk(varcov, ana.obj, ...)
 }

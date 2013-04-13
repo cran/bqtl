@@ -171,4 +171,8 @@ index index hkreg.c:196 corrected
 added NAMESPACE
 fixed partial matches of args
 
+-----------------------------------------
+
+Version 1.0.28
+remove synopsis from Rd files
 

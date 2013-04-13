@@ -6,13 +6,13 @@
 \description{
  Provide a simple report on the data structure
 }
-\synopsis{summary.map.frame(object,...)}
 \usage{
-\method{summary}{map.frame}(object)
+\method{summary}{map.frame}(object,\dots)
 }
 
 \arguments{
   \item{object}{ A \code{map.frame} or \code{analysis.object} }
+  \item{\dots}{ignored}
 }
 
 \value{

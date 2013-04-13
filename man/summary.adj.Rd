@@ -7,14 +7,10 @@
   markers. This function combines the results of a call like
   \code{bqtl(y~configs(swap.obj),\dots)} with the data in
   \code{swap.obj} to provide improved posteriors, et cetera}
-\synopsis{
-summary.adj(object, n.loc, coef.znames, mode.names=c("add", "dom"),
-imp.denom=NULL, swap.obj=NULL,...)
-}
 \usage{
 
 \method{summary}{adj}(object, n.loc, coef.znames, mode.names=c("add",
-"dom"), imp.denom=NULL, swap.obj=NULL)
+"dom"), imp.denom=NULL, swap.obj=NULL,\dots)
 }
 \arguments{
   \item{object}{Typically, this is the result of a call like
@@ -26,6 +22,7 @@ imp.denom=NULL, swap.obj=NULL,...)
   \item{imp.denom}{Optional, and only used when some sampling scheme
     other than the default MCMC generates \code{object} }
   \item{swap.obj}{The result of a call to \code{swap} }
+  \item{\dots}{unused}
 }
 \details{
   There are a lot of details. This sections nneds to be revised to

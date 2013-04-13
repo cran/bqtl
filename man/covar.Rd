@@ -9,20 +9,17 @@
   approach. \code{covar} provides a mechanism for creating formula
   objects that specify such linearizations. 
 }
-\synopsis{covar(x)} 
+
 \usage{
-covar(x,...,scope=<<see below>>, method=<<see below>>)
+covar(x)
 }
 \arguments{
   \item{x}{The name of a locus (except for F2 designs, when it is the
     name of an effect like 'add.m.32') or any argument of the sort that 
-    \code{\link{locus}} allows.}
-  \item{...}{If \code{x} evaluates to a single value, then additional
-    atomic elements may be included as with \code{locus}.}
-  \item{scope}{Not supplied by the user. see \link{locus}}
-  \item{method}{Not supplied by the user. see \link{locus}}
-
-}
+    \code{\link{locus}} allows. If \code{x} evaluates to a single value,
+    then additional atomic elements may be included as with
+    \code{locus}.}
+  }
 \details{
   The function \code{covar} actually only returns \code{x}. The real
   work is done by a \code{covar} function that is hidden inside of

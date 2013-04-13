@@ -5,13 +5,12 @@
  The phenotype data, estimated coefficients, and expected locus values
 are used to find fitted values for the QTL model
 }
-\synopsis{residuals.bqtl(object,...)}
 \usage{
-\method{residuals}{bqtl}(object)
-
+\method{residuals}{bqtl}(object,\dots)
 }
 \arguments{
-  \item{object}{ An object of class \code{\link{bqtl}}}}
+  \item{object}{An object of class \code{\link{bqtl}}}
+  \item{\dots}{ignored}}
 \details{
  The estimated coefficients for a specific QTL model fit are used along
  with the  expected locus values (conditionally on the marker values)
@@ -26,8 +25,6 @@ are used to find fitted values for the QTL model
 }
 \value{ A vector with as many elements trait values used in the original
   fitted model.
-
- 
 }
 \author{Charles C. Berry \email{cberry@ucsd.edu}}
 
