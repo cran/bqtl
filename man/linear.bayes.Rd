@@ -8,13 +8,9 @@
   epistasis) are fitted and a MCMC sampler is used to fit 3,4, and 5 gene
   and (optionally) larger models. 
 }
-\synopsis{
-linear.bayes(x, ana.obj, partial = NULL, rparm, specs, scope,
-                 subset, casewt, ...)
-}
 \usage{
-linear.bayes(x, ana.obj, partial=NULL, rparm=<<see below>>, specs=<<see below>>,
-scope=<<see below>>, subset=<<see below>>, casewt=<<see below>>, ...)
+linear.bayes(x, ana.obj, partial=NULL, rparm, specs,
+scope, subset, casewt, ...)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{

@@ -6,10 +6,8 @@
 Calculate marginal posteriors for location, posterior means for
 coefficients, and the Bayes Factor for k vs k-1 genes  
 }
-\synopsis{
-summary.swap(object, method, ncoef, nloc, ...)}
 \usage{
-\method{summary}{swap}(object, method=NULL, ncoef=length(sc.obj$alt.coef), nloc=sc.obj$nloc)
+\method{summary}{swap}(object, method=NULL, ncoef=length(object$alt.coef), nloc=object$nloc,\dots)
 }
 
 \arguments{
@@ -19,6 +17,7 @@ summary.swap(object, method, ncoef, nloc, ...)}
     models. Typically, \code{2*nloc} for \code{method=="F2"} and
     \code{nloc} for all other methods  }
   \item{nloc}{Optional. The number of loci in the sample space. }
+  \item{\dots}{ignored}
 }
 \value{
   A list with components:

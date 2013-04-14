@@ -10,14 +10,9 @@
 
 Using precomputed dispersion matrices, various priors, and a pre-selected set of variables, one locus is removed, all other loci are examined to determine the effect of each on the posterior. One locus is sampled. The process is repeated until each locus has been removed and a new one sampled in its place (possibly the same one that was removed is sampled). 
 }
-\synopsis{
-swapf2(varcov, invars, rparm, nreps, ana.obj, locs = NULL,
-                 locs.prior = NULL, combo.prior = rep(1, 3)/3, tol =
-                 1e-10)
-}
 \usage{
-swapf2(varcov, invars, rparm, nreps, ana.obj, locs = <<see below>>, 
-    locs.prior = <<see below>>, combo.prior = <<see below>>, tol = 1e-10)
+swapf2(varcov, invars, rparm, nreps, ana.obj, locs, 
+    locs.prior, combo.prior, tol = 1e-10)
 } 
 
 \arguments{

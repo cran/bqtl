@@ -10,12 +10,10 @@ function.  It is used on the right hand side of a formula in the
 \code{\link{bqtl}} function. 
 
 }
-\synopsis{
-locus(x, ..., scope, method, chromo, cM, ana.obj)}
 \usage{
 locus(x, ..., scope, method, chromo, cM, ana.obj)
-add(x)
-dom(x)
+add(x, ..., scope, method)
+dom(x, ..., scope, method)
 }
 
 \arguments{
