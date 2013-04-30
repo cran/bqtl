@@ -1,5 +1,5 @@
-9e24268005d3aa6e652b830ad0194f3c *CHANGES
-474e53c9e3ea390aab2411b4432fc951 *DESCRIPTION
+8fb667808895747aec7e76acd896089d *CHANGES
+8841ddbcd0d1c7317ee3ad1d9c39f18d *DESCRIPTION
 d55a7488d58470d86a039986b62b6451 *INDEX
 afa08f942babdaa7141b084ab35df607 *NAMESPACE
 cfff5211f481c6d8c261a88ab2ec7173 *R/add.s
@@ -110,8 +110,8 @@ c218cb643f39714530b8447394a5fa7f *man/varcov.Rd
 82dfbc505e1e88cf1edfcab48cbd30f5 *src/Makevars
 25aff088fcd39ca5df11c174599f3940 *src/bc1wt.c
 e51eba1e25e53309bfc0225ec05d4836 *src/conCk.c
-53ca60c0fc6196d722c9d0d8a2f27a8f *src/condreg.c
-b516edffabd30bba99eb0dcbf0aa2a7e *src/f2wt2.c
+f893faffb16a59c9485cd96c86f009fa *src/condreg.c
+ae3000e91ca117e2673175d230517147 *src/f2wt2.c
 d9cc0bdb295486cdae6dae678c569127 *src/hessup.f
 87c36ebebf9a29a65280eac731fb3ebe *src/hkreg.c
 46091ffaea7f17d3fb564e59e1a03b64 *src/lapWHL.c

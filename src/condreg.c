@@ -146,7 +146,7 @@ void condreg(double *varx, double *covxy, double *vary, double *df,
 	curcoefs = &coefs[imodel*(*optmax+*nin)];/* pt to coefs*/
 	curvars = &optvars[imodel**optmax];      /* pt to extra vars */
 	
-	for (j=0; (j<*optmax) & (curvars[j] >= 0L) ;j++); /* neg vals ==> no entry*/
+	for (j=0; (j<*optmax) && (curvars[j] >= 0L) ;j++); /* neg vals ==> no entry*/
 	nvars = j;
 	
 	vrload(varx,zz,curvars,curvars,&nvars,&nvars,nrx); /* regressor varmat */

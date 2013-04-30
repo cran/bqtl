@@ -176,3 +176,7 @@ fixed partial matches of args
 Version 1.0.28
 remove synopsis from Rd files
 
+-----------------------------------------
+
+Version 1.0.29
+fix memory access error in condreg.c

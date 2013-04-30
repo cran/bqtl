@@ -35,7 +35,7 @@ static void adj33(double a[3], double b[3], double lambda[1], double tab[9],
 
   MaxAdj = 2.0*tol[0]; MinAdj=0.0;
 
-  for (i=0 ; (i<maxIter[0])& (MaxAdj-MinAdj>tol[0]) ; i++) {
+  for (i=0 ; (i<maxIter[0]) && (MaxAdj-MinAdj>tol[0]) ; i++) {
 
     ColAdj = b[0]/ (tab[0]+tab[1]+tab[2]);
     MinAdj=ColAdj;
