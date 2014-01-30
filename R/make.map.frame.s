@@ -73,7 +73,8 @@
                    paste(names(out.order)[out.order],collapse=",")))
     
     ##  check arg lengths
-    if (!all.equal( length(nint), length(mgd), length(chr.num) ) )
+    if ((!is.null(nint) && length(nint) != length(mgd)) ||
+        (length(mgd) != length(chr.num)) )
         stop("lengths of nint, chr.num, dx not all equal")
     ## default is 'right' if only one marker on a chromo
     pos.type <- as.numeric(c(0,chr.num[-length(chr.num)])==chr.num) +
