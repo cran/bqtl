@@ -180,3 +180,10 @@ remove synopsis from Rd files
 
 Version 1.0.29
 fix memory access error in condreg.c
+
+-----------------------------------------
+
+Version 1.0.30
+change all.equal to "==" 
+
+-----------------------------------------

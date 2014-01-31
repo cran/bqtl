@@ -1,5 +1,5 @@
-8fb667808895747aec7e76acd896089d *CHANGES
-8841ddbcd0d1c7317ee3ad1d9c39f18d *DESCRIPTION
+ef060773bd3e990f9c5fae2d910745dd *CHANGES
+9910831c8c19ad08001dd969dac19e1b *DESCRIPTION
 d55a7488d58470d86a039986b62b6451 *INDEX
 afa08f942babdaa7141b084ab35df607 *NAMESPACE
 cfff5211f481c6d8c261a88ab2ec7173 *R/add.s
@@ -17,7 +17,7 @@ f513faeb4bc4d59d3dca5d54f9331f84 *R/is.element.s
 197d2df80dea8e9ddf7a237897260036 *R/make.analysis.obj.s
 38035d0944d8db0a6d5956b59add6c63 *R/make.loc.right.s
 77b3c1742dd8f379f87cd00d03874373 *R/make.location.prior.s
-b06fedf9c2eaaaa8a602478cae4d3a64 *R/make.map.frame.s
+4ecbd1a7b4488b92487fe1e7a6123adf *R/make.map.frame.s
 87541b9189845910c0e5e9a9324bd321 *R/make.marker.numeric.s
 014babb37ffa1cbcb3a3c286c928e55d *R/make.regressor.matrix.s
 10feabd7e27dffed74c470167f7e1298 *R/make.state.matrix.s
