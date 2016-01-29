@@ -1,21 +1,10 @@
-#include <S.h>
 
-#ifndef USING_R 
-/* for use with Splus */
-#define NTFINITE(x) (is_na((&x),DOUBLE))? 1: is_inf((&x),DOUBLE)
-#define longint long
-#include <nonlin.h> 
-#include <math.h>
-#define Rprintf  printf
-#define F77_SYMBOL(x) F77_CALL(x)
-extern double F77_NAME(ddot)();/* in lieu of Blas.h */
-#else
 /* for use with R */
-#include <R_ext/PrtUtil.h>
 #include <R.h>
+#include <R_ext/PrtUtil.h>
+#include <R_ext/Random.h>
 #define longint int
 #define NTFINITE(x) (R_FINITE(x))?0:1
-#endif
 
 
 /* funky print macros for debugging */

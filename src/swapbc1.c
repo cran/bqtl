@@ -39,7 +39,6 @@
 
 
 #include "lapadj.h"
-#include <S.h>
 
      /* MAXMOD - number of model types per locus */
 #define MAXMOD 1
@@ -85,7 +84,7 @@ void swapbc1( longint *nreps, longint *nstep,
   
   NOptU = *noptuse;
 
-  seed_in((long *)NULL);
+  GetRNGstate();
 
   for (irep = 0; irep < *nreps; irep ++)
     for (istep=0; istep <*nstep; istep++) {
@@ -163,6 +162,6 @@ void swapbc1( longint *nreps, longint *nstep,
       }
     
     }
-  seed_out((long *)NULL);
+  PutRNGstate();
 }
 

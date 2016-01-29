@@ -24,7 +24,7 @@
 ###
     sum.or.one <- function(x)  {y <- sum(x);if (y>0) y else 1.0}
     md.unique <- unique( c( marker.distances ) )
-    md.ind <- factor(marker.distances, md.unique)
+    md.ind <- match(marker.distances, md.unique)
     n.ind <- length(md.unique)
 ###
 ### RI strains use an approximation - they aren't quite a Markov Chain

@@ -23,7 +23,7 @@ void hkreg(double *y,double **xc, double **zc, double **txc, double **tzc,
 	   double *xvx,double *xvy, longint *pvt,double *qraux,double *wrksp,
 	   longint *rank, double *hkapprox, double *ss0, double *casewt)
 {
-  int i, j, k, n, nrx, np, nx2uz, nz2uz, nt2uz, nreg, df;
+  int i, j, k, n, nrx, nx2uz, nz2uz, nt2uz, nreg, df;
   double tmp, vsum, ss, sigma, detvar,logpost;
   const double rt2pi = 2.5066282746310002416;
   double tol[1] = {QR_TOL};

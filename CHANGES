@@ -187,3 +187,14 @@ Version 1.0.30
 change all.equal to "==" 
 
 -----------------------------------------
+
+Version 1.0.31
+Use R.h not S.h
+make.state.matrix.s uses:
+     md.ind <- match(...) not factor()
+-----------------------------------------
+
+Version 1.0.32
+include update, importFrom in NAMESPACE
+
+-----------------------------------------

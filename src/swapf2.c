@@ -77,12 +77,12 @@ void swapf2( longint *nreps, longint *nstep,
 	     double *altmarg, double *altcoef)
 {
   longint oc, NOptU, NVar;
-  longint i,j,k, dl, ndelete, curpick, irep, istep, curloc, ncoef;
-  double unifr, margwk[1], condwk[1], postsum, tmp;
+  longint i,j, dl, curpick, irep, istep, ncoef;
+  double unifr, condwk[1], postsum, tmp;
   
   NOptU = *noptuse;
 
-  seed_in((long *)NULL);
+  GetRNGstate();
 
   for (irep = 0; irep < *nreps; irep ++)
     for (istep=0; istep <*nstep; istep++) {
@@ -169,6 +169,6 @@ void swapf2( longint *nreps, longint *nstep,
 	coefs[(irep**nstep+istep)*MAXVAR+i] = 0.0;
       }
     }
-  seed_out((long *)NULL);
+  PutRNGstate();
 }
 

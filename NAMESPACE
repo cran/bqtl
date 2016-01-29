@@ -1,3 +1,10 @@
+importFrom("graphics", "lines", "matplot", "plot", "rug", "segments",
+           "title")
+importFrom("stats", "coef", "delete.response", "dnorm", "lsfit",
+           "model.extract", "model.frame", "model.matrix", "na.omit",
+           "pnorm", "terms", "update", "var")
+
+
 export(
        f2.levels,
        bc1.levels,
