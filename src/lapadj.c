@@ -155,7 +155,7 @@ void lapadj(longint *crsType, longint *nparm,
  
   
   if (*rank<*nreg) 
-    PROBLEM "deficient rank in hkreg\n" WARNING(NULL_ENTRY) ; 
+    warning( "deficient rank in hkreg" ) ; 
   
   if ( *ninit == 0 ) { /* start with hkreg results */
     hkSigma = sqrt(*sigma2);

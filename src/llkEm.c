@@ -93,9 +93,7 @@ void llkEm(longint *nparm, double **xc,double **zc, double **txc, double **tzc,
 	      vsum[i] += res[j + i * x_dim1];
 	    }
 	    if ( vsum[i] <= 0) {
-	      PROBLEM
-		"machine zero likelihood"
-		WARNING(NULL_ENTRY);
+	      warning("machine zero likelihood");
 	      *llik = -HUGE_VAL;
 	      return;
 	    }
@@ -377,7 +375,7 @@ void llkEm(longint *nparm, double **xc,double **zc, double **txc, double **tzc,
 	for (i=0;i<rank;i++) wrksp[pvt[i]-1] = coefs[i];
 	for (i=rank;i<*nreg;i++) wrksp[pvt[i]-1] = 0.0;
 	CPY(wrksp,coefs,nreg);
-	PROBLEM "deficient rank in llkEm\n" WARNING(NULL_ENTRY) ;
+	warning( "deficient rank in llkEm" ) ;
       }
 
       *ss = 0.0;

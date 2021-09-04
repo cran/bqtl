@@ -198,3 +198,8 @@ Version 1.0.32
 include update, importFrom in NAMESPACE
 
 -----------------------------------------
+
+Version 1.0.33
+Remove old S macros PROBLEM, ..., WARN
+
+-----------------------------------------

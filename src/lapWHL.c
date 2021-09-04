@@ -86,7 +86,7 @@ void lapWhl(double *y, double *wt, double *amnt, longint *nparm, double **xc,
 	if (notdn == 1L && (sigma <= 0.0 || newllk < oldllk)) {
 	    if (need_search==1) {                                /* do line search */
 		if (sigma <= 0.0) {                         /* bail out */
-		    PROBLEM "convergence failed\n" WARNING(NULL_ENTRY) ;
+		  warning( "convergence failed" ) ;
 		    notdn = 0;
 		}
 		else {                                      /* line search should work */

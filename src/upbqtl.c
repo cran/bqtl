@@ -221,7 +221,7 @@ void upbqtl(longint *crsType, longint *nparm,
 	rank, hkApprox,ss0,casewt);
     
   if (*rank<NREG) 
-    PROBLEM "deficient rank in hkreg\n" WARNING(NULL_ENTRY) ; 
+    warning( "deficient rank in hkreg" ) ; 
   
   hkSigma = sqrt(*sigma2);
 

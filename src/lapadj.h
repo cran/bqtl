@@ -1,4 +1,8 @@
 
+/* make sure obsolete S headers are not used */
+
+#define R_LEGACY_S_DEFS 0 
+
 /* for use with R */
 #include <R.h>
 #include <R_ext/PrtUtil.h>

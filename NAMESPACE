@@ -84,5 +84,5 @@ S3method(map.location,default)
 
 
 
-useDynLib(bqtl)
+useDynLib(bqtl, .registration = TRUE, .fixes="C_")
 
