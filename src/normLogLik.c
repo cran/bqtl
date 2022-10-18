@@ -6,15 +6,14 @@
 #include "lapadj.h"
 
 void normLogLik(
-		 nparm,xc,zc,txc,tzc,y,fits,v,sigma,amnt,beta,
-		 tmp1,tmp2,tmp3,
-		 dl_d1,dl_d2,llik,casewt)
+		
+		 longint *nparm,
+		 double **xc, double **zc, double **txc, double **tzc,
+		 double *y, double *fits, double * v, double * sigma,
+		 double *amnt, double *beta,
+		 double *tmp1, double *tmp2, double *tmp3,
+		 double *dl_d1, double *dl_d2, double *llik, double *casewt)
 
-     double *y, *fits, *v, *sigma, *tmp1, *tmp2, *tmp3,
-  *dl_d1, *dl_d2, *llik, *amnt, *beta, *casewt,
-    **xc, **zc, **txc, **tzc ;
-
-     longint *nparm;
 
 {
   longint i, j, k, k_1, NP, NREG;

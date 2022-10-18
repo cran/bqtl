@@ -2,7 +2,7 @@
     function(varcov, invars, rparm, nreps, ana.obj, ...)
 {
     this.call <- match.call()
-    if (class(ana.obj) != "analysis.object")
+    if (!inherits(ana.obj, "analysis.object"))
         stop("arg 5 must be analysis.object")
     method <- ana.obj$method
     res <-

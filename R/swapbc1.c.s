@@ -10,7 +10,7 @@
     nin <- length(invars)
 
     if (!missing(ana.obj)) {
-        if (class(ana.obj) != "analysis.object")
+        if (!inherits(ana.obj,"analysis.object"))
             stop("arg \'ana.obj\' must be analysis object")
         if (missing(locs.prior)) {
             match.names <-

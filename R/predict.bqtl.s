@@ -16,7 +16,7 @@
     }
     else {
         bqtl.terms <- delete.response(terms(reg.form))
-        if (class(newdata) == "analysis.object")
+        if ( inherits(newdata, "analysis.object") )
             model.fr <- model.frame(bqtl.terms,data=eval(newdata$data),
                                     na.action=na.omit)
         else

@@ -32,9 +32,27 @@ void hkreg(double *y,double **xc, double **zc, double **txc, double **tzc,
 	   double *xvx,double *xvy, longint *pvt,double *qraux,double *wrksp,
 	   longint *rank, double *hkapprox, double *ss0, double *casewt);
 
-void llkEm();
-void lapWhl();
 
+void llkEm(longint *nparm, double **xc,double **zc, double **txc, double **tzc,
+	   double *sigma, double *amnt, double *fits, double *y, double *beta,
+	   double *wt, double *res, double *vsum, double *vsum2, double *vysum,
+	   double *lprior, double *llik, double *xvx, double *xvy, double *df,
+	   double *coefs, double *ss, double *grad, double *hess, double *sigma2,
+	   double *qrxvx, double *qraux, longint *pvt, double *wrksp,
+	   longint *n_em, double *casewt);
+
+void lapWhl(double *y, double *wt, double *amnt, longint *nparm, double **xc,
+	    double **zc, double **txc, double **tzc, double *fits,
+	    double *res, double *vsum, double *vsum2, double *vysum,
+	    double *xvx, double *xvy, double *df, double *qrxvx, double *qraux,
+	    longint *pvt, double *wrksp, double *tol, double *llk, double *dgr,
+	    double *dparm, double *newgrd, double *oldgr, double *curprm,
+	    double *oldprm, longint *reset, double *bk, double *newhss,
+	    double *bks, double *qrbk, double *paradj, double *newprm,
+	    double *emparm, longint *iter, longint *nem, double *casewt);
+
+
+  
 void upbqtl(longint *crsType, longint *nparm,
             double *y, 
             double *x,

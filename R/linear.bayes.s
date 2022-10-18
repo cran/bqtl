@@ -2,7 +2,7 @@
     function(x, ana.obj, partial=NULL,rparm,specs,
              scope,subset,casewt,...){
         x.call <- match.call(expand.dots=TRUE)
-        if (class(x)!="varcov"){
+        if (!inherits(x,"varcov")){
             vc.call <- x.call
             vc.call[[1]] <- as.name("varcov")
             OK.args <-

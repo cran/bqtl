@@ -7,7 +7,7 @@ function(reg.formula, ana.obj,
 {
   this.call <- match.call(expand.dots=TRUE)
   n.data<-nrow(ana.obj$data)
-  if (class(ana.obj)!="analysis.object") stop("ana.obj must be an analysis.object") 
+  if (!inherits(ana.obj, "analysis.object")) stop("ana.obj must be an analysis.object") 
 
   if (is.character(ana.obj$method))
     crstype <- if (is.element(ana.obj$method,c("BC1","RI.self","RI.sib"))) 1 else 2

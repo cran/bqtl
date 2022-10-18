@@ -203,3 +203,8 @@ Version 1.0.33
 Remove old S macros PROBLEM, ..., WARN
 
 -----------------------------------------
+
+Version 1.0.34
+Improve prototypes for lapWHL and llkEM
+
+-----------------------------------------
