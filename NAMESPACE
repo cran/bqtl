@@ -54,6 +54,7 @@ S3method(formula,bqtl)
 S3method(coef,bqtl)
 S3method(coef,bqtl.list)
 
+S3method(posterior,default    )
 S3method(posterior,bqtl    )
 S3method(posterior,bqtl.list    )
 S3method(predict,bqtl)

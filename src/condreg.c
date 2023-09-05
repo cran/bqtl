@@ -29,6 +29,7 @@
 #ifdef USING_R
 #include <R_ext/Applic.h>
 #include <R_ext/Linpack.h>
+#include <R_ext/BLAS.h>
 #include <Rmath.h>
 #else
 int F77_SYMBOL(dqrsl1)();

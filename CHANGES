@@ -208,3 +208,6 @@ Version 1.0.34
 Improve prototypes for lapWHL and llkEM
 
 -----------------------------------------
+
+Version 1.0.35
+Include header for BLAS routines
