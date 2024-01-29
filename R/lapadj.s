@@ -72,12 +72,8 @@ function(reg.formula, ana.obj,
       subset <- row.names(ana.obj$data)%in%row.names(covar.frame)
       covar.matrix <- model.matrix(covar.terms,covar.frame)
       y <- model.extract(covar.frame,"response")
-      covar.assign <-
-          if (exists("is.R") && is.R() )
-              attr(covar.matrix,"assign")[-1]
-          else
-              rep(seq(along=attr(covar.matrix,"assign"))-1,sapply(attr(covar.matrix,"assign"),length))[-1] 
-
+      covar.assign <- attr(covar.matrix,"assign")[-1]
+      
       covar.reps <- table(factor(covar.assign,sort(unique(covar.assign))))
       if (any(both.terms)) {
           pttz <- apply(both.covar,1,function(x) seq(x)[x])-1
@@ -106,10 +102,7 @@ function(reg.formula, ana.obj,
   if (any(plain.terms)) {
       plain.formula <-
           eval(parse(text=paste(c("~",dimnames(form.factors)[[2]][plain.terms]),collapse="+")))
-      reg.vec <- if (exists("is.R") && is.R() )
-          as.character(attr(form.terms,"variables")[-1])[plain.terms]
-      else
-          as.character(attr(form.terms,"variables"))[plain.terms]
+      reg.vec <- as.character(attr(form.terms,"variables")[-1])[plain.terms]
       
       which.vars <- sort(match(reg.vec, regr.names))
       

@@ -45,7 +45,7 @@
     if (is.null(y.range))
         y.range <- range(y,na.rm=TRUE)
 
-    if (exists("is.R") && is.R() && y.type=="matrix") { # S compat workaround
+    if ( y.type=="matrix" ) { 
         matlines <-
             function(x, y, type = 'l', lty=1:5, lwd = 1, pch=NULL, col=1:6, ...)
                 matplot(x=x, y=y, type=type, lty=lty, lwd=lwd, pch=pch, col=col,

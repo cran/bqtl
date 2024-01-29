@@ -2,7 +2,6 @@
     function(reg.terms,ana.obj,bqtl.specials,local.covar,
              scope, expand.specials=NULL,method,...)
 {
-    using.R <- exists("is.R")&&is.R()
     reg.labels <- labels(reg.terms)
     reg.specials <- attr(reg.terms,"specials")  
     if (missing(method))
@@ -28,11 +27,9 @@
     
     
 ### let the specials expand themselves
-    if (using.R)
-        formals(local.covar)$bq.spec <- bqtl.specials # bind bqtl.specials explicitly
-    else
-        local.covar$bq.spec <- bqtl.specials
-    pt.vars <- reg.specials + if (using.R) 1 else 0
+    formals(local.covar)$bq.spec <- bqtl.specials # bind bqtl.specials explicitly
+    
+    pt.vars <- reg.specials +  1 
     if (length(reg.specials) != 0) {
         rspec <-
             lapply(attr(reg.terms,"variables")[pt.vars],
@@ -69,15 +66,9 @@
     else { # no specials
         rspec <- NULL
     }
-    if (using.R ){
-        term.list <- c(rspec,as.list(c(reg.plain,plus="+",colon=":")))
-    }
-    else { #argh! Splus 3.4
-        rspec <- lapply(rspec,as.character)
-        term.list <- c(rspec,as.list(c(reg.plain,plus="+",colon=":")))
-        names(term.list) <- c(names(rspec),names(reg.plain),"plus","colon")
-  }
-  
+    
+    term.list <- c(rspec,as.list(c(reg.plain,plus="+",colon=":")))
+    
 ### order is <var,conj,var,conj,...,conj,var>
     spec.col.order <-
         if (length(terms.conjuncs)==0)

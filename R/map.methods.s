@@ -19,10 +19,8 @@
 "map.names.bqtl"<-
     function(x,...,ana.obj=NULL)
 {
-    if (exists("is.R") && is.R())
-        tokens <- unlist(strsplit(x$reg.vec,":"))
-    else
-        tokens <-  unlist(lapply(x$reg.vec,strsplit,":"))
+    tokens <- unlist(strsplit(x$reg.vec,":"))
+    
     covar.used <- tokens[grep("covar\\(",tokens)]
     
     if (is.null(ana.obj))

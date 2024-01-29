@@ -1,8 +1,6 @@
 ### convenience functions for defining marker levels
 ###
-if (!( exists("is.R") && is.R() ))          # S 3.4 needs this
-    formals <- function(x) x[-length(x)]
-###
+
 "f2.levels" <-
     function(AA="AA", Aa="Aa", aa="aa", not.aa="A-", not.AA="a-",
              miss.val="--")

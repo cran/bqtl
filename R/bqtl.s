@@ -57,8 +57,6 @@
     if (any(is.na(pmatch(c("loc.right","map.frame","state.matrix","method"),names(ana.obj)))))
         stop("ana.obj doesn't have required components")
 
-    using.R <- exists("is.R")&&is.R()
-
 ### get terms.object, extract 'configs' terms,
     
     bqtl.specials <- c("configs","locus","add","dom","covar","acovar","dcovar")
@@ -92,11 +90,10 @@
     reg.plain[response] <- paste(response, "~")
     
 ### let the specials expand themselves
-    if (using.R)
-        formals(local.covar)$bq.spec <- bqtl.specials # bind bqtl.specials explicitly
-    else
-        local.covar$bq.spec <- bqtl.specials
-    pt.vars <- reg.specials + if (using.R) 1 else 0
+
+    formals(local.covar)$bq.spec <- bqtl.specials # bind bqtl.specials explicitly
+
+    pt.vars <- reg.specials + 1
     rspec <-
         lapply(attr(reg.terms,"variables")[pt.vars],
                function(x,scope,method,covar) {
@@ -129,15 +126,8 @@
     if (expand.specials)
         rspec <- do.call("expand.grid",rspec)
 
-    if (using.R ){
-        term.list <- c(rspec,as.list(c(reg.plain,plus="+",colon=":")))
-    }
-    else { #argh! Splus 3.4
-        rspec <- lapply(rspec,as.character)
-        term.list <- c(rspec,as.list(c(reg.plain,plus="+",colon=":")))
-        names(term.list) <- c(names(rspec),names(reg.plain),"plus","colon")
-    }
-    
+    term.list <- c(rspec,as.list(c(reg.plain,plus="+",colon=":")))
+        
 ### order is <var,conj,var,conj,...,conj,var>
     spec.col.order <-
         if (length(terms.conjuncs)==0)

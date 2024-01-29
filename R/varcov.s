@@ -2,7 +2,6 @@
     function(x,ana.obj,partial=NULL,scope=ana.obj$reg.names,...)
 {
     this.call <- match.call(expand.dots=TRUE)
-    using.R <- exists("is.R")&&is.R()
     bqtl.specials <- c("configs","locus") # dont use: add or dom so
                                         # swap, hk wont jam up    
     reg.terms <- terms(x,specials=bqtl.specials)

@@ -211,3 +211,8 @@ Improve prototypes for lapWHL and llkEM
 
 Version 1.0.35
 Include header for BLAS routines
+
+-----------------------------------------
+
+Version 1.0.36
+Remove is.R()
