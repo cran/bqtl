@@ -216,3 +216,8 @@ Include header for BLAS routines
 
 Version 1.0.36
 Remove is.R()
+
+-----------------------------------------
+
+Version 1.0.36
+Prefix R_ to Calloc, Free

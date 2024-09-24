@@ -32,25 +32,25 @@ printf("%3.1e ",*(pr_d+nrow+ncol*nr));printf("\n");};};
    UNCOMMENT this group of lines 
 
    #define ZERO_FLT(x,y) for (i=0;i<(y);i++) (x)[i]=0.0
-   #define ALLOC_DBL(x,y) (x) = Calloc( (y) + 1, double); \
+   #define ALLOC_DBL(x,y) (x) = R_Calloc( (y) + 1, double); \
    ZERO_FLT((x),(y));(x)[(y)] = 9.87654321 
-   #define ALLOC_DBLPT(x,y) (x) = Calloc( (y+1), double *)
+   #define ALLOC_DBLPT(x,y) (x) = R_Calloc( (y+1), double *)
    #define ZERO_INT(x,y) for (i=0;i<(y);i++) (x)[i]=0
-   #define ALLOC_LONG(x,y) (x)  = Calloc( (y) + 1 , longint); \
+   #define ALLOC_LONG(x,y) (x)  = R_Calloc( (y) + 1 , longint); \
    ZERO_INT((x),(y)); (x)[(y)] = 987654
-   #define DEALLOC_DBL(x,y) PRD( (x)[(y)] ); Free( (x) ) 
-   #define DEALLOC_LONG(x,y) printf("%d\n",(x)[(y)]); Free( (x) ) 
-   #define DEALLOC_DBLPT(x,y) Free( (x) )
+   #define DEALLOC_DBL(x,y) PRD( (x)[(y)] ); R_Free( (x) ) 
+   #define DEALLOC_LONG(x,y) printf("%d\n",(x)[(y)]); R_Free( (x) ) 
+   #define DEALLOC_DBLPT(x,y) R_Free( (x) )
 */
 
 
 
-#define ALLOC_DBL(x,y) (x) = Calloc( (y), double)
-#define ALLOC_DBLPT(x,y) (x) = Calloc( (y), double *)
-#define ALLOC_LONG(x,y) (x)  = Calloc( (y), longint)
-#define DEALLOC_LONG(x,y) Free( (x) )
-#define DEALLOC_DBL(x,y) Free( (x) )
-#define DEALLOC_DBLPT(x,y) Free( (x) )
+#define ALLOC_DBL(x,y) (x) = R_Calloc( (y), double)
+#define ALLOC_DBLPT(x,y) (x) = R_Calloc( (y), double *)
+#define ALLOC_LONG(x,y) (x)  = R_Calloc( (y), longint)
+#define DEALLOC_LONG(x,y) R_Free( (x) )
+#define DEALLOC_DBL(x,y) R_Free( (x) )
+#define DEALLOC_DBLPT(x,y) R_Free( (x) )
 
 
 #define ABS(x) ((x) >= 0 ? (x) : -(x))
