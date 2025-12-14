@@ -5,7 +5,7 @@
 
 /* for use with R */
 #include <R.h>
-#include <R_ext/PrtUtil.h>
+#include <R_ext/Print.h>
 #include <R_ext/Random.h>
 #define longint int
 #define NTFINITE(x) (R_FINITE(x))?0:1
@@ -21,7 +21,7 @@
 #define PRDMAT(pr_d,nr,nc) \
 {long nrow,ncol; for (nrow=0;nrow<nr;nrow++) \
  {for (ncol=0;ncol<nc;ncol++) \
-printf("%3.1e ",*(pr_d+nrow+ncol*nr));printf("\n");};};
+Rprintf("%3.1e ",*(pr_d+nrow+ncol*nr));Rprintf("\n");};};
 #define PRLN Rprintf("%d %s\n",__LINE__,__FILE__)
 #define PRI(pr_int) Rprintf("%d %s integer = %ld \n",__LINE__,__FILE__, pr_int)
 #define CKLOG(x)  if ((x) <= 0.0 ) PRLN 
@@ -39,7 +39,7 @@ printf("%3.1e ",*(pr_d+nrow+ncol*nr));printf("\n");};};
    #define ALLOC_LONG(x,y) (x)  = R_Calloc( (y) + 1 , longint); \
    ZERO_INT((x),(y)); (x)[(y)] = 987654
    #define DEALLOC_DBL(x,y) PRD( (x)[(y)] ); R_Free( (x) ) 
-   #define DEALLOC_LONG(x,y) printf("%d\n",(x)[(y)]); R_Free( (x) ) 
+   #define DEALLOC_LONG(x,y) Rprintf("%d\n",(x)[(y)]); R_Free( (x) ) 
    #define DEALLOC_DBLPT(x,y) R_Free( (x) )
 */
 

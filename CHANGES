@@ -219,5 +219,11 @@ Remove is.R()
 
 -----------------------------------------
 
-Version 1.0.36
+Version 1.0.37/38
 Prefix R_ to Calloc, Free
+
+-----------------------------------------
+
+Vesrion 1.0.39
+R_ext/PRTUtils.h  is obsolete
+
